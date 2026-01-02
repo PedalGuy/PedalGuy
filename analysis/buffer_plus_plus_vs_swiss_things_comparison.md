@@ -1,8 +1,48 @@
 # Empress Buffer++ vs Swiss Things 深度比較分析
 
 **建立日期:** 2026-01-02
-**版本:** 1.0
+**版本:** 2.0
+**最後更新:** 2026-01-02
 **比較對象:** Empress Buffer++ vs EarthQuaker Devices Swiss Things
+
+---
+
+## ⚠️ 重大發現：Buffer++ 優勢遠超預期！
+
+**關鍵發現：你的兩台音箱都支援 Stereo FX Loop！**
+
+### Roland JC-22 ✅
+- **有 Stereo FX Loop** (mono send, stereo L/R return)
+- Series/Parallel 模式切換
+- 可充分發揮 stereo effects → stereo speakers (2x 6.5")
+
+### Tone King Imperial Tri-tube Preamp ✅
+- **有 Stereo FX Return** (mono send, stereo L/R return)
+- **有 Stereo XLR Outputs** (Left + Right, balanced)
+- 完美的 stereo 錄音設置
+
+### Buffer++ vs Swiss Things 關鍵差異
+
+| 功能 | Buffer++ | Swiss Things | 影響 |
+|---|---|---|---|
+| Loop 2 stereo | ✅ **Stereo** | ❌ Mono | **巨大差異** |
+| JC-22 FX Loop 利用 | ✅ **完整 stereo** | ❌ 只能 mono | Buffer++ 完勝 |
+| Tone King FX Loop 利用 | ✅ **完整 stereo** | ❌ 只能 mono | Buffer++ 完勝 |
+| Nucleo Stereo Reverb | ✅ **完整發揮** | ❌ 只能 mono | 浪費 stereo 能力 |
+| Stereo 錄音 (XLR) | ✅ **完整 stereo** | ❌ 只能 mono | Buffer++ 完勝 |
+
+### 結論提前揭曉
+
+**Buffer++ 升級價值比原先評估高出數倍！**
+
+原因：
+1. ✅ **JC-22 + Tone King 都有 stereo FX loops**，不是只有單純 mono 設置
+2. ✅ Buffer++ Loop 2 stereo 可串接 JC-22 FX loop → 充分發揮 stereo speakers
+3. ✅ Buffer++ Loop 2 stereo 可串接 Tone King FX loop → 完整 stereo XLR 錄音
+4. ✅ Nucleo stereo reverb + FT-1Y delay 可完整發揮空間感
+5. ✅ Swiss Things Loop 2 mono **完全無法利用**這些 stereo 能力
+
+**如果你想充分發揮 JC-22 和 Tone King 的 stereo 能力，Buffer++ 是唯一選擇！**
 
 ---
 
@@ -498,13 +538,13 @@ Input 2: Throbber-CTM (SD APH-1, medium output)
 
 | 設備 | Swiss Things 相性 | Buffer++ 相性 | 備註 |
 |---|---|---|---|
-| **Nucleo (Stereo Reverb)** | ⚠️ 只能 mono | ✅ **完整 stereo** | Buffer++ 可充分發揮 stereo |
+| **Nucleo (Stereo Reverb)** | ⚠️ 只能 mono | ✅ **完整 stereo** | **Buffer++ 完勝** |
 | **AASB (Shimmer Reverb)** | ⚠️ 只能 mono | ✅ 可能支援 stereo | 需確認 AASB 是否有 stereo |
 | **FT-1Y (Delay)** | ✅ Loop 2 buffered | ✅ 可配置 | 兩者皆適合 |
 | **Gain Pedals (6顆)** | ✅ Loop 1 unbuffered | ✅ 可配置 unbuffered mode | 兩者皆適合 |
 | **PA-1QG (EQ + Boost)** | ✅ 適合 before input | ✅ 適合 before input | 兩者皆適合 |
-| **Roland JC-22** | ✅ 適合 mono | ⚠️ Stereo 浪費 (除非加 stereo setup) | 除非建立 stereo rig |
-| **Tone King Imperial MKII** | ✅ 適合 4CM | ✅ 適合 4CM | 兩者皆適合 |
+| **Roland JC-22** | ❌ **Loop 2 mono 浪費 stereo FX loop** | ✅ **Loop 2 stereo → JC-22 FX loop** | **Buffer++ 完勝** |
+| **Tone King Imperial** | ❌ **Loop 2 mono 浪費 stereo FX loop** | ✅ **Loop 2 stereo → Tone King FX loop** | **Buffer++ 完勝** |
 | **ESP Eclipse (EMG active)** | ✅ 適合 | ✅ **更好 (Input pads)** | Buffer++ 可避免削波 |
 | **多把吉他切換** | ❌ 只有 1 input | ✅ **2 inputs** | Buffer++ 優勢明顯 |
 
@@ -512,162 +552,308 @@ Input 2: Throbber-CTM (SD APH-1, medium output)
 
 ## 七、如果要升級，該如何配置 Buffer++?
 
-### 建議配置範例
+### 🎯 推薦配置 1: Buffer++ + JC-22 Stereo FX Loop (舞台/練習)
 
-**路由模式選擇: Independent (Stereo) Loops**
+**重大優勢：JC-22 有 stereo FX loop！**
 
 ```
-Input 1: 主要吉他 (ESP Eclipse, Throbber, etc.)
-Input 2: 備用吉他或 synth
+Guitar → [Always-on: Empress MKII, Cali76, PA-1QG]
+     → Buffer++ Input
 
-Loop 1: Gain pedals (可配置 unbuffered mode)
-  → Horsemeat, Sweet Honey, Morning Glory, Blacklon, Source Code, ODL-1-CS
+     → Buffer++ Loop 1 [Gain pedals: Horsemeat, Sweet Honey, Morning Glory, etc.]
 
-Loop 2: Time-based (buffered, stereo!)
-  → FT-1Y (Delay) → Nucleo (Stereo Reverb) → AASB (Stereo Shimmer)
+     → Buffer++ Output → JC-22 INPUT
 
-Output A: Tone King Imperial MKII (Left channel)
-Output B: Roland JC-22 or second amp (Right channel) - 發揮 Stereo!
-```
+     → JC-22 FX SEND → Buffer++ Loop 2 Input
 
-### 優勢
+     → Buffer++ Loop 2 [Stereo effects: FT-1Y, Nucleo, AASB]
 
-- ✅ Nucleo stereo 能力完整發揮
-- ✅ AASB shimmer reverb 也可 stereo (如果支援)
-- ✅ 可在兩把吉他間快速切換
-- ✅ Input metering 避免 EMG active pickup 削波
-- ✅ 30dB boost 能力
+     → Buffer++ Loop 2 Output LEFT → JC-22 FX RETURN LEFT
+     → Buffer++ Loop 2 Output RIGHT → JC-22 FX RETURN RIGHT
 
-### Stereo Rig 建議
-
-如果要充分利用 Buffer++ 的 stereo 能力:
-
-**選項 1: 雙音箱 Stereo**
-```
-Buffer++ Output A → Tone King Imperial MKII (Left)
-Buffer++ Output B → Roland JC-22 (Right)
+     → JC-22 Power Amp → **Stereo Speakers (2x 6.5")**
 ```
 
 **優勢:**
-- Nucleo stereo reverb 完整發揮
-- 兩台音箱產生空間感
+- ✅ **充分發揮 JC-22 stereo speakers** (2x 6.5")
+- ✅ Nucleo stereo reverb 完整空間感
+- ✅ FT-1Y delay stereo 寬度
+- ✅ AASB shimmer reverb stereo (如果支援)
+- ✅ 單台音箱即可享受完整 stereo
+- ✅ 適合舞台演出和家裡練習
 
-**挑戰:**
-- 需要兩台音箱同時使用
-- 舞台/家裡空間需求
+**JC-22 FX Loop 模式選擇:**
+- **Series mode**: 100% wet signal (推薦 stereo effects)
+- **Parallel mode**: Mix dry/wet (視需求)
 
 ---
 
-**選項 2: Mono Amp + Stereo DI to FOH/Interface**
+### 🎯 推薦配置 2: Buffer++ + Tone King Stereo XLR (錄音)
+
+**重大優勢：Tone King 有 stereo FX return + stereo XLR outputs！**
+
 ```
-Buffer++ Output A → Tone King Imperial MKII (舞台監聽)
-Buffer++ Output B → DI Box → FOH/Interface (Stereo 錄音)
+Guitar → [Always-on: Empress MKII, Cali76, PA-1QG]
+     → Buffer++ Input
+
+     → Buffer++ Loop 1 [Gain pedals: Blacklon, Source Code, ODL-1-CS, etc.]
+
+     → Buffer++ Output → Tone King Imperial INPUT
+
+     → Tone King FX SEND → Buffer++ Loop 2 Input
+
+     → Buffer++ Loop 2 [Stereo effects: FT-1Y, Nucleo, AASB]
+
+     → Buffer++ Loop 2 Output LEFT → Tone King FX RETURN LEFT
+     → Buffer++ Loop 2 Output RIGHT → Tone King FX RETURN RIGHT
+
+     → Tone King **XLR OUTPUT LEFT** → Audio Interface Left
+     → Tone King **XLR OUTPUT RIGHT** → Audio Interface Right
+
+     → DAW (完整 stereo 錄音)
 ```
 
 **優勢:**
-- 舞台上用 mono amp 監聽
-- FOH/錄音保留 stereo
+- ✅ **完整 stereo XLR 錄音** (balanced, professional)
+- ✅ Tone King tube preamp 音色 + stereo effects
+- ✅ Nucleo stereo reverb 完整保留
+- ✅ Silent recording (XLR direct to interface)
+- ✅ Headphone monitoring (Tone King 有 headphone out)
+- ✅ 專業錄音室等級設置
+
+---
+
+### 🎯 推薦配置 3: 雙音箱 Stereo Rig (終極設置)
+
+**充分利用兩台音箱的 stereo 能力！**
+
+```
+Guitar → Buffer++ Input
+
+     → Buffer++ Loop 1 [Gain pedals]
+
+     → Buffer++ Loop 2 [Stereo effects: FT-1Y, Nucleo, AASB]
+
+方案 A: 雙音箱 stereo speakers
+     → Buffer++ Loop 2 Output LEFT → JC-22 FX RETURN LEFT → JC-22 Speakers
+     → Buffer++ Loop 2 Output RIGHT → JC-22 FX RETURN RIGHT → JC-22 Speakers
+     (JC-22 作為 stereo 主音箱)
+
+方案 B: 單音箱監聽 + stereo 錄音
+     → Buffer++ Output → Tone King INPUT → Tone King FX SEND
+     → Buffer++ Loop 2 [Stereo effects]
+     → Tone King FX RETURN L/R → Tone King XLR L/R → Interface
+     (舞台用 Tone King 監聽，錄音/FOH 收 stereo XLR)
+```
+
+**優勢:**
+- ✅ 完整發揮兩台音箱的 stereo 能力
+- ✅ 靈活切換舞台/錄音設置
+- ✅ 所有 stereo effects 都能完整發揮
+
+---
+
+### 建議配置總結
+
+| 配置 | 適用場景 | 音箱 | Stereo 輸出 | 優勢 |
+|---|---|---|---|---|
+| **配置 1** | 舞台/練習 | JC-22 | Stereo speakers | 單台音箱 stereo, 簡單 |
+| **配置 2** | 錄音 | Tone King | Stereo XLR | 專業錄音, silent |
+| **配置 3** | 終極 | 兩台 | Speakers + XLR | 完整發揮所有設備 |
+
+### Swiss Things 的致命缺點
+
+**Swiss Things Loop 2 是 MONO，完全無法使用:**
+- ❌ JC-22 stereo FX loop 能力被浪費
+- ❌ Tone King stereo FX loop 能力被浪費
+- ❌ Nucleo stereo reverb 只能 mono
+- ❌ 無法 stereo 錄音
+
+**結論：如果要充分發揮 JC-22 和 Tone King 的 stereo 能力，Buffer++ 是唯一選擇！**
 
 ---
 
 ## 八、結論
 
-### 不是"取代"，而是"不同用途"
+### ⚠️ 重大發現改變一切！
 
-**Swiss Things** 和 **Buffer++** 不是取代關係，而是針對不同需求設計:
+**原先評估:** Swiss Things 和 Buffer++ 不是取代關係，而是針對不同需求設計
 
-- **Swiss Things** = 專用最佳化，簡單直覺，mono pedalboard 的最佳選擇
-- **Buffer++** = 極度靈活，stereo 能力，多用途專業工具
+**重大發現後:** Buffer++ 的價值遠超預期，因為：
+
+1. ✅ **JC-22 有 stereo FX loop** (mono send, stereo L/R return)
+2. ✅ **Tone King 有 stereo FX loop + stereo XLR outputs**
+3. ✅ Swiss Things Loop 2 是 **mono**，**完全無法利用**這些 stereo 能力
+4. ✅ Buffer++ Loop 2 是 **stereo**，可完整發揮兩台音箱的 stereo 能力
 
 ---
 
 ### 針對你的情況，建議如下
 
-#### **建議 A: 保留 Swiss Things (當前設置)**
+#### ❌ 不建議：保留 Swiss Things
 
-**理由:**
-1. ✅ 你的訊號鏈設計與 Swiss Things 完美匹配
-2. ✅ Loop 1 (unbuffered for gain) + Loop 2 (buffered for time-based)
-3. ✅ 簡單直覺操作
-4. ✅ Flexi-Switch 適合現場演出
-5. ✅ Expression Pedal volume 避免 tone-suck
+**致命缺點:**
+1. ❌ **Loop 2 mono 完全浪費 JC-22 stereo FX loop**
+2. ❌ **Loop 2 mono 完全浪費 Tone King stereo FX loop + XLR outputs**
+3. ❌ **Nucleo stereo reverb 只能 mono 輸出**
+4. ❌ 無法 stereo 錄音
+5. ❌ 只有 1 input，無法快速換吉他
 
-**適合條件:**
-- 如果 Nucleo stereo 不是必須
-- 如果不常在兩把吉他間切換
-- 如果喜歡簡單操作
+**唯一保留理由:**
+- 如果你完全不在意 stereo 能力
+- 如果你只用 mono 設置
+- 如果你需要 Expression Pedal volume
 
----
-
-#### **建議 B: 升級到 Buffer++ (如果想充分發揮 Nucleo)**
-
-**理由:**
-1. ✅ **Nucleo 是 stereo reverb，目前可能只用了一半能力**
-2. ✅ Buffer++ 可完整保留 stereo 訊號鏈
-3. ✅ 2 inputs 可在多把吉他間快速切換 (ESP Eclipse, Throbber, Greco, Fender Thinline)
-4. ✅ 12 種路由模式提供未來擴展性
-5. ✅ Input metering 避免 ESP Eclipse (EMG active) 削波
-6. ✅ Input pads 處理熱訊號
-7. ✅ 30dB boost (比 Swiss Things 多 10dB)
-
-**適合條件:**
-- 如果想充分發揮 Nucleo stereo
-- 如果常在兩把吉他間切換
-- 如果需要更靈活的路由配置
-- 如果計畫未來擴展到 stereo rig
+**但這樣的話，你就浪費了:**
+- JC-22 的 stereo speakers 能力
+- Tone King 的 stereo XLR 錄音能力
+- Nucleo 的 stereo reverb 能力
 
 ---
 
-#### **建議 C: 兩者並用 (最靈活)**
+#### ✅ 強烈建議：升級到 Buffer++
 
-**用途分離:**
-- **Swiss Things:** 舞台演出 (簡單可靠)
-- **Buffer++:** 錄音室 (stereo, 複雜路由)
+**理由 (按重要性排序):**
+
+1. ✅ **JC-22 + Tone King 都有 stereo FX loops，Buffer++ 是唯一能充分利用的設備**
+2. ✅ **Nucleo stereo reverb 目前只用了一半能力 (mono)**
+3. ✅ Buffer++ Loop 2 stereo 可串接 JC-22 → 完整 stereo speakers 輸出
+4. ✅ Buffer++ Loop 2 stereo 可串接 Tone King → 完整 stereo XLR 錄音
+5. ✅ 2 inputs 可在多把吉他間快速切換 (ESP Eclipse, Throbber, Greco, Fender Thinline)
+6. ✅ 12 種路由模式提供極大靈活性
+7. ✅ Input metering 避免 ESP Eclipse (EMG active) 削波
+8. ✅ Input pads 處理熱訊號
+9. ✅ 30dB boost (比 Swiss Things 多 10dB)
+10. ✅ Variable input loading (調整音色)
 
 **適合條件:**
-- 如果預算允許
-- 如果有舞台演出和錄音兩種需求
+- ✅ 如果你想充分發揮 **JC-22 stereo speakers**
+- ✅ 如果你想充分發揮 **Tone King stereo XLR 錄音**
+- ✅ 如果你想充分發揮 **Nucleo stereo reverb**
+- ✅ 如果你常在兩把吉他間切換
+- ✅ 如果你需要專業錄音設置
+
+**關鍵問題:**
+- 你是否想充分發揮 JC-22 和 Tone King 的 stereo 能力？
+- 如果答案是 YES → Buffer++ 是**唯一選擇**
+- 如果答案是 NO → 你買 JC-22 和 Tone King 的 stereo 能力幹嘛？
+
+---
+
+#### ⚠️ 兩者並用不再推薦
+
+**原因:**
+- Swiss Things 的 mono Loop 2 是**致命缺陷**
+- 無法充分利用你的設備
+- Buffer++ 可涵蓋所有 Swiss Things 的功能
+
+**唯一例外:**
+- 如果你需要 Expression Pedal volume，可保留 Swiss Things 作為備用
 
 ---
 
 ## 九、最終總結
 
-### Swiss Things 的價值
+### Swiss Things 的價值 (重新評估)
 
+**原本的優勢:**
 - ✅ 專為 pedalboard 設計，針對 dirt 和 time-based pedals 最佳化
 - ✅ 簡單直覺，不會用錯
 - ✅ Flexi-Switch 適合現場
 - ✅ Expression Pedal volume
 - ✅ 價格合理 ($299)
 
-### Buffer++ 的價值
+**致命缺陷 (重大發現後):**
+- ❌ **Loop 2 mono 完全浪費 JC-22 stereo FX loop**
+- ❌ **Loop 2 mono 完全浪費 Tone King stereo FX loop + XLR outputs**
+- ❌ **Nucleo stereo reverb 只能 mono 輸出**
+- ❌ 只有 1 input，無法快速換吉他
 
+**結論:** 優點無法彌補 mono Loop 2 的致命缺陷
+
+---
+
+### Buffer++ 的價值 (重新評估)
+
+**原本的優勢:**
 - ✅ 12 種路由模式，極度靈活
-- ✅ **完整 stereo 能力** (這是最大差異)
+- ✅ 完整 stereo 能力
 - ✅ 2 inputs (多樂器切換)
 - ✅ Input metering + pads (專業功能)
 - ✅ Variable input loading (音色調整)
 - ✅ 30dB boost
 
-### 我的最終建議
+**重大發現後的額外優勢:**
+- ✅ **唯一能充分利用 JC-22 stereo FX loop 的設備**
+- ✅ **唯一能充分利用 Tone King stereo FX loop + XLR outputs 的設備**
+- ✅ **唯一能完整發揮 Nucleo stereo reverb 的設備**
 
-**如果只能選一個:**
+**結論:** 升級價值比原先評估高出**數倍**
 
-1. **保留 Swiss Things** - 如果你的需求是:
-   - ✅ 簡單可靠的 mono pedalboard
-   - ✅ 不需要 stereo
-   - ✅ 不常換吉他
+---
 
-2. **升級 Buffer++** - 如果你的需求是:
-   - ✅ **充分發揮 Nucleo stereo reverb**
-   - ✅ 經常在兩把吉他間切換
-   - ✅ 需要複雜路由配置
-   - ✅ 計畫未來建立 stereo rig
+### 我的最終建議 (重大發現後)
 
-**關鍵決策因素:**
-- **Nucleo stereo 能力** 是否重要？如果是，Buffer++ 優勢巨大
-- **多吉他切換** 是否頻繁？如果是，Buffer++ 的 2 inputs 很實用
-- **簡單操作 vs 靈活配置** 你更看重哪個？
+#### ✅ 強烈建議：立即升級到 Buffer++
+
+**理由:**
+
+1. **你已經投資了 stereo 設備:**
+   - JC-22 stereo speakers + stereo FX loop
+   - Tone King stereo FX return + stereo XLR outputs
+   - Nucleo stereo reverb
+   - **Swiss Things 讓這些投資完全浪費！**
+
+2. **Buffer++ 可充分發揮你的設備:**
+   - ✅ JC-22 stereo speakers 完整空間感
+   - ✅ Tone King stereo XLR 專業錄音
+   - ✅ Nucleo stereo reverb 完整發揮
+   - ✅ 2 inputs 快速換吉他
+   - ✅ Input metering 避免 EMG active pickup 削波
+
+3. **Swiss Things 已經不再適合你的設備:**
+   - ❌ Mono Loop 2 是致命缺陷
+   - ❌ 無法利用 JC-22 和 Tone King 的 stereo 能力
+   - ❌ 浪費 Nucleo 的 stereo reverb
+
+---
+
+### 關鍵決策問題
+
+**問題:** 你是否想充分發揮 JC-22 和 Tone King 的 stereo 能力？
+
+- **如果 YES** → Buffer++ 是**唯一選擇** ✅
+- **如果 NO** → 那你買 JC-22 和 Tone King 的 stereo 能力幹嘛？❓
+
+**我的建議:** 既然已經投資了 stereo 設備，就應該充分利用它們。**立即升級 Buffer++。**
+
+---
+
+### 升級行動方案
+
+1. **立即購買 Buffer++** ($299, 與 Swiss Things 同價)
+2. **賣掉 Swiss Things** (二手約 $200-250)
+3. **實際支出:** $50-100 (非常值得)
+
+**配置建議:**
+- **舞台/練習:** Buffer++ + JC-22 stereo FX loop → stereo speakers
+- **錄音:** Buffer++ + Tone King stereo FX loop → stereo XLR → Interface
+- **終極:** 兩台音箱同時使用，完整 stereo rig
+
+---
+
+### 最終結論
+
+**重大發現改變了一切。**
+
+原本 Swiss Things vs Buffer++ 是「簡單 vs 靈活」的選擇，但現在變成：
+
+- **Swiss Things:** 浪費你的 stereo 設備投資 ❌
+- **Buffer++:** 充分發揮你的 stereo 設備投資 ✅
+
+**建議:** 立即升級 Buffer++，充分發揮 JC-22 stereo speakers、Tone King stereo XLR、Nucleo stereo reverb 的能力。
+
+**這不是升級，而是修正錯誤的設備選擇。**
 
 ---
 

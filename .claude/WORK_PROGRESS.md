@@ -1,8 +1,8 @@
 # 工作進度記錄 - Work Progress Log
 
-**最後更新:** 2025-12-30 22:00
-**當前狀態:** ✅ Phase 1 已完成 - 完整 Agents & Skills 系統已建立
-**Session:** 2025-12-30-002
+**最後更新:** 2026-01-02
+**當前狀態:** ✅ Phase 1 已完成 + 重大 Stereo 發現
+**Session:** 2026-01-02-001
 
 ---
 
@@ -268,8 +268,326 @@
 
 ---
 
+## 🔥 Session 2026-01-02: 重大發現與設備升級建議
+
+**Session ID:** 2026-01-02-001
+**執行時間:** 2026-01-02
+**狀態:** ✅ 完成
+
+### 主要工作項目
+
+#### 1. ✅ Overdrive Pedals 深度分析
+**檔案:** `analysis/overdrive_inventory_analysis.md` (18.5 KB)
+
+- 完成 6 顆 overdrive pedals 完整分析
+  - Sweet Honey Overdrive Deluxe (溫暖派)
+  - PRS Horsemeat (透明派 - Klon 路線)
+  - Morning Glory (透明經典派)
+  - Roshi Blacklon (Fender Blackface amp sim)
+  - TWA Source Code (TS-style)
+  - ODL-1-CS (Dumble-style)
+
+- 設計 5 種疊加組合方案 (2-3 顆)
+  - 方案 A: Neo Soul/Jazz 溫暖派
+  - 方案 B: Classic Rock/Blues 經典派
+  - 方案 C: Post Rock/Fusion 多層次派
+  - 方案 D: Amp Sim + 疊加派
+  - 方案 E: 極簡主義派
+
+- 完整的音樂風格、吉他配對、音箱配對建議
+- Overdrive 收藏總價值: $1,602
+
+---
+
+#### 2. ✅ Guitar Database 建立
+**目錄:** `shared/equipment_database/guitars/`
+
+建立 4 把吉他完整 YAML 文件：
+
+1. **ESP Eclipse CTM** (`esp_eclipse_ctm.yaml` - 5.8 KB)
+   - EMG JH-B active humbucker
+   - High output, modern metal tone
+   - Mahogany + maple top
+
+2. **ESP Throbber-CTM** (`esp_throbber_ctm.yaml` - 7.5 KB)
+   - Seymour Duncan APH-1 passive humbucker
+   - Semi-hollow with Sound Reservoir
+   - Jazz/Blues/Neo Soul 專用
+
+3. **Greco TE-500** (`greco_te500.yaml` - 8.4 KB)
+   - Lindy Fralin WideRange humbucker (改裝)
+   - Semi-hollow thinline Telecaster
+   - Vintage tone
+
+4. **Fender Tokyo Thinline** (`fender_tokyo_thinline.yaml` - 8.5 KB)
+   - Momose VT-1 single-coil
+   - Classic Telecaster tone
+   - MIJ Flagship series
+
+---
+
+#### 3. ⚠️ **重大發現：JC-22 規格錯誤修正**
+
+**問題:** 原 `roland_jc22.yaml` v1.0 錯誤標註「無 FX loop」
+
+**用戶更正:** "你的資訊錯誤，請搜尋網路重建 JC-22 的規格與 YAML，我手邊有 JC-22 的實體，他有 FX-Send/Return，而且 FX-Return 有支援立體聲"
+
+**修正結果:**
+- ✅ 完整重建 `roland_jc22.yaml` v2.0 (20.4 KB)
+- ✅ 確認 **JC-22 有 Stereo FX Loop** (mono send, stereo L/R return)
+- ✅ 支援 Series/Parallel 模式切換
+- ✅ 可充分發揮 stereo effects → stereo speakers (2x 6.5")
+
+**關鍵新增內容:**
+```yaml
+fx_loop_details:
+  has_fx_loop: true
+  type: "Stereo effects loop (mono send, stereo return)"
+  modes:
+    - "Series (串聯)"
+    - "Parallel (並聯)"
+
+  stereo_capability:
+    send: "Mono"
+    return: "**Stereo (L/MONO + R)**"
+    benefit: "可使用 stereo effects 並充分發揮 JC-22 的 stereo speakers"
+
+buffer_plus_plus_pairing:
+  configuration:
+    signal_flow: |
+      Guitar → Buffer++ Loop 1 [Gain pedals]
+      → Buffer++ Output → JC-22 INPUT
+      → JC-22 FX SEND → Buffer++ Loop 2 Input
+      → Buffer++ Loop 2 [Stereo effects: FT-1Y, Nucleo, AASB]
+      → Buffer++ Loop 2 Output L → JC-22 FX RETURN L
+      → Buffer++ Loop 2 Output R → JC-22 FX RETURN R
+      → JC-22 Power Amp → Stereo Speakers
+```
+
+---
+
+#### 4. ✅ Tone King Imperial Stereo 確認
+
+**檔案:** `shared/equipment_database/amps/tone_king_imperial_mkii.yaml` v2.0
+
+**用戶確認:** "ToneKing Preamp Pedal 的 FX-Loop 的 Return 也是立體聲，而他的輸出(XLR)也是"
+
+**確認結果:**
+- ✅ 正確型號: **Tone King Imperial Tri-tube Preamp** (preamp pedal, not amp)
+- ✅ **Stereo FX Return** (mono send, stereo L/R return)
+- ✅ **Stereo XLR Outputs** (Left + Right, balanced)
+- ✅ 3x 12AX7 tubes
+- ✅ 完美的 stereo 錄音設置
+
+**關鍵規格:**
+```yaml
+outputs_xlr:
+  - name: "XLR OUTPUT LEFT"
+    type: "Balanced XLR"
+    note: "**STEREO XLR Output - Left channel**"
+  - name: "XLR OUTPUT RIGHT"
+    type: "Balanced XLR"
+    note: "**STEREO XLR Output - Right channel**"
+
+fx_loop:
+  - name: "EFFECTS RETURN LEFT"
+    note: "**STEREO RETURN - Left channel**"
+  - name: "EFFECTS RETURN RIGHT"
+    note: "**STEREO RETURN - Right channel**"
+
+stereo_capability:
+  send: "Mono"
+  return: "**Stereo (LEFT + RIGHT)**"
+  benefit: "可使用 stereo effects 並通過 stereo XLR outputs 輸出完整 stereo"
+```
+
+---
+
+#### 5. 🔥 **Buffer++ vs Swiss Things 比較報告重大更新**
+
+**檔案:** `analysis/buffer_plus_plus_vs_swiss_things_comparison.md` v2.0
+
+**重大發現改變整個建議:**
+
+原先評估:
+- Swiss Things vs Buffer++ = 「簡單 vs 靈活」的選擇
+- 兩者各有優勢，視需求選擇
+
+**重大發現後:**
+- ✅ **JC-22 有 stereo FX loop**
+- ✅ **Tone King 有 stereo FX loop + stereo XLR outputs**
+- ✅ Swiss Things Loop 2 是 **mono**，完全無法利用這些 stereo 能力
+- ✅ Buffer++ Loop 2 是 **stereo**，可完整發揮
+
+**新增關鍵比較表:**
+
+| 功能 | Buffer++ | Swiss Things | 影響 |
+|---|---|---|---|
+| Loop 2 stereo | ✅ **Stereo** | ❌ Mono | **巨大差異** |
+| JC-22 FX Loop 利用 | ✅ **完整 stereo** | ❌ 只能 mono | Buffer++ 完勝 |
+| Tone King FX Loop 利用 | ✅ **完整 stereo** | ❌ 只能 mono | Buffer++ 完勝 |
+| Nucleo Stereo Reverb | ✅ **完整發揮** | ❌ 只能 mono | 浪費 stereo 能力 |
+| Stereo 錄音 (XLR) | ✅ **完整 stereo** | ❌ 只能 mono | Buffer++ 完勝 |
+
+**新增 3 種 Buffer++ 配置方案:**
+
+1. **Buffer++ + JC-22 Stereo FX Loop** (舞台/練習)
+   - 充分發揮 JC-22 stereo speakers
+   - 單台音箱即可享受完整 stereo
+
+2. **Buffer++ + Tone King Stereo XLR** (錄音)
+   - 完整 stereo XLR 錄音
+   - Tube preamp 音色 + stereo effects
+   - Silent recording
+
+3. **雙音箱 Stereo Rig** (終極設置)
+   - 完整發揮兩台音箱的 stereo 能力
+   - 靈活切換舞台/錄音設置
+
+**最終建議 (重大改變):**
+- ❌ **不再建議保留 Swiss Things**
+  - Loop 2 mono 完全浪費 JC-22 stereo FX loop
+  - Loop 2 mono 完全浪費 Tone King stereo FX loop + XLR outputs
+  - Nucleo stereo reverb 只能 mono 輸出
+
+- ✅ **強烈建議立即升級 Buffer++**
+  - JC-22 + Tone King 都有 stereo FX loops，Buffer++ 是唯一能充分利用的設備
+  - Nucleo stereo reverb 目前只用了一半能力
+  - 2 inputs 可快速換吉他
+  - Input metering 避免 EMG active pickup 削波
+  - 升級成本: $50-100 (賣掉 Swiss Things 後)
+
+**升級行動方案:**
+1. 立即購買 Buffer++ ($299)
+2. 賣掉 Swiss Things (二手約 $200-250)
+3. 實際支出: $50-100
+
+**關鍵結論:**
+> "這不是升級，而是修正錯誤的設備選擇。"
+
+---
+
+### 檔案變更總結
+
+#### 新建檔案 (7)
+1. `analysis/overdrive_inventory_analysis.md` (18.5 KB)
+2. `analysis/buffer_plus_plus_vs_swiss_things_comparison.md` v1.0 → v2.0 (20.1 KB)
+3. `shared/equipment_database/guitars/esp_eclipse_ctm.yaml` (5.8 KB)
+4. `shared/equipment_database/guitars/esp_throbber_ctm.yaml` (7.5 KB)
+5. `shared/equipment_database/guitars/greco_te500.yaml` (8.4 KB)
+6. `shared/equipment_database/guitars/fender_tokyo_thinline.yaml` (8.5 KB)
+
+#### 更新檔案 (2)
+1. `shared/equipment_database/amps/roland_jc22.yaml` v1.0 → v2.0 (20.4 KB)
+   - 重大修正: 新增 stereo FX loop 完整規格
+2. `shared/equipment_database/amps/tone_king_imperial_mkii.yaml` v1.0 → v2.0 (13.2 KB)
+   - 確認 stereo FX return + stereo XLR outputs
+
+---
+
+### 關鍵發現與影響
+
+#### 🔥 Stereo 發現的重要性
+
+**發現前:**
+- 以為 JC-22 沒有 FX loop
+- 以為只能 mono 設置
+- Swiss Things 看起來是合理選擇
+
+**發現後:**
+- JC-22 和 Tone King 都有 **stereo FX loops**
+- Swiss Things Loop 2 mono 是**致命缺陷**
+- Buffer++ 升級價值**遠超預期**
+
+**實際影響:**
+1. ✅ 可充分發揮 JC-22 stereo speakers
+2. ✅ 可充分發揮 Tone King stereo XLR 錄音
+3. ✅ 可充分發揮 Nucleo stereo reverb
+4. ✅ 可快速在 4 把吉他間切換 (2 inputs)
+5. ✅ 避免 ESP Eclipse EMG active pickup 削波 (input metering)
+
+**設備投資優化:**
+- 既然已經投資了 stereo 設備 (JC-22 + Tone King + Nucleo)
+- 就應該充分利用它們
+- Swiss Things 讓這些投資完全浪費
+- Buffer++ 是唯一能充分利用的設備
+
+---
+
+### 下一步建議
+
+#### Phase 2 優先任務更新
+
+1. **立即考慮 Buffer++ 升級** 🔥
+   - 價格: $299 (與 Swiss Things 同價)
+   - 賣掉 Swiss Things: 約 $200-250
+   - 實際支出: $50-100
+
+2. **測試 Stereo Signal Chain**
+   - 配置 1: Buffer++ + JC-22 stereo FX loop
+   - 配置 2: Buffer++ + Tone King stereo XLR
+   - 配置 3: 雙音箱 stereo rig
+
+3. **建立 Stereo Effects 訊號鏈**
+   - FT-1Y (delay) stereo
+   - Nucleo (reverb) stereo
+   - AASB (shimmer) stereo (需確認)
+
+4. **更新 Signal Chain 文件**
+   - 反映 stereo FX loop 發現
+   - 新增 Buffer++ stereo routing 配置
+
+---
+
+### 經驗教訓
+
+#### 資料驗證的重要性
+
+**教訓:** 永遠不要完全依賴線上資料，實體設備規格才是真相
+
+**案例:**
+- 網路資料錯誤標註 JC-22 無 FX loop
+- 用戶實際擁有設備，確認有 stereo FX loop
+- 這個發現完全改變了升級建議
+
+**最佳實踐:**
+1. ✅ 優先參考用戶實際使用經驗
+2. ✅ 交叉驗證多個資料來源
+3. ✅ 明確標註資料可靠度
+4. ✅ 保持開放態度，隨時修正錯誤
+
+---
+
+## 📊 當前 Inventory 快照 (更新)
+
+### 吉他 (4) - ✅ 完整 YAML
+1. ESP Eclipse CTM (EMG active, high) - `esp_eclipse_ctm.yaml`
+2. ESP Throbber-CTM (SD APH-1, medium, semi-hollow) - `esp_throbber_ctm.yaml`
+3. Greco TE-500 (Lindy Fralin, medium, semi-hollow thinline) - `greco_te500.yaml`
+4. Fender Tokyo Thinline (Momose VT-1, single-coil) - `fender_tokyo_thinline.yaml`
+
+### 效果器 (12) - ✅ 完整 YAML
+- Compressors (2): Empress MKII, Cali76 FET
+- EQ (1): PA-1QG
+- Overdrives (6): Sweet Honey, Horsemeat, Morning Glory, Blacklon, Source Code, ODL-1-CS
+- Delay (1): FT-1Y
+- Reverb (2): Nucleo, AASB
+
+### 音箱 (2) - ✅ 完整 YAML + Stereo 確認
+- **Tone King Imperial Tri-tube Preamp** (tube preamp, **stereo FX loop**, **stereo XLR outputs**)
+- **Roland JC-22** (solid-state, **stereo FX loop**, **stereo speakers**)
+
+### 🔥 待升級設備
+- **Empress Buffer++** - $299 (強烈建議立即升級)
+  - 取代 Swiss Things
+  - 充分發揮 JC-22 + Tone King stereo 能力
+  - 2 inputs 快速換吉他
+  - Input metering 避免削波
+
+---
+
 **本文件會持續更新，記錄每個階段的進度**
 
-**最後更新時間:** 2025-12-30 22:00
-**當前任務:** ✅ Phase 1 已完成
-**下一步:** Phase 2 - 測試與優化
+**最後更新時間:** 2026-01-02
+**當前任務:** ✅ Session 2026-01-02 完成 - 重大 Stereo 發現
+**下一步:** 考慮 Buffer++ 升級 + Phase 2 測試

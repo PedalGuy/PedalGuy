@@ -1,47 +1,54 @@
-# Tone King Imperial MKII Preamp
-# 音箱詳細技術資料
+# Tone King Imperial Tri-tube Preamp
+# 音箱/Preamp Pedal 詳細技術資料
 
-version: 1.0
+version: 2.0
 last_updated: 2026-01-02
+correction_note: "確認版本 - Imperial Preamp 有 STEREO FX Loop Return + STEREO XLR Outputs"
 
 # 基本資訊
 basic_info:
   id: "tone_king_imperial_mkii"
   brand: "Tone King"
-  model: "Imperial MKII"
-  full_name: "Tone King Imperial MKII Preamp"
+  model: "Imperial Tri-tube Preamp"
+  full_name: "Tone King Imperial Tri-tube Preamp and DI Pedal"
+  alternative_names:
+    - "Imperial MKII Preamp"
+    - "Imperial Preamp"
   type: "tube_preamp"
   category: "preamp_pedal"
   made_in: "USA"
+  tubes: "3x 12AX7 tubes"
 
 # 價格資訊
 price:
-  msrp: null  # 請補充 (預估 $600-800 USD)
+  msrp: 599  # USD (2024-2025)
   currency: "USD"
-  tier: "high_end_preamp"
+  tier: "high_end_preamp_pedal"
 
 # 核心規格
 technical_specs:
-  type: "Tube preamp pedal"
+  type: "Tube preamp pedal with DI"
   channels: 2
   channel_names:
     - "Rhythm (Clean)"
     - "Lead"
 
   tubes:
-    preamp_tubes: "12AX7 (預估)"
-    tube_count: null  # 請補充
+    preamp_tubes: "3x 12AX7"
+    tube_count: 3
+    note: "Tri-tube design"
 
   power:
-    voltage: null  # 請補充
-    current: null  # 請補充
-    type: "AC adapter (預估) or power supply"
+    voltage: "9-18V DC"
+    current: "300mA (預估)"
+    type: "DC adapter (center negative)"
+    note: "Standard 9V pedal power supply compatible"
 
   size:
-    width: null  # 請補充
-    depth: null  # 請補充
-    height: null  # 請補充
-    weight: null  # 請補充
+    width: "7.2 inches (183 mm)"
+    depth: "5.7 inches (145 mm)"
+    height: "2.75 inches (70 mm)"
+    weight: "1.9 lbs (862 g)"
 
 # 通道規格
 channels:
@@ -98,28 +105,114 @@ fx_loop:
 # 輸入/輸出
 inputs_outputs:
   inputs:
-    - name: "Input"
-      type: "1/4 inch jack"
-      impedance: "High impedance (預估 1MΩ)"
+    - name: "INPUT"
+      type: "1/4 inch phone jack"
+      impedance: "1 MΩ (high impedance)"
+      level: "Instrument level"
 
-  outputs:
-    - name: "Output"
-      type: "1/4 inch jack"
-      level: "Line level (預估)"
-      impedance: "Low impedance (預估 1kΩ)"
+  outputs_1_4_inch:
+    - name: "TO AMP (Output to guitar amp input)"
+      type: "1/4 inch phone jack"
+      level: "Instrument level"
+      impedance: "Low impedance"
+      note: "用於連接到 guitar amp input"
 
-    - name: "FX Send"
-      type: "1/4 inch jack"
+    - name: "FROM AMP SEND (From guitar amp FX send)"
+      type: "1/4 inch phone jack"
       level: "Line level"
+      note: "用於 4-Cable Method，接收 amp 的 FX send"
 
-    - name: "FX Return"
-      type: "1/4 inch jack"
+    - name: "FROM AMP RETURN (To guitar amp FX return)"
+      type: "1/4 inch phone jack"
       level: "Line level"
+      note: "用於 4-Cable Method，送回 amp 的 FX return"
+
+    - name: "HEADPHONES"
+      type: "1/4 inch stereo phone jack"
+      level: "Headphone level"
+      note: "Stereo headphone output"
+
+  outputs_xlr:
+    - name: "XLR OUTPUT LEFT"
+      type: "Balanced XLR"
+      level: "Line level / Mic level"
+      impedance: "600Ω balanced"
+      features: "Ground lift switch"
+      note: "**STEREO XLR Output - Left channel**"
+
+    - name: "XLR OUTPUT RIGHT"
+      type: "Balanced XLR"
+      level: "Line level / Mic level"
+      impedance: "600Ω balanced"
+      features: "Ground lift switch"
+      note: "**STEREO XLR Output - Right channel**"
+
+  fx_loop:
+    - name: "EFFECTS SEND"
+      type: "1/4 inch phone jack"
+      level: "Line level"
+      note: "Mono send to external effects"
+
+    - name: "EFFECTS RETURN LEFT"
+      type: "1/4 inch phone jack"
+      level: "Line level"
+      note: "**STEREO RETURN - Left channel**"
+
+    - name: "EFFECTS RETURN RIGHT"
+      type: "1/4 inch phone jack"
+      level: "Line level"
+      note: "**STEREO RETURN - Right channel**"
+
+  other_connectors:
+    - name: "MIDI IN"
+      type: "5-pin DIN"
+      function: "MIDI program change, channel switching"
+
+    - name: "USB-C"
+      type: "USB-C connector"
+      function: "Connection to Tone King Editor software (Mac/PC)"
+
+    - name: "FOOTSWITCH"
+      type: "1/4 inch TRS jack (預估)"
+      function: "External footswitch for channel switching"
+
+# Effects Loop 詳細說明
+fx_loop_details:
+  has_fx_loop: true
+  type: "Stereo effects loop (mono send, stereo return)"
+  bypassable: true
+
+  operation:
+    send: "Mono - EFFECTS SEND"
+    return: "**Stereo - EFFECTS RETURN LEFT + RIGHT**"
+    signal_flow: "Preamp → FX Send (mono) → External Effects → FX Return L/R (stereo) → XLR Outputs (stereo)"
+
+  stereo_capability:
+    send: "Mono"
+    return: "**Stereo (LEFT + RIGHT)**"
+    benefit: "可使用 stereo effects (delay, reverb) 並通過 stereo XLR outputs 輸出完整 stereo"
+
+  connection_examples:
+    mono_effect:
+      description: "連接 mono 效果器"
+      connection: "SEND → Mono Effect → RETURN LEFT"
+      result: "Mono 訊號，XLR outputs 也會是 mono"
+
+    stereo_effect:
+      description: "連接 stereo 效果器 (例: Nucleo, FT-1Y, AASB)"
+      connection: "SEND → Stereo Effect Input → Stereo Effect L Out → RETURN LEFT, Stereo Effect R Out → RETURN RIGHT"
+      result: "**完整 stereo，XLR L/R outputs 分別輸出左右聲道**"
+
+  typical_use:
+    - "Delay/Reverb pedals in FX loop"
+    - "Stereo effects 充分發揮"
+    - "XLR outputs 直接到 interface/FOH (stereo)"
+    - "Headphones 也可聽到 stereo 效果"
 
 # 音色特性
 tonal_characteristics:
   preamp_type: "Tube preamp"
-  circuit: "All-tube signal path"
+  circuit: "All-tube signal path (3x 12AX7)"
 
   clean_channel:
     character: "Warm, open, touch-sensitive"
@@ -269,14 +362,41 @@ recording_applications:
 # 與庫存音箱比較
 comparisons:
   vs_roland_jc22:
+    similarities:
+      - "**Both have STEREO FX loops** (mono send, stereo return)"
+      - "Both excellent for stereo effects"
+      - "Both can output stereo signal"
+
     differences:
       - "Imperial: Tube preamp vs JC-22: Solid-state"
-      - "Imperial: Has FX loop vs JC-22: No FX loop"
-      - "Imperial: Preamp only vs JC-22: Full amp"
+      - "Imperial: **Stereo XLR outputs** vs JC-22: Stereo speaker outputs"
+      - "Imperial: Preamp only vs JC-22: Full combo amp"
       - "Imperial: Recording-focused vs JC-22: Live amp"
+      - "Imperial: MIDI + USB-C vs JC-22: No MIDI"
+
+    stereo_capabilities_comparison:
+      imperial:
+        - "Stereo FX loop return (L/R)"
+        - "**Stereo XLR outputs (L/R)** - 直接到 interface/FOH"
+        - "Stereo headphone output"
+        - "Perfect for stereo recording"
+      jc22:
+        - "Stereo FX loop return (L/R)"
+        - "Stereo speakers (2x 6.5\")"
+        - "Stereo line outputs (L/R)"
+        - "Perfect for stereo live performance"
+
     use_cases:
-      - "Imperial: 錄音, 4CM, professional applications"
-      - "JC-22: Live performance, clean jazz/funk tones"
+      imperial:
+        - "錄音 (stereo XLR to interface)"
+        - "4CM with guitar amp"
+        - "Direct to FOH (stereo)"
+        - "Home studio/silent recording"
+      jc22:
+        - "舞台演出 (stereo speakers)"
+        - "練習/小型演出"
+        - "Jazz/Funk clean tones"
+        - "需要音箱聲音的場合"
 
 # 推薦訊號鏈
 signal_chain_recommendations:

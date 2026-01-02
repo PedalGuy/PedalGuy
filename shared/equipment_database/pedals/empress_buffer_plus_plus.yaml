@@ -1,0 +1,524 @@
+# Empress Buffer++
+# 效果器詳細技術資料
+
+version: 1.0
+last_updated: 2026-01-02
+data_source: "Official website, web research"
+
+# 基本資訊
+basic_info:
+  id: "empress_buffer_plus_plus"
+  brand: "Empress Effects"
+  model: "Buffer++"
+  full_name: "Empress Effects Buffer++ I/O Interface & Signal Router"
+  type: "utility"
+  category: "buffer_router_interface"
+  made_in: "Canada"
+  release_year: 2025
+  successor_to: "Stereo Buffer+"
+
+# 價格資訊
+price:
+  msrp: 399  # USD
+  street_price: 299  # USD (2026, 25% off promotion)
+  currency: "USD"
+  tier: "professional_utility"
+  value_proposition: "Multi-功能 utility pedal, 取代多個單功能設備"
+
+# 核心規格
+technical_specs:
+  type: "All-analog buffer, router, interface, boost"
+  signal_path: "All-analog, pristine transparent buffering"
+
+  inputs:
+    count: 2
+    type: "1/4 inch phone jack"
+    impedance: "High impedance (預估 1 MΩ)"
+    features:
+      - "Visual input metering (LED indicators)"
+      - "Switchable input pads (處理熱訊號)"
+      - "Variable input loading (模擬線材音色)"
+
+  outputs:
+    count: 2
+    type: "1/4 inch phone jack"
+    configuration: "Stereo or dual-mono"
+    features:
+      - "Output A: Standard output"
+      - "Output B: Transformer-isolated (ground loop rejection)"
+
+  loops:
+    count: 2
+    type: "Effects send/return loops"
+    stereo_capability: true
+    features:
+      - "Loop 1: Configurable routing"
+      - "Loop 2: Configurable routing, stereo capable"
+      - "Differential FX loop returns (noise rejection)"
+
+  boost:
+    max_gain: "30dB"
+    type: "Footswitchable clean boost"
+    control: "Footswitch activation"
+
+  routing_modes:
+    count: 12
+    description: "12 internal routing configurations"
+
+  power:
+    voltage: "9V DC (預估)"
+    current: "TBD (需補充)"
+    type: "Standard 9V DC adapter (center negative, 預估)"
+    note: "需確認實際規格"
+
+  dimensions:
+    width: "TBD (需補充)"
+    depth: "TBD (需補充)"
+    height: "TBD (需補充)"
+    weight: "454g (1.0 lb)"
+
+  controls:
+    footswitches:
+      count: "TBD (需補充, 預估 2-3 個)"
+      functions:
+        - "Loop switching"
+        - "Boost activation"
+        - "Mode selection (預估)"
+
+    knobs:
+      count: "TBD (需補充)"
+      functions:
+        - "Boost level"
+        - "Input loading"
+        - "其他控制 (需補充)"
+
+    switches:
+      count: "TBD (需補充)"
+      functions:
+        - "Routing mode selection"
+        - "Input pad activation"
+        - "其他開關 (需補充)"
+
+# 12 種路由模式詳細說明
+routing_modes_details:
+  mode_1:
+    name: "Independent (Stereo) Loops"
+    description: "兩個完全獨立的 stereo loops"
+    use_case: "完整 stereo 效果器鏈"
+    signal_flow: "Input → Loop 1 (stereo) → Loop 2 (stereo) → Output (stereo)"
+
+  mode_2:
+    name: "Summed Loops"
+    description: "合併 loop 1 和 loop 2 訊號"
+    use_case: "Parallel effects 處理"
+    signal_flow: "Input → Loop 1 + Loop 2 (parallel) → Summed output"
+
+  mode_3:
+    name: "Loop In 1 Only"
+    description: "只使用 Loop 1，Loop 2 bypass"
+    use_case: "簡化訊號鏈，只使用 Loop 1"
+    signal_flow: "Input → Loop 1 → Output (Loop 2 bypassed)"
+
+  mode_4:
+    name: "Independent/Summed Loop Ins Combination"
+    description: "混合獨立與合併模式"
+    use_case: "複雜路由需求"
+    signal_flow: "Flexible routing combination"
+
+  mode_5:
+    name: "Loop Select"
+    description: "在 Loop 1 和 Loop 2 之間切換"
+    use_case: "A/B loop 切換 (例: Loop 1 = Gain pedals, Loop 2 = Modulation)"
+    signal_flow: "Input → Loop 1 OR Loop 2 → Output"
+
+  mode_6:
+    name: "Loop Sum Select"
+    description: "Loop 合併後切換"
+    use_case: "Summed loops vs bypass"
+    signal_flow: "Input → Loop 1 + Loop 2 (summed) OR bypass"
+
+  mode_7:
+    name: "Momentary Loop Switching"
+    description: "瞬間啟動 loop (類似 Flexi-Switch)"
+    use_case: "Temporary effects (按住時啟動，放開時 bypass)"
+    signal_flow: "Input → Loop (momentary activation)"
+    note: "🆕 Buffer++ 新增功能 (vs Stereo Buffer+)"
+
+  mode_8:
+    name: "Momentary Loop Sum"
+    description: "瞬間啟動 summed loops"
+    use_case: "Temporary parallel effects"
+    signal_flow: "Input → Loop 1 + Loop 2 (momentary summed)"
+    note: "🆕 Buffer++ 新增功能 (vs Stereo Buffer+)"
+
+  mode_9:
+    name: "Instrument Select – Mono Loops"
+    description: "在兩個 input 間切換，mono loops"
+    use_case: "兩把吉他切換 (mono 效果器鏈)"
+    signal_flow: "Input 1 OR Input 2 → Loop 1 → Loop 2 (mono) → Output"
+
+  mode_10:
+    name: "Instrument Select – Summed Loops"
+    description: "在兩個 input 間切換，summed loops"
+    use_case: "兩把吉他 + parallel effects"
+    signal_flow: "Input 1 OR Input 2 → Loop 1 + Loop 2 (summed) → Output"
+
+  mode_11:
+    name: "Instrument Select – Independent (Stereo) Loops"
+    description: "在兩個 input 間切換，stereo loops"
+    use_case: "兩把吉他 + stereo effects"
+    signal_flow: "Input 1 OR Input 2 → Loop 1 → Loop 2 (stereo) → Output (stereo)"
+
+  mode_12:
+    name: "Instrument Select – Separate Rigs, Shared Effects"
+    description: "兩個 input，分離 rig，共享 effects"
+    use_case: "兩把吉他/兩台音箱/共享效果器"
+    signal_flow: "Input 1 OR Input 2 → Shared loops → Output A OR Output B"
+
+# 核心功能特性
+core_features:
+  buffering:
+    type: "All-analog, pristine transparent buffering"
+    quality: "Professional-grade, maintains tone integrity"
+    purpose: "Prevent signal loss in long cable runs and complex pedalboards"
+
+  stereo_capability:
+    description: "True stereo signal paths"
+    loops: "Loop 2 supports full stereo"
+    outputs: "2 outputs for stereo or dual-mono"
+    benefit: "Preserve stereo effects (delay, reverb) spatial imaging"
+
+  noise_management:
+    dolby_filtering:
+      description: "Dolby-style noise filtering"
+      benefit: "Eliminates noise and hiss from high-gain or vintage FX"
+      note: "Does not compromise tone"
+
+    transformer_isolation:
+      location: "Output B"
+      benefit: "Prevents ground loops and hum in dual-amp setups"
+      note: "Essential for avoiding ground loop issues"
+
+    differential_fx_returns:
+      description: "Differential FX loop returns"
+      benefit: "Reject unwanted noise from effects"
+
+  input_features:
+    metering:
+      description: "Visual input metering (LED indicators)"
+      benefit: "Prevent clipping, monitor signal levels"
+      use_case: "Essential for active pickups, synths, hot signals"
+
+    pads:
+      description: "Switchable input pads"
+      benefit: "Handle hot signals without clipping"
+      use_case: "Active pickups (EMG), synths, line-level sources"
+
+    variable_loading:
+      description: "Variable input loading"
+      benefit: "Simulate warm roll-off of long cables"
+      use_case: "Tone shaping, vintage sound emulation"
+      effect: "Adjusts pickup high-frequency response"
+
+  boost:
+    gain_range: "Up to 30dB"
+    type: "Clean boost"
+    activation: "Footswitchable"
+    use_case: "Solo boost, signal recovery, drive pedal boost"
+
+  ab_switching:
+    description: "AB/AY instrument & amp switching"
+    capability: "Toggle between instruments, amps, or loop paths"
+    use_case: "Quick switching between guitars or dual-amp setups"
+
+# 與 Swiss Things 比較
+vs_swiss_things:
+  advantages:
+    - name: "Stereo Capability"
+      buffer_plus_plus: "✅ Full stereo (Loop 2)"
+      swiss_things: "❌ Mono only"
+      impact: "巨大差異 - 可充分發揮 stereo effects"
+
+    - name: "Routing Flexibility"
+      buffer_plus_plus: "✅ 12 routing modes"
+      swiss_things: "❌ Fixed 2-loop design"
+      impact: "極度靈活 vs 固定角色"
+
+    - name: "Inputs"
+      buffer_plus_plus: "✅ 2 inputs"
+      swiss_things: "❌ 1 input"
+      impact: "可快速換吉他，無需拔線"
+
+    - name: "Input Metering"
+      buffer_plus_plus: "✅ Visual metering"
+      swiss_things: "❌ No metering"
+      impact: "防止削波，監控訊號"
+
+    - name: "Input Pads"
+      buffer_plus_plus: "✅ Switchable pads"
+      swiss_things: "❌ No pads"
+      impact: "處理熱訊號 (active pickups)"
+
+    - name: "Variable Input Loading"
+      buffer_plus_plus: "✅ Adjustable"
+      swiss_things: "❌ Fixed"
+      impact: "音色調整能力"
+
+    - name: "Boost Range"
+      buffer_plus_plus: "✅ 30dB"
+      swiss_things: "❌ 20dB"
+      impact: "更大 boost 能力"
+
+    - name: "Momentary Switching"
+      buffer_plus_plus: "✅ Mode 7 & 8"
+      swiss_things: "✅ Flexi-Switch"
+      impact: "兩者都有"
+
+  disadvantages:
+    - name: "Expression Pedal"
+      buffer_plus_plus: "❌ No expression jack"
+      swiss_things: "✅ Expression pedal volume"
+      impact: "Swiss Things 優勢"
+
+    - name: "Dedicated Loop Design"
+      buffer_plus_plus: "❌ Configurable (需設定)"
+      swiss_things: "✅ Loop 1 unbuffered, Loop 2 buffered"
+      impact: "Swiss Things 更簡單直覺"
+
+  price_comparison:
+    buffer_plus_plus: "$299 USD (promotion)"
+    swiss_things: "$299 USD (MSRP)"
+    conclusion: "同價，但 Buffer++ 功能更多"
+
+# 適用場景
+best_for:
+  excellent:
+    - "Stereo pedalboards (充分發揮 stereo effects)"
+    - "複雜訊號鏈 (12 種路由模式)"
+    - "多把吉他快速切換 (2 inputs)"
+    - "Dual-amp setups (transformer isolation)"
+    - "Active pickups / 熱訊號 (input metering + pads)"
+    - "專業錄音 (stereo capability)"
+    - "需要靈活路由配置"
+
+  good:
+    - "傳統 pedalboard (可當作進階版 Swiss Things)"
+    - "舞台演出 (momentary switching)"
+    - "家裡練習 (stereo 體驗)"
+
+  not_ideal:
+    - "極簡主義者 (功能過多可能複雜)"
+    - "需要 expression pedal volume (無 expression jack)"
+
+# 與庫存設備相性
+equipment_pairing:
+  amps:
+    jc22:
+      compatibility: "✅ 完美配對"
+      reason: "JC-22 有 stereo FX loop，Buffer++ Loop 2 stereo 可充分發揮 stereo speakers"
+      configuration: |
+        Guitar → Buffer++ Input
+        → Buffer++ Loop 1 [Gain pedals]
+        → Buffer++ Output → JC-22 INPUT
+        → JC-22 FX SEND → Buffer++ Loop 2 Input
+        → Buffer++ Loop 2 [Stereo effects: FT-1Y, Nucleo, AASB]
+        → Buffer++ Loop 2 Output L → JC-22 FX RETURN L
+        → Buffer++ Loop 2 Output R → JC-22 FX RETURN R
+        → JC-22 Power Amp → Stereo Speakers
+      benefit: "單台音箱即可享受完整 stereo"
+
+    tone_king_imperial:
+      compatibility: "✅ 完美配對"
+      reason: "Tone King 有 stereo FX return + stereo XLR outputs，Buffer++ 可完整發揮"
+      configuration: |
+        Guitar → Buffer++ Input
+        → Buffer++ Loop 1 [Gain pedals]
+        → Buffer++ Output → Tone King INPUT
+        → Tone King FX SEND → Buffer++ Loop 2 Input
+        → Buffer++ Loop 2 [Stereo effects]
+        → Buffer++ Loop 2 Output L → Tone King FX RETURN L
+        → Buffer++ Loop 2 Output R → Tone King FX RETURN R
+        → Tone King XLR OUTPUT L/R → Audio Interface (stereo recording)
+      benefit: "完整 stereo XLR 錄音"
+
+  pedals:
+    stereo_effects:
+      - name: "Nucleo (Stereo Reverb)"
+        compatibility: "✅ 完美發揮"
+        reason: "Buffer++ Loop 2 stereo 可保留 Nucleo 完整 stereo imaging"
+        current_issue: "目前 Swiss Things mono，浪費 stereo 能力"
+
+      - name: "FT-1Y (Delay)"
+        compatibility: "✅ 適合"
+        reason: "可在 Loop 2 stereo 使用"
+
+      - name: "AASB (Shimmer Reverb)"
+        compatibility: "✅ 適合"
+        reason: "如果 AASB 有 stereo，可充分發揮"
+
+    gain_pedals:
+      - name: "All 6 Overdrives"
+        compatibility: "✅ 適合"
+        reason: "可放在 Loop 1，根據 routing mode 選擇 buffered/unbuffered"
+        routing: "可使用適合 gain pedals 的 routing mode"
+
+  guitars:
+    esp_eclipse_ctm:
+      compatibility: "✅ 完美配對"
+      reason: "EMG active pickups 高輸出，Buffer++ input metering + pads 可防止削波"
+      benefit: "視覺化監控訊號，避免 input clipping"
+
+    all_guitars:
+      compatibility: "✅ 適合"
+      reason: "2 inputs 可同時連接兩把吉他，快速切換"
+      use_case: "Instrument Select modes (9-12) 專為多吉他設計"
+
+# 推薦訊號鏈配置
+signal_chain_recommendations:
+  config_1:
+    name: "Stereo Pedalboard + JC-22"
+    description: "充分發揮 JC-22 stereo speakers"
+    routing_mode: "Mode 1 - Independent (Stereo) Loops"
+    signal_flow: |
+      Guitar → [Always-on: Empress MKII, Cali76, PA-1QG]
+           → Buffer++ Input
+           → Buffer++ Loop 1 [Gain pedals: Horsemeat, Sweet Honey, Morning Glory]
+           → Buffer++ Output → JC-22 INPUT
+           → JC-22 FX SEND → Buffer++ Loop 2 Input
+           → Buffer++ Loop 2 [Stereo: FT-1Y, Nucleo, AASB]
+           → Buffer++ Loop 2 L/R → JC-22 FX RETURN L/R
+           → JC-22 Stereo Speakers
+    benefit:
+      - "完整 stereo 體驗"
+      - "Nucleo stereo reverb 完整發揮"
+      - "單台音箱即可享受 stereo"
+
+  config_2:
+    name: "Stereo Recording + Tone King"
+    description: "專業 stereo 錄音設置"
+    routing_mode: "Mode 1 - Independent (Stereo) Loops"
+    signal_flow: |
+      Guitar → [Always-on pedals]
+           → Buffer++ Input
+           → Buffer++ Loop 1 [Gain pedals: Blacklon, Source Code, ODL-1-CS]
+           → Buffer++ Output → Tone King INPUT
+           → Tone King FX SEND → Buffer++ Loop 2 Input
+           → Buffer++ Loop 2 [Stereo effects]
+           → Buffer++ Loop 2 L/R → Tone King FX RETURN L/R
+           → Tone King XLR L/R → Audio Interface (stereo)
+    benefit:
+      - "完整 stereo XLR 錄音"
+      - "Tube preamp 音色 + stereo effects"
+      - "Silent recording"
+
+  config_3:
+    name: "Dual Guitar Setup"
+    description: "兩把吉他快速切換"
+    routing_mode: "Mode 11 - Instrument Select (Stereo Loops)"
+    signal_flow: |
+      Input 1: ESP Eclipse CTM (EMG active, high output)
+      Input 2: Throbber-CTM (SD APH-1, medium output)
+           → Buffer++ (auto-switch inputs)
+           → Buffer++ Loop 1 [Gain pedals]
+           → Buffer++ Loop 2 [Stereo effects]
+           → Output (stereo)
+    benefit:
+      - "快速換吉他，無需拔線"
+      - "Input metering 避免 Eclipse EMG 削波"
+      - "保留 stereo 能力"
+
+  config_4:
+    name: "Dual Amp Stereo Rig"
+    description: "終極 stereo 設置"
+    routing_mode: "Mode 1 - Independent (Stereo) Loops"
+    signal_flow: |
+      Guitar → Buffer++ Input
+           → Loop 1 [Gain pedals]
+           → Loop 2 [Stereo effects]
+           → Output A (Left) → JC-22 (via FX loop)
+           → Output B (Right) → Tone King (via FX loop)
+    benefit:
+      - "完整發揮兩台音箱 stereo 能力"
+      - "極致 stereo 空間感"
+
+# 使用注意事項
+usage_notes:
+  routing_modes:
+    - "需要學習 12 種 routing modes 的差異"
+    - "建議從 Mode 1 (Independent Stereo Loops) 開始"
+    - "參考 user manual 了解每個 mode 的詳細功能"
+
+  setup:
+    - "首次設定需要時間熟悉功能"
+    - "建議標記常用的 routing mode"
+    - "可使用多個 preset 配置 (如果支援)"
+
+  power:
+    - "需確認電源供應規格 (9V DC 預估)"
+    - "確保 pedalboard power supply 有足夠電流"
+
+  stereo_effects:
+    - "充分利用 Loop 2 stereo 能力"
+    - "確保 stereo effects 正確連接 L/R"
+    - "使用 stereo cables 連接 FX loop returns"
+
+# 優缺點總結
+pros_cons:
+  pros:
+    - "✅ 12 種路由模式，極度靈活"
+    - "✅ 完整 stereo 能力 (Loop 2)"
+    - "✅ 2 inputs (多樂器快速切換)"
+    - "✅ Input metering (防止削波)"
+    - "✅ Input pads (處理熱訊號)"
+    - "✅ Variable input loading (音色調整)"
+    - "✅ 30dB boost (比 Swiss Things 多 10dB)"
+    - "✅ Transformer isolation (ground loop rejection)"
+    - "✅ Dolby-style noise filtering"
+    - "✅ Momentary switching (Mode 7 & 8)"
+    - "✅ All-analog signal path"
+    - "✅ 加拿大製造 (Empress 高品質)"
+
+  cons:
+    - "❌ 需要學習 12 種 routing modes (複雜度較高)"
+    - "❌ 無 Expression Pedal jack"
+    - "❌ 尺寸/電源規格需要補充確認"
+    - "❌ 價格較高 (雖然目前 $299 促銷)"
+
+# 升級建議
+upgrade_recommendation:
+  from_swiss_things:
+    recommendation: "✅ 強烈建議立即升級"
+    reasons:
+      - "JC-22 + Tone King 都有 stereo FX loops"
+      - "Swiss Things Loop 2 mono 完全浪費這些 stereo 能力"
+      - "Buffer++ 是唯一能充分利用 stereo 設備的選擇"
+      - "Nucleo stereo reverb 目前只用了一半能力"
+      - "2 inputs 可快速換吉他"
+      - "Input metering 避免 ESP Eclipse EMG 削波"
+
+    cost_analysis:
+      buffer_plus_plus_price: "$299"
+      swiss_things_resale: "$200-250 (二手)"
+      net_cost: "$50-100"
+      conclusion: "實際支出很低，價值遠超成本"
+
+    migration_plan:
+      step_1: "購買 Buffer++ ($299)"
+      step_2: "設定 Buffer++ routing mode (Mode 1 推薦)"
+      step_3: "測試 stereo 訊號鏈 (JC-22 或 Tone King)"
+      step_4: "賣掉 Swiss Things ($200-250)"
+      step_5: "享受完整 stereo 體驗"
+
+# 參考資料
+sources:
+  - "Empress Effects Official Website - https://empresseffects.com/products/buffer-plus-plus"
+  - "Empress Buffer++ Support - https://empresseffects.com/blogs/support-buffer-plus-plus"
+  - "No Treble Announcement - https://www.notreble.com/buzz/2025/11/29/empress-effects-announces-the-buffer-a-powerful-upgrade-for-complex-signal-chains/"
+  - "Web research 2026-01-02"
+
+data_reliability: "中 - 部分規格需要補充 (dimensions, power, detailed controls)"
+need_verification:
+  - "確切的尺寸規格"
+  - "電源電壓和電流需求"
+  - "Footswitch 和 knob 的詳細配置"
+  - "User manual 完整內容"
