@@ -1,0 +1,184 @@
+# Virtues Arca
+# 效果器詳細技術資料
+# 資料來源: projects/2025-v3-signal-chain/research/overdrive_pedals_technical_data.md
+
+version: 1.0
+last_updated: 2026-01-03
+
+# 基本資訊
+basic_info:
+  id: "virtues_arca"
+  brand: "Virtues"
+  model: "Arca"
+  full_name: "Virtues Arca Semi-Transparent Overdrive"
+  type: "overdrive"
+  subtype: "bluesbreaker_enhanced"
+  circuit_basis: "Bluesbreaker 架構但有改良"
+  design_approach: "類似 BB 但增加顆粒度與中頻厚實度"
+
+# 價格資訊
+price:
+  msrp: 270
+  currency: "USD"
+  price_range: "250-280 USD"
+  tier: "mid_high_end"
+
+# 核心技術規格
+technical_specs:
+  controls:
+    - name: "Treble"
+      function: "高頻控制"
+    - name: "Bass"
+      function: "低頻控制"
+    - name: "Volume"
+      function: "輸出音量"
+    - name: "Gain"
+      function: "增益量控制"
+
+  knob_count: 4
+  design_note: "4 旋鈕設計提供充分音色塑造能力"
+
+  bypass: "True Bypass (推測)"
+
+# 音色特性
+tonal_characteristics:
+  type: "Semi-Transparent Overdrive (BB-like with enhancement)"
+  design_goal: "保持 Bluesbreaker 基礎,增加現代個性"
+
+  frequency:
+    low: "可調 (Bass 控制)"
+    mid: "比標準 BB 更厚實、更突出"
+    high: "可調 (Treble 控制)"
+
+  dynamics:
+    pick_sensitivity: "高"
+    volume_sensitivity: "高"
+    compression: "適中,比 BB 略多"
+
+  gain:
+    breakup_point: "可調"
+    gain_range: "Low to Medium"
+    harmonics: "比 BB 更多顆粒感"
+
+  tone_character:
+    - "聲音較 Q"
+    - "有彈性"
+    - "更多顆粒度 (grit)"
+    - "中頻更厚實"
+
+# 與 Bluesbreaker 比較
+bluesbreaker_comparison:
+  similarities:
+    - "基本音色走向相似"
+    - "開放、清晰的特性"
+    - "動態響應"
+
+  differences:
+    midrange:
+      arca: "更厚實、更突出"
+      bb: "較平衡"
+    grit:
+      arca: "增加顆粒度"
+      bb: "較平滑"
+    character:
+      arca: "更 Q、更有彈性"
+      bb: "較傳統、較溫和"
+    versatility:
+      arca: "更現代、更有個性"
+      bb: "更經典、更中性"
+
+  enhancement: "保留 BB 核心,加入現代改良"
+
+# EQ 控制
+eq_controls:
+  treble:
+    function: "高頻 cut/boost"
+    purpose: "針對吉他或音箱特性調整高頻"
+
+  bass:
+    function: "低頻 cut/boost"
+    purpose: "調整低頻厚度與溫暖度"
+
+  benefit: "4 旋鈕設計提供比標準 BB (3 旋鈕) 更多音色塑造能力"
+
+# 使用建議
+usage_recommendations:
+  best_for:
+    - "Blues"
+    - "Rock"
+    - "Fusion"
+
+  good_for:
+    - "Neo Soul"
+    - "Jazz"
+
+  versatility: "BB 音色但更現代、更有個性"
+
+  signal_chain_position: "Signal chain 前段或中段"
+
+  tone_shaping:
+    description: "4 旋鈕設計提供充分音色塑造能力"
+    benefit: "可針對不同吉他/音箱進行精細調整"
+
+  features:
+    - "Bluesbreaker-based"
+    - "Enhanced midrange thickness"
+    - "Added grit and articulation"
+    - "4-knob control (Treble/Bass/Volume/Gain)"
+
+# 阻抗特性
+impedance:
+  input: "~1MΩ (推測,標準)"
+  output: "~10-50kΩ (推測)"
+  buffer: "None (True Bypass 推測)"
+
+# 與其他 BB 踏板比較
+comparisons:
+  vs_standard_bb:
+    improvement: "更多中頻厚實度與顆粒感"
+    eq_control: "獨立 Treble/Bass 控制"
+
+  vs_jhs_morning_glory:
+    midrange: "Arca 更突出,Morning Glory 更中性"
+    transparency: "Morning Glory 更透明,Arca 更有個性"
+
+  vs_cornerstone_colosseum_bb:
+    approach: "Arca 增加顆粒度,Colosseum 改良透明度"
+    overlap: "80% 功能重疊,都是 BB-style"
+
+# 評價
+review_summary:
+  pros:
+    - "保留 Bluesbreaker 核心音色"
+    - "增加中頻厚實度"
+    - "更多顆粒度與個性"
+    - "4 旋鈕提供充分音色塑造"
+    - "聲音 Q 彈、有活力"
+
+  cons:
+    - "與其他 BB 踏板功能重疊 (Morning Glory, Colosseum)"
+    - "價格較高 ($270)"
+    - "資訊較少,品牌知名度較低"
+
+  use_case: "適合喜歡 BB 音色,但希望有更多中頻厚實度與顆粒感的玩家"
+
+# V1.0 配置使用
+signal_chain:
+  position: "pre_amp_gain"
+  v1_status: "評估後移除"
+  removal_reason: "與 Colosseum BB Side 功能重疊 (80%)"
+  notes: "V1.0 評估後即移除,選擇 Colosseum 作為 BB 代表"
+
+# 參考資料來源
+sources:
+  - "YouTube Demo: https://www.youtube.com/watch?v=wo7BpL1sNP8"
+  - "用戶評價"
+
+data_collected: 2025-12-13
+data_reliability: "中 (資訊較少)"
+
+# 產地
+origin:
+  manufacturer: "Virtues"
+  country: "未知"
+  note: "較小眾品牌,資訊有限"

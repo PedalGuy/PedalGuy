@@ -1,0 +1,241 @@
+# From Yesterday (Analog Man King of Tone Clone)
+# 效果器詳細技術資料
+# 資料來源: projects/2025-v3-signal-chain/research/overdrive_pedals_technical_data.md
+# 註: 本效果器使用 Analog Man King of Tone 規格作為參考
+
+version: 1.0
+last_updated: 2026-01-03
+
+# 基本資訊
+basic_info:
+  id: "from_yesterday_kot"
+  brand: "From Yesterday"
+  model: "King of Tone Clone"
+  full_name: "From Yesterday - Analog Man King of Tone Clone"
+  type: "overdrive"
+  subtype: "dual_transparent"
+  circuit_basis: "Analog Man King of Tone clone"
+  design_approach: "保留吉他與音箱原音,加上溫暖 overdrive"
+  original_designer: "Mike Piera (Analog Man) & Jim Weider"
+
+# 價格資訊
+price:
+  msrp: 335
+  currency: "USD"
+  tier: "boutique"
+  note: "2025年因關稅調漲"
+
+# 原版 KOT 參考資訊
+original_kot:
+  wait_time: "數年等待清單"
+  used_price: "800-1000+ USD"
+  alternatives:
+    - "Prince of Tone"
+    - "Duke of Tone"
+
+# 核心技術規格
+technical_specs:
+  power:
+    voltage: "9V to 18V DC"
+    recommended: "18V (提供更好音色)"
+
+  controls:
+    red_channel:
+      - name: "Volume"
+        function: "Red 通道輸出音量"
+      - name: "Drive"
+        function: "Red 通道增益量"
+      - name: "Tone"
+        function: "Red 通道音色控制"
+
+    yellow_channel:
+      - name: "Volume"
+        function: "Yellow 通道輸出音量"
+      - name: "Drive"
+        function: "Yellow 通道增益量"
+      - name: "Tone"
+        function: "Yellow 通道音色控制"
+
+  channels:
+    description: "Dual channel (Red & Yellow)"
+    modes_per_channel: "3 種模式 (OD/Clean/Dist)"
+    total_combinations: "9 種組合 (3×3)"
+
+  internal_controls:
+    dip_switches:
+      - "Switch 1: Yellow channel mode (OD/CLEAN)"
+      - "Switch 2: Yellow channel DIST mode"
+      - "Switch 3: Red channel mode (OD/CLEAN)"
+      - "Switch 4: Red channel DIST mode"
+    trimpot:
+      - "Treble Trimpot: 內部高頻微調"
+
+  options:
+    - "Buffer bypass (+$45)"
+    - "External mode toggle (+$50)"
+
+  bypass: "True Bypass"
+
+# 三種模式 (每通道獨立設定)
+operating_modes:
+  normal_overdrive:
+    name: "Normal Overdrive Mode"
+    characteristics:
+      - "標準 KOT 音色"
+      - "增益略低於 Tube Screamer"
+      - "可達到 4 倍 TS 音量"
+    best_for: "標準 overdrive 使用"
+
+  clean_mode:
+    name: "Clean Mode"
+    characteristics:
+      - "更少失真"
+      - "適合 clean boost"
+      - "Compression 更低"
+      - "可達到 2 倍 OD mode 音量"
+    best_for: "Clean boost, 透明推動"
+
+  distortion_mode:
+    name: "Distortion Mode"
+    characteristics:
+      - "比標準模式更多失真"
+      - "更多 compression"
+      - "保留踏板特性"
+    best_for: "需要更多增益時"
+
+# 音色特性
+tonal_characteristics:
+  type: "Dual Transparent Overdrive"
+  design_goal: "保留吉他與音箱原音"
+
+  frequency:
+    low: "豐富但不過度"
+    mid: "平衡,不突出"
+    high: "開放、清晰"
+
+  dynamics:
+    pick_sensitivity: "極高 (amp-like)"
+    volume_sensitivity: "極高"
+    compression: "極低 (除非選 Dist mode)"
+
+  gain:
+    breakup_point: "極度透明"
+    gain_range: "Low to Medium-high"
+    harmonics: "豐富、有機,偏偶次諧波"
+
+  characteristic: "Amp-like 反應,極度觸鍵敏感"
+
+# 雙通道使用策略
+dual_channel_strategy:
+  typical_setup:
+    yellow: "Clean Mode"
+    red: "OD Mode"
+
+  stacking:
+    description: "兩個通道可同時使用"
+    order: "Yellow → Red (可透過內部跳線切換)"
+
+  flexibility:
+    - "可設定為兩種不同增益"
+    - "可設定為 Clean Boost + OD"
+    - "可設定為兩種不同 OD 色彩"
+
+# 18V Operation
+voltage_recommendations:
+  9v_mode:
+    description: "標準 9V 供電"
+    characteristics: "標準音色"
+
+  18v_mode:
+    description: "18V 供電 (許多用戶偏好)"
+    advantages:
+      - "更大 headroom"
+      - "更好動態範圍"
+      - "更清晰音色"
+      - "更 amp-like 反應"
+
+# 使用建議
+usage_recommendations:
+  best_for:
+    - "Blues"
+    - "Classic Rock"
+    - "Jazz"
+    - "Country"
+
+  versatility: "幾乎所有音樂風格"
+
+  signal_chain_position: "Signal chain 前段"
+
+  stacking:
+    ability: "內建雙通道疊加,也可與其他 OD 疊加"
+    description: "極佳的疊加能力"
+
+  v1_usage:
+    yellow_channel: "Clean Mode (只使用 1/6 功能)"
+    red_channel: "未使用"
+    utilization: "16% (1/6)"
+    reason_for_removal: "功能被 PA-1QG LEVEL 取代"
+
+  features:
+    - "Dual channel with 3 modes each"
+    - "Amp-like transparency"
+    - "Extreme touch sensitivity"
+    - "18V operation capability"
+
+# 阻抗特性
+impedance:
+  input: "~1MΩ"
+  output: "~10-50kΩ"
+  buffer: "Optional (+$45 extra)"
+
+# 與其他踏板比較
+comparisons:
+  vs_fulltone_ocd:
+    description: "OCD 更多 gain 與 compression"
+    kot_advantage: "更透明,更 amp-like"
+
+  vs_timmy:
+    description: "相似透明度"
+
+  vs_morning_glory:
+    description: "相似設計理念,都是極度透明的 OD"
+
+  transparency_ranking: "市場上最透明的 OD 之一"
+
+# 評價
+review_summary:
+  pros:
+    - "市場上最透明的 overdrive 之一"
+    - "Amp-like 反應 - 踏板適應你的音箱"
+    - "極度觸鍵敏感與動態"
+    - "兩個獨立通道提供極大彈性"
+    - "18V 運作提供更好音色"
+
+  cons:
+    - "原版 KOT 有數年等待清單"
+    - "原版二手價格極高 ($800-1000+)"
+    - "Clone 版本品質參差不齊"
+
+  famous_quote: "The pedal adapts to your amp - Fender sounds like cranked Fender, Marshall sounds like cranked Marshall"
+
+# 訊號鏈配置
+signal_chain:
+  position: "pre_amp_gain"
+  v1_assignment: "Yellow Clean Mode"
+  v2_removal_reason: "只使用 Yellow Clean Mode (1/6 功能),功能被 PA-1QG LEVEL 取代"
+  notes: "V1.0 核心效果器,V2.0 已移除"
+
+# 參考資料來源
+sources:
+  - "Analog Man 官方網站"
+  - "Premier Guitar"
+  - "Reverb"
+  - "The Gear Page"
+
+data_collected: 2025-12-13
+data_reliability: "高 (基於原版 KOT 規格)"
+
+# 產地
+origin:
+  original_kot: "USA (Analog Man)"
+  clone_note: "From Yesterday clone 產地未明"

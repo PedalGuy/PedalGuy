@@ -232,6 +232,18 @@ if budget_analysis_enabled:
 
 ### Step 6: 生成輸出
 
+**⚠️ 重要：必須同時生成 Markdown 和 YAML 兩種格式**
+
+研究完成後，**必須**生成以下兩個文件：
+1. **Markdown 報告** (人類閱讀) - `.md` 文件
+2. **YAML 資料** (AI 處理) - `.yaml` 文件
+
+**為什麼兩者都必須生成：**
+- Markdown: 供人類閱讀和參考
+- YAML: 供後續 AI agents/skills 快速讀取和處理，避免重複 research
+
+**注意：** 無論研究是否加入 inventory，YAML 文件都必須生成！
+
 #### 6.1 Markdown 報告 (人類閱讀)
 
 檔案路徑: `shared/equipment_database/[type]/[brand]_[model]_v[N].md`
@@ -362,9 +374,14 @@ if budget_analysis_enabled:
 **Date:** [date]
 ```
 
-#### 6.2 YAML 資料 (AI 處理)
+#### 6.2 YAML 資料 (AI 處理) **[必須生成]**
 
-檔案路徑: `shared/equipment_database/[type]/[brand]_[model]_v[N].yaml`
+檔案路徑: `shared/equipment_database/[type]/[brand]_[model].yaml`
+
+**注意：**
+- YAML 文件名稱**不包含**版本號 (例: `strymon_bigsky.yaml`，不是 `strymon_bigsky_v1.yaml`)
+- 版本資訊記錄在 YAML 文件內部的 `version` 欄位
+- 這樣確保後續 agents 總是讀取同一個檔案名，獲得最新版本
 
 **結構:**
 
@@ -513,21 +530,30 @@ sources:
 
 ## Important Notes
 
-1. **客觀性**
+1. **⚠️ YAML 文件必須生成 (Critical)**
+   - **每次研究完成後，YAML 文件是必須生成的**
+   - 無論設備是否加入 inventory，YAML 都必須存在
+   - YAML 文件供後續 agents/skills 快速讀取，避免重複 research
+   - 文件名稱: `[brand]_[model].yaml` (不含版本號)
+   - 版本資訊記錄在 YAML 內部的 `version` 欄位
+   - Markdown 文件可包含版本號: `[brand]_[model]_v[N].md`
+
+2. **客觀性**
    - 報告應客觀中立
    - 列出優缺點
    - 引用來源
 
-2. **引用格式**
+3. **引用格式**
    - 所有資訊標註來源
    - YouTube 影片註明訂閱數/瀏覽量
    - 官方資料優先
 
-3. **版本控制**
-   - 每次研究建立新版本
+4. **版本控制**
+   - Markdown: 每次研究建立新版本 (v1, v2, v3...)
+   - YAML: 同一檔案名，更新 `version` 和 `last_updated` 欄位
    - 版本差異說明必須清晰
 
-4. **與 Inventory 整合**
+5. **與 Inventory 整合**
    - 自動讀取 Inventory
    - 比較分析必須基於實際擁有的設備
 

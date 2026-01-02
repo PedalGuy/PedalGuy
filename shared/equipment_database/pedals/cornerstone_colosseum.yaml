@@ -1,0 +1,235 @@
+# Cornerstone Colosseum
+# 效果器詳細技術資料
+# 資料來源: projects/2025-v3-signal-chain/research/overdrive_pedals_technical_data.md
+
+version: 1.0
+last_updated: 2026-01-03
+
+# 基本資訊
+basic_info:
+  id: "cornerstone_colosseum"
+  brand: "Cornerstone"
+  model: "Colosseum"
+  full_name: "Cornerstone Colosseum Dual Overdrive"
+  type: "overdrive"
+  subtype: "dual_channel"
+  circuit_basis: "Bluesbreaker + Klon combination"
+  design_approach: "Community-driven design combining BB and Klon"
+
+# 價格資訊
+price:
+  msrp: 380
+  currency: "USD"
+  msrp_eur: 359
+  tier: "boutique"
+
+# 核心技術規格
+technical_specs:
+  power:
+    voltage: "9V DC"
+    current: "150mA"
+
+  dimensions:
+    depth: "119mm"
+    width: "94mm"
+    height: "42mm"
+
+  controls:
+    bb_side:
+      - name: "Volume"
+        function: "BB 通道輸出音量"
+      - name: "Drive"
+        function: "BB 通道增益量"
+      - name: "Tone"
+        function: "BB 通道音色控制"
+      - name: "Clean Control"
+        function: "混入乾訊號 (來自 Gladio)"
+
+    klon_side:
+      - name: "Volume"
+        function: "Klon 通道輸出音量"
+      - name: "Drive"
+        function: "Klon 通道增益量"
+      - name: "Tone"
+        function: "Klon 通道音色控制"
+      - name: "Clip Blender"
+        function: "混合 Germanium 與 Silicon clipping"
+
+    switches:
+      - name: "Order Toggle"
+        function: "切換兩通道順序 (BB→Klon 或 Klon→BB)"
+
+  special_features:
+    - "4 Rear Jacks (可獨立接入 looper 或其他效果器)"
+    - "Order Toggle (切換通道順序)"
+    - "Clean Control (BB side)"
+    - "Clip Blender (Klon side)"
+
+  bypass: "True Bypass"
+
+# 音色特性
+tonal_characteristics:
+  bb_side:
+    type: "Bluesbreaker with improvements"
+    design_improvement: "無 clipping diodes"
+
+    frequency:
+      low: "飽滿"
+      mid: "平衡"
+      high: "開放、清晰 (避免傳統 BB 黯淡問題)"
+
+    dynamics:
+      pick_sensitivity: "高"
+      volume_sensitivity: "高"
+      compression: "適中"
+
+    gain:
+      breakup_point: "可調"
+      gain_range: "Low to Medium"
+      harmonics: "開放、清晰"
+
+    advantages:
+      - "提升音量與清晰度"
+      - "避免傳統 BB 的 dark tone 與 low volume 問題"
+      - "Clean Control 增加音色塑造彈性"
+
+  klon_side:
+    type: "Klon-style with Clip Blender"
+    design_approach: "維持經典 Klon 架構並增加 Clip Blender"
+
+    frequency:
+      low: "飽滿"
+      mid: "經典 Klon 中頻提升"
+      high: "清晰"
+
+    dynamics:
+      pick_sensitivity: "高"
+      volume_sensitivity: "高"
+      compression: "適中"
+
+    gain:
+      breakup_point: "可調"
+      gain_range: "Clean boost to Medium"
+      harmonics: "豐富,可透過 Clip Blender 調整"
+
+    clip_blender:
+      description: "混合 Germanium 與 Silicon diodes"
+      germanium: "Hand-selected 1N34A (原版 Klon)"
+      silicon: "新增 Silicon diodes"
+      effect: "提供從 Germanium 到 Silicon 的連續變化"
+
+# Clean Control (BB Side)
+clean_control:
+  name: "CLEAN"
+  description: "混入原始乾訊號"
+  source: "來自 Cornerstone Gladio"
+  purpose: "增加音色塑造彈性與透明度"
+
+# Clip Blender (Klon Side)
+clip_blender:
+  name: "CLIP BLENDER"
+  description: "混合兩種 clipping 特性"
+  germanium_mode:
+    setting: "順時針最小"
+    effect: "Pure Germanium clipping (原版 Klon)"
+    tone: "溫暖、有機"
+  silicon_mode:
+    setting: "順時針最大"
+    effect: "Pure Silicon clipping"
+    tone: "更清晰、更多 headroom"
+  blend:
+    description: "可連續調整兩種 clipping 比例"
+
+# Order Toggle
+order_toggle:
+  name: "ORDER TOGGLE"
+  description: "切換兩個通道順序"
+  mode_1:
+    setting: "BB → Klon"
+    character: "BB 基礎音色 + Klon 推動"
+  mode_2:
+    setting: "Klon → BB"
+    character: "Klon 基礎音色 + BB 開放感"
+  note: "兩種順序音色差異明顯"
+
+# 使用建議
+usage_recommendations:
+  best_for:
+    - "Blues"
+    - "Rock"
+    - "Jazz"
+    - "Neo Soul"
+
+  versatility: "一個踏板提供兩種經典音色 (BB + Klon)"
+
+  signal_chain_position: "Signal chain 中段"
+
+  stacking:
+    ability: "內建兩個通道可疊加"
+    description: "可透過 Order Toggle 切換疊加順序"
+
+  integration:
+    four_jacks: "4 Rear Jacks 可獨立接入 looper 或插入其他效果器"
+
+  features:
+    - "Community-driven design"
+    - "BB side 改良 (無 clipping diodes)"
+    - "Klon side Clip Blender"
+    - "可切換通道順序"
+    - "4 Rear Jacks 整合性"
+
+# 阻抗特性
+impedance:
+  input: "1MΩ"
+  output: "50kΩ"
+
+# 與其他踏板比較
+comparisons:
+  vs_traditional_bb:
+    improvement: "無 clipping diodes,避免 dark tone 與 low volume 問題"
+    clean_control: "增加乾訊號混合功能"
+
+  vs_traditional_klon:
+    addition: "Clip Blender 增加 Germanium/Silicon 混合能力"
+    flexibility: "提供更多音色調整範圍"
+
+  value_proposition:
+    description: "一個踏板 = BB + Klon 兩個 boutique pedal"
+    price: "€359 包含兩種經典音色"
+
+# 評價
+review_summary:
+  pros:
+    - "Community-driven 設計確保實用性"
+    - "BB side 改良解決傳統問題"
+    - "Clip Blender 增加 Klon side 彈性"
+    - "可切換順序與 looper 整合性強"
+    - "義大利製造品質優異"
+
+  cons:
+    - "尺寸較大 (119mm × 94mm)"
+    - "電流消耗較高 (150mA)"
+
+  use_case: "適合需要 BB 與 Klon 兩種音色,但想節省 pedalboard 空間的玩家"
+
+# 訊號鏈配置
+signal_chain:
+  position: "pre_amp_gain"
+  swiss_things_assignment: "N/A (V3.0 已移除)"
+  notes: "V2.0 核心效果器,V3.0 改用單功能效果器取代"
+  removal_reason: "簡化訊號鏈,用 PRS Horsemeat + JHS Morning Glory V3 取代"
+
+# 參考資料來源
+sources:
+  - "Cornerstone 官方網站"
+  - "Community feedback"
+  - "Premier Guitar"
+  - "Reverb"
+
+data_collected: 2025-12-13
+data_reliability: "高 (多方驗證)"
+
+# 產地
+origin:
+  country: "Italy"
+  manufacturer: "Cornerstone"

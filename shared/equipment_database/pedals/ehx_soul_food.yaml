@@ -1,0 +1,204 @@
+# Electro-Harmonix Soul Food
+# 效果器詳細技術資料
+# 資料來源: projects/2025-v3-signal-chain/research/overdrive_pedals_technical_data.md
+
+version: 1.0
+last_updated: 2026-01-03
+
+# 基本資訊
+basic_info:
+  id: "ehx_soul_food"
+  brand: "Electro-Harmonix"
+  model: "Soul Food"
+  full_name: "Electro-Harmonix Soul Food Transparent Overdrive"
+  type: "overdrive"
+  subtype: "klon_clone"
+  circuit_basis: "Klon Centaur 改良設計"
+  design_approach: "平價版 Klon,提供 95% Klon 音色"
+
+# 價格資訊
+price:
+  msrp: 80
+  currency: "USD"
+  price_range: "70-90 USD"
+  tier: "budget_boutique"
+  value: "極高 C/P 值"
+  comparison: "95% Klon tone for 3% of the cost"
+
+# 核心技術規格
+technical_specs:
+  power:
+    voltage: "9.6V DC-200mA adapter (included) or 9V battery"
+    internal_voltage: "18V (internal boosted power rails)"
+    current: "低電流消耗"
+    battery_support: true
+    included_adapter: true
+
+  controls:
+    - name: "Volume"
+      function: "輸出音量"
+    - name: "Drive"
+      function: "增益量控制 (從 clean boost 到 medium OD)"
+    - name: "Treble"
+      function: "音色控制 (高頻 cut/boost)"
+
+  special_features:
+    - "Buffered/True Bypass 可切換 (內部 DIP switch)"
+    - "Boosted power rails (18V internal)"
+    - "隨附 9.6V power supply"
+
+  bypass:
+    type: "可切換"
+    options:
+      - "True Bypass"
+      - "Buffered Bypass"
+    switch_location: "內部 DIP switch"
+
+# 音色特性
+tonal_characteristics:
+  type: "Transparent Overdrive (Klon Clone)"
+  design_goal: "提供 Klon Centaur 音色,價格平易近人"
+
+  frequency:
+    low: "適中,有些用戶認為不如原版 Klon 厚實"
+    mid: "輕微提升,但比 Tube Screamer 少"
+    high: "豐富,帶有 sparkle"
+
+  dynamics:
+    pick_sensitivity: "高"
+    volume_sensitivity: "高"
+    compression: "適中"
+
+  gain:
+    breakup_point: "可調,從 clean boost 到 medium OD"
+    gain_range: "Clean boost to Medium gain"
+    harmonics: "豐富泛音,偏偶次諧波"
+
+# 與 Klon Centaur 比較
+klon_comparison:
+  similarities:
+    - "使用 TL072 op-amps"
+    - "Dual-gang gain control"
+    - "整體音色走向相似 (95% 相似度)"
+
+  differences:
+    clipping_diodes:
+      soul_food: "Silicon"
+      klon: "Germanium 1N34A"
+    midrange:
+      soul_food: "略少於原版 Klon"
+    girth:
+      soul_food: "有些用戶認為不如 Klon 厚實"
+    price:
+      soul_food: "$70-90 USD"
+      klon: "$2000-3000+ USD (二手)"
+
+  similarity_rating: "95%"
+
+# Buffer 功能
+buffer_function:
+  switchable: true
+  switch_location: "內部 DIP switch"
+  quality: "優異"
+  use_case: "適合長導線或多踏板系統"
+  bypass_modes:
+    buffered:
+      description: "Always-on buffer"
+      output_impedance: "幾 kΩ"
+      best_for: "長導線,大型 pedalboard"
+    true_bypass:
+      description: "完全旁路"
+      best_for: "短導線,小型設定"
+
+# Mod 選項
+modifications:
+  jhs_mod:
+    name: "JHS Mod"
+    description: "加入 Germanium diode toggle"
+    effect: "提供接近原版 Klon 音色"
+
+  monte_allums_mod:
+    name: "Monte Allums 'Son of Klon' Mod"
+    features:
+      - "加入 1N34A diodes"
+      - "Girth control"
+    effect: "更接近原版 Klon"
+
+# 使用建議
+usage_recommendations:
+  best_for:
+    - "Blues"
+    - "Rock"
+    - "Country"
+    - "Pop"
+
+  versatility: "幾乎所有音樂風格"
+
+  signal_chain_position: "Signal chain 前段或中段"
+
+  stacking:
+    ability: "與其他 OD 疊加優異"
+    common_combinations:
+      - "Soul Food → Tube Screamer"
+      - "Soul Food → OCD"
+
+  clean_boost_mode:
+    setting: "Gain 低, Volume 高"
+    description: "極佳 clean boost 功能"
+
+  features:
+    - "Klon-style transparent overdrive"
+    - "Excellent clean boost"
+    - "Affordable Klon alternative"
+    - "Switchable buffer"
+
+# 阻抗特性
+impedance:
+  input: "~1MΩ"
+  output:
+    buffered: "~幾kΩ (當 buffer 開啟時)"
+    true_bypass: "Direct connection"
+
+# 評價
+review_summary:
+  pros:
+    - "95% Klon tone for 3% of the cost"
+    - "極佳 clean boost 與 light overdrive"
+    - "可切換 buffered/true bypass"
+    - "附贈 power supply"
+    - "極高性價比"
+
+  cons:
+    - "Treble control 可能變得尖銳"
+    - "有些用戶認為缺乏 mid-range warmth"
+    - "不如原版 Klon 厚實 (girth)"
+    - "Silicon clipping vs Germanium (原版 Klon)"
+
+  famous_quote: "The Soul Food delivers 95% of Klon tone for 3% of the cost"
+
+  user_feedback:
+    positive: "極佳的平價 Klon 替代品"
+    negative: "挑剔的用戶會發現與原版 Klon 的差異"
+
+# V2.0 配置使用
+signal_chain:
+  position: "pre_amp_gain"
+  v1_usage: "Klon Clone clean boost"
+  v2_removal_reason: "功能被 Colosseum Klon Side 取代"
+  notes: "V2.0 已移除,選擇更高階的 Klon 實現"
+
+# 參考資料來源
+sources:
+  - "Electro-Harmonix 官方網站"
+  - "Premier Guitar"
+  - "Reverb"
+  - "The Gear Page"
+  - "JHS Pedals (mod info)"
+
+data_collected: 2025-12-13
+data_reliability: "高 (多方驗證)"
+
+# 產地
+origin:
+  country: "USA"
+  manufacturer: "Electro-Harmonix"
