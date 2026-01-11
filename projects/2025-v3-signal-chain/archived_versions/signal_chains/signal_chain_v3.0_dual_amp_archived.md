@@ -69,7 +69,7 @@
 ---
 
 ### 【Delay】1顆
-10. ✅ **Free the Tone FT-1Y** ($400)
+10. ✅ **Free the Tone FF-1Y** ($400)
     - 兩條訊號鏈共用
     - Realtime BPM Analyzer
 
@@ -192,7 +192,7 @@ JC-22 前級處理 → Send (Stereo L+R)
 【Effects Loop - Stereo】
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   ↓
-⑤ Free the Tone FT-1Y Delay
+⑤ Free the Tone FF-1Y Delay
    ┌─────────────────────────────────────┐
    │ 設定：                               │
    │ • MODE: Digital                      │
@@ -231,7 +231,7 @@ JC-22 前級處理 → Send (Stereo L+R)
 | PA-1QG | 100% | EQ + Clean Boost |
 | Sweet Honey | 90% | 核心 OD 音色 |
 | PRS Horsemeat | 80% | 透明 Klon Boost |
-| FT-1Y | 100% | 主 Delay |
+| FF-1Y | 100% | 主 Delay |
 | Nucleo | 95% | 主 Reverb |
 
 **總計**：6顆效果器（前級4顆 + Loop 2顆）
@@ -371,7 +371,7 @@ JC-22 前級處理 → Send (Stereo L+R)
 【Effects Loop】
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   ↓
-⑦ Free the Tone FT-1Y Delay
+⑦ Free the Tone FF-1Y Delay
    ┌─────────────────────────────────────┐
    │ 設定：                               │
    │ • MODE: Analog/Digital（視需求）     │
@@ -427,7 +427,7 @@ JC-22 前級處理 → Send (Stereo L+R)
 | Morning Glory | 85% | Bluesbreaker OD |
 | TWA Source Code | 60% | TS 中頻（Classic Rock 時） |
 | ODL-1-CS | 70% | Dumble 高階音色 |
-| FT-1Y | 100% | 主 Delay + Hold |
+| FF-1Y | 100% | 主 Delay + Hold |
 | AASB | 50% | Shimmer/Drone |
 | Nucleo | 95% | 主 Reverb |
 

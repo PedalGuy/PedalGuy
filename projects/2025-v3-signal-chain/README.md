@@ -37,8 +37,8 @@
 
 #### 訊號鏈配置（signal_chains/）
 - `signal_chain_v3.md` - **最終版訊號鏈配置**
-  - 訊號鏈 1: Empress MKII → PA-1QG → Sweet Honey → PRS Horsemeat → JC-22 → FT-1Y → Nucleo
-  - 訊號鏈 2: Cali76 FET → PA-1QG → Roshi Blacklon → Morning Glory → TWA Source Code → ODL-1-CS → Imperial → FT-1Y → AASB → Nucleo
+  - 訊號鏈 1: Empress MKII → PA-1QG → Sweet Honey → PRS Horsemeat → JC-22 → FF-1Y → Nucleo
+  - 訊號鏈 2: Cali76 FET → PA-1QG → Roshi Blacklon → Morning Glory → TWA Source Code → ODL-1-CS → Imperial → FF-1Y → AASB → Nucleo
 - `signal_chain_diagrams_v2.md` - 訊號鏈流程圖
 
 #### 技術研究（research/）

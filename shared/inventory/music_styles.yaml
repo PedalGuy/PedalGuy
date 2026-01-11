@@ -32,7 +32,7 @@ preferences:
       amp: "Roland JC-22"
       compressor: "Empress MKII (transparent)"
       overdrive: "Sweet Honey (low gain, mostly bypassed)"
-      delay: "FT-1Y (short, subtle)"
+      delay: "FF-1Y (short, subtle)"
       reverb: "Nucleo (room mode)"
 
     notes: "最高優先風格，需要極度 clean 的音色與動態表現"
@@ -56,7 +56,7 @@ preferences:
       amp: "Roland JC-22"
       compressor: "Empress MKII"
       overdrive: "Sweet Honey + PRS Horsemeat (stacked)"
-      delay: "FT-1Y (medium)"
+      delay: "FF-1Y (medium)"
       reverb: "Nucleo (room/hall)"
 
     notes: "需要溫暖 OD 疊加，甜美音色為主"
@@ -101,7 +101,7 @@ preferences:
       amp: "Tone King Imperial MKII (4CM)"
       compressor: "Cali76 FET (sustain + warmth)"
       overdrive: "Roshi Blacklon + Morning Glory + TWA Source Code"
-      delay: "FT-1Y (long delay, HOLD on)"
+      delay: "FF-1Y (long delay, HOLD on)"
       reverb: "AASB (shimmer) + Nucleo (long decay, freeze)"
 
     notes: "需要大量音景層次，Freeze 和 HOLD 功能重要"
@@ -124,7 +124,7 @@ preferences:
       amp: "Tone King Imperial MKII"
       compressor: "Cali76 FET or Empress MKII"
       overdrive: "ODL-1-CS (Dumble)"
-      delay: "FT-1Y (short)"
+      delay: "FF-1Y (short)"
       reverb: "Nucleo (subtle)"
 
     notes: "Larry Carlton / Robben Ford 風格，需要 Dumble 音色"
@@ -146,7 +146,7 @@ preferences:
       amp: "Roland JC-22"
       compressor: "Empress MKII"
       overdrive: "Sweet Honey or Morning Glory"
-      delay: "FT-1Y (medium)"
+      delay: "FF-1Y (medium)"
       reverb: "Nucleo (medium)"
 
     notes: "需要多樣性，待補充 modulation 效果器"
@@ -168,7 +168,7 @@ preferences:
       amp: "Tone King Imperial MKII"
       compressor: "Cali76 FET"
       overdrive: "Morning Glory (BB) or TWA Source Code (TS)"
-      delay: "FT-1Y (short)"
+      delay: "FF-1Y (short)"
       reverb: "Nucleo (room)"
 
     notes: "Classic Rock 風格，需要 BB 或 TS 音色"

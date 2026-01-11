@@ -281,7 +281,7 @@ User: "我賣掉了 JHS Morning Glory，買了 Walrus Slö"
 9. Free the Tone ODL-1-CS (Dumble-style)
 
 **Delay (1):**
-10. Free the Tone FT-1Y (Realtime BPM Analyzer, HOLD)
+10. Free the Tone FF-1Y (Realtime BPM Analyzer, HOLD)
 
 **Reverb (2):**
 11. Cornerstone Nucleo (Stereo, nuclear reactor IR)

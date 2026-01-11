@@ -199,7 +199,7 @@ fx_loop_details:
       result: "Mono 訊號，XLR outputs 也會是 mono"
 
     stereo_effect:
-      description: "連接 stereo 效果器 (例: Nucleo, FT-1Y, AASB)"
+      description: "連接 stereo 效果器 (例: Nucleo, FF-1Y, AASB)"
       connection: "SEND → Stereo Effect Input → Stereo Effect L Out → RETURN LEFT, Stereo Effect R Out → RETURN RIGHT"
       result: "**完整 stereo，XLR L/R outputs 分別輸出左右聲道**"
 
@@ -288,7 +288,7 @@ pedal_pairing:
 
   in_fx_loop:
     excellent:
-      - "Delay (FT-1Y)"
+      - "Delay (FF-1Y)"
       - "Reverb (Nucleo, AASB)"
       - "Modulation (chorus, flanger)"
     notes:
@@ -426,7 +426,7 @@ signal_chain_recommendations:
         - "PA-1QG (EQ)"
         - "Swiss Things Loop 1 [Blacklon, Source Code, ODL-1-CS]"
       in_fx_loop:
-        - "Swiss Things Loop 2 [FT-1Y, Nucleo, AASB]"
+        - "Swiss Things Loop 2 [FF-1Y, Nucleo, AASB]"
     notes: "Imperial MKII 提供 tube preamp，FX loop 放 time-based effects"
 
 # 使用注意事項

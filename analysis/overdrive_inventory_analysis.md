@@ -593,7 +593,7 @@ Transparent Boost → Foundational OD → High Gain OD
 ```
 Guitar → [Always-on: Empress MKII, Cali76, PA-1QG]
      → Swiss Things Loop 1 [Horsemeat, Sweet Honey, Morning Glory]
-     → Swiss Things Loop 2 [FT-1Y, Nucleo]
+     → Swiss Things Loop 2 [FF-1Y, Nucleo]
      → Roland JC-22
 ```
 
@@ -609,7 +609,7 @@ Guitar → [Always-on: Empress MKII, Cali76, PA-1QG]
 ```
 Guitar → [Always-on: 同上]
      → Swiss Things Loop 1 [Blacklon, Source Code, ODL-1-CS]
-     → Swiss Things Loop 2 [FT-1Y, Nucleo, AASB]
+     → Swiss Things Loop 2 [FF-1Y, Nucleo, AASB]
      → Tone King Imperial MKII (4CM)
 ```
 

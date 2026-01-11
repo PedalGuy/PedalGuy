@@ -321,7 +321,7 @@ equipment_pairing:
         → Buffer++ Loop 1 [Gain pedals]
         → Buffer++ Output → JC-22 INPUT
         → JC-22 FX SEND → Buffer++ Loop 2 Input
-        → Buffer++ Loop 2 [Stereo effects: FT-1Y, Nucleo, AASB]
+        → Buffer++ Loop 2 [Stereo effects: FF-1Y, Nucleo, AASB]
         → Buffer++ Loop 2 Output L → JC-22 FX RETURN L
         → Buffer++ Loop 2 Output R → JC-22 FX RETURN R
         → JC-22 Power Amp → Stereo Speakers
@@ -348,7 +348,7 @@ equipment_pairing:
         reason: "Buffer++ Loop 2 stereo 可保留 Nucleo 完整 stereo imaging"
         current_issue: "目前 Swiss Things mono，浪費 stereo 能力"
 
-      - name: "FT-1Y (Delay)"
+      - name: "FF-1Y (Delay)"
         compatibility: "✅ 適合"
         reason: "可在 Loop 2 stereo 使用"
 
@@ -385,7 +385,7 @@ signal_chain_recommendations:
            → Buffer++ Loop 1 [Gain pedals: Horsemeat, Sweet Honey, Morning Glory]
            → Buffer++ Output → JC-22 INPUT
            → JC-22 FX SEND → Buffer++ Loop 2 Input
-           → Buffer++ Loop 2 [Stereo: FT-1Y, Nucleo, AASB]
+           → Buffer++ Loop 2 [Stereo: FF-1Y, Nucleo, AASB]
            → Buffer++ Loop 2 L/R → JC-22 FX RETURN L/R
            → JC-22 Stereo Speakers
     benefit:

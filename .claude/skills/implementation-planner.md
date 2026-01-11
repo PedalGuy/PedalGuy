@@ -164,7 +164,7 @@ implementation_phases:
     duration: "Week 7-8"
     focus: "Delay & Reverb"
     tasks:
-      - "整合 FT-1Y Delay"
+      - "整合 FF-1Y Delay"
       - "整合 Nucleo & AASB Reverb"
       - "設定 4-Cable Method (Tone King)"
     dependencies: ["phase_3_tone_shaping"]
@@ -176,7 +176,7 @@ implementation_phases:
     tasks:
       - "購買 MIDI Controller"
       - "設定 PA-1QG MIDI Presets"
-      - "設定 FT-1Y MIDI Sync"
+      - "設定 FF-1Y MIDI Sync"
     dependencies: ["phase_4_time_effects"]
     success_criteria: "MIDI 一鍵切換吉他 Preset"
 ```
@@ -253,7 +253,7 @@ shopping_list:
         Roshi Blacklon: ~50mA
         TWA Source Code: ~100mA
         ODL-1-CS: 95mA
-        FT-1Y: 400mA (12V!)
+        FF-1Y: 400mA (12V!)
         Nucleo: ~150mA
         AASB: 150mA
         Swiss Things: 100mA
@@ -272,7 +272,7 @@ shopping_list:
           - "完全隔離"
           - "噪音極低"
         cons:
-          - "無 12V 輸出 (需另購 FT-1Y 專用)"
+          - "無 12V 輸出 (需另購 FF-1Y 專用)"
 
       option_2:
         brand: "Truetone"
@@ -287,11 +287,11 @@ shopping_list:
           - "無 12V 輸出"
 
       special_note:
-        pedal: "FT-1Y"
+        pedal: "FF-1Y"
         voltage: "12V DC, 400mA"
         solution: "需單獨 12V 變壓器 (原廠附贈) 或購買支援 12V 的電供"
 
-      recommended: "Strymon Zuma + FT-1Y 原廠變壓器"
+      recommended: "Strymon Zuma + FF-1Y 原廠變壓器"
       total_cost: 279
 
   cables:
@@ -331,7 +331,7 @@ shopping_list:
       required_if: "啟用 MIDI 整合"
       cables:
         - "MIDI Controller → PA-1QG"
-        - "PA-1QG → FT-1Y (MIDI Thru)"
+        - "PA-1QG → FF-1Y (MIDI Thru)"
       price: 40
 
   total_estimate:
@@ -393,7 +393,7 @@ Pedalboard Layout - Pedaltrain Classic Pro (61 × 40 cm)
 │                                                              │
 │  Row 1 (前排 - 常用):                                       │
 │  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐  │
-│  │Sweet │ │ PRS  │ │Roshi │ │ TWA  │ │ODL-1 │ │ FT-1Y│  │
+│  │Sweet │ │ PRS  │ │Roshi │ │ TWA  │ │ODL-1 │ │ FF-1Y│  │
 │  │Honey │ │Horse │ │Black │ │Source│ │  CS  │ │      │  │
 │  └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘  │
 │                                                              │
@@ -408,7 +408,7 @@ Pedalboard Layout - Pedaltrain Classic Pro (61 × 40 cm)
 Swiss Things 配置 (若使用):
   - Before Input: Empress MKII, Cali76 FET, PA-1QG
   - Loop 1: Sweet Honey, PRS Horsemeat, Roshi Blacklon, TWA Source Code, ODL-1-CS
-  - Loop 2: FT-1Y, Nucleo, AASB
+  - Loop 2: FF-1Y, Nucleo, AASB
 ```
 
 ---
@@ -533,7 +533,7 @@ testing_checklist:
           - "Greco TE-500 → Preset 3"
 
       - id: "T4.2"
-        test: "FT-1Y MIDI Sync"
+        test: "FF-1Y MIDI Sync"
         expected: "Delay Time 與 MIDI Clock 同步"
 
     pass_criteria:

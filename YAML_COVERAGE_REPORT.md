@@ -49,7 +49,9 @@
 14. ✅ **PRS Horsemeat** → `prs_horsemeat.yaml`
 
 #### Delay (1/1) ✅
-15. ✅ **Free the Tone FT-1Y** → `ft1y.yaml`
+15. ✅ **Free the Tone FF-1Y FUTURE FACTORY** → `ff1y.yaml`
+   - **型號更正:** 2026-01-10 由 FT-1Y 更正為 FF-1Y
+   - 舊檔案已歸檔: `archived/ft1y_incorrect.yaml`
 
 #### Reverb (2/2) ✅
 16. ✅ **Cornerstone Nucleo** → `nucleo.yaml`

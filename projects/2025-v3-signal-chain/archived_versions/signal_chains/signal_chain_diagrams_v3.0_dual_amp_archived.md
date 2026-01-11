@@ -218,7 +218,7 @@ flowchart TB
     end
 
     subgraph TimeBased["Time-Based Effects Chain"]
-        FT1Y["Free the Tone FT-1Y<br/>Realtime BPM Analyzer<br/>Delay + Hold"]
+        FF1Y["Free the Tone FF-1Y<br/>Realtime BPM Analyzer<br/>Delay + Hold"]
         AASB["Lichtlaerm AASB<br/>Shimmer Reverb<br/>Above/Below/Both<br/>+ Freeze"]
         Nucleo["Cornerstone Nucleo<br/>Stereo Reverb<br/>Room/Hall/Reactor<br/>+ Freeze"]
     end
@@ -254,8 +254,8 @@ flowchart TB
     Boost --> OutputA
     Boost -.Both開關.-> OutputB
 
-    OutputA --> FT1Y
-    FT1Y --> AASB
+    OutputA --> FF1Y
+    FF1Y --> AASB
     AASB --> Nucleo
     Nucleo --> Amp1
 
@@ -280,7 +280,7 @@ flowchart TB
     class Horsemeat newPedalStyle
     class Loop2Send,Blacklon,TWA,ODL1CS,Loop2Return loop2Style
     class MorningGlory newPedalStyle
-    class FT1Y,AASB,Nucleo timeStyle
+    class FF1Y,AASB,Nucleo timeStyle
     class Amp1,Amp2 ampStyle
 ```
 
@@ -301,7 +301,7 @@ flowchart TB
 
         Swiss1["SWISS THINGS<br/>❌ Loop 1: OFF<br/>❌ Loop 2: OFF<br/>❌ Boost: OFF<br/>訊號直接通過"]
 
-        FT1Y1["FT-1Y Delay<br/>✅ ON<br/>細微 Delay<br/>MIX: 20%"]
+        FF1Y1["FF-1Y Delay<br/>✅ ON<br/>細微 Delay<br/>MIX: 20%"]
 
         Nucleo1["Nucleo Reverb<br/>✅ ON<br/>Hall 模式<br/>BLEND: 20%"]
 
@@ -311,14 +311,14 @@ flowchart TB
     Guitar1 --> Empress1
     Empress1 --> PA1QG1
     PA1QG1 --> Swiss1
-    Swiss1 -- "完全 Clean<br/>（兩個 Loop Bypass）" --> FT1Y1
-    FT1Y1 --> Nucleo1
+    Swiss1 -- "完全 Clean<br/>（兩個 Loop Bypass）" --> FF1Y1
+    FF1Y1 --> Nucleo1
     Nucleo1 --> Amp1
 
     classDef activeStyle fill:#10B981,stroke:#065F46,stroke-width:3px,color:#fff
     classDef bypassStyle fill:#6B7280,stroke:#374151,stroke-width:2px,color:#fff
 
-    class Guitar1,Empress1,PA1QG1,FT1Y1,Nucleo1,Amp1 activeStyle
+    class Guitar1,Empress1,PA1QG1,FF1Y1,Nucleo1,Amp1 activeStyle
     class Swiss1 bypassStyle
 ```
 
@@ -358,7 +358,7 @@ flowchart TB
             Output2["OUTPUT A"]
         end
 
-        FT1Y2["FT-1Y Delay<br/>✅ ON<br/>BPM 同步<br/>MIX: 30%"]
+        FF1Y2["FF-1Y Delay<br/>✅ ON<br/>BPM 同步<br/>MIX: 30%"]
 
         Nucleo2["Nucleo Reverb<br/>✅ ON<br/>Room 模式<br/>BLEND: 40%"]
 
@@ -373,15 +373,15 @@ flowchart TB
     Horse2 --> Loop2Off
     Loop2Off --> BoostOff
     BoostOff --> Output2
-    Output2 --> FT1Y2
-    FT1Y2 --> Nucleo2
+    Output2 --> FF1Y2
+    FF1Y2 --> Nucleo2
     Nucleo2 --> Amp2
 
     classDef activeStyle fill:#10B981,stroke:#065F46,stroke-width:3px,color:#fff
     classDef bypassStyle fill:#6B7280,stroke:#374151,stroke-width:2px,color:#fff
     classDef newStyle fill:#F59E0B,stroke:#B45309,stroke-width:3px,color:#000
 
-    class Guitar2,Empress2,PA1QG2,Input2,Sweet2,FT1Y2,Nucleo2,Amp2 activeStyle
+    class Guitar2,Empress2,PA1QG2,Input2,Sweet2,FF1Y2,Nucleo2,Amp2 activeStyle
     class Horse2 newStyle
     class Loop2Off,BoostOff bypassStyle
 ```
@@ -424,7 +424,7 @@ flowchart TB
             Output3["OUTPUT A"]
         end
 
-        FT1Y3["FT-1Y Delay<br/>✅ ON"]
+        FF1Y3["FF-1Y Delay<br/>✅ ON"]
 
         Nucleo3["Nucleo Reverb<br/>✅ ON"]
 
@@ -439,15 +439,15 @@ flowchart TB
     Horse3 --> Loop2Off3
     Loop2Off3 --> BoostOn
     BoostOn -- "額外 +15dB" --> Output3
-    Output3 --> FT1Y3
-    FT1Y3 --> Nucleo3
+    Output3 --> FF1Y3
+    FF1Y3 --> Nucleo3
     Nucleo3 --> Amp3
 
     classDef activeStyle fill:#10B981,stroke:#065F46,stroke-width:3px,color:#fff
     classDef bypassStyle fill:#6B7280,stroke:#374151,stroke-width:2px,color:#fff
     classDef boostStyle fill:#F59E0B,stroke:#B45309,stroke-width:3px,color:#fff
 
-    class Guitar3,Empress3,PA1QG3,Input3,Sweet3,Horse3,FT1Y3,Nucleo3,Amp3 activeStyle
+    class Guitar3,Empress3,PA1QG3,Input3,Sweet3,Horse3,FF1Y3,Nucleo3,Amp3 activeStyle
     class Loop2Off3 bypassStyle
     class BoostOn boostStyle
 ```
@@ -476,7 +476,7 @@ flowchart TB
 
         Swiss4["SWISS THINGS<br/>❌ Loop 1: OFF<br/>❌ Loop 2: OFF<br/>❌ Boost: OFF<br/>Clean 訊號通過"]
 
-        FT1Y4["FT-1Y Delay<br/>✅ ON<br/>Hold 功能<br/>長 Delay (1/1 note)<br/>建構 Ambient Pad"]
+        FF1Y4["FF-1Y Delay<br/>✅ ON<br/>Hold 功能<br/>長 Delay (1/1 note)<br/>建構 Ambient Pad"]
 
         AASB4["AASB Shimmer<br/>✅ ON<br/>Above/Both 模式<br/>Freeze 開啟<br/>雙向八度"]
 
@@ -488,8 +488,8 @@ flowchart TB
     Guitar4 --> Cali4
     Cali4 --> PA1QG4
     PA1QG4 --> Swiss4
-    Swiss4 -- "Clean Tone<br/>+ Cali76 Sustain" --> FT1Y4
-    FT1Y4 -- "Hold 建 Pad" --> AASB4
+    Swiss4 -- "Clean Tone<br/>+ Cali76 Sustain" --> FF1Y4
+    FF1Y4 -- "Hold 建 Pad" --> AASB4
     AASB4 -- "Freeze 層次" --> Nucleo4
     Nucleo4 --> Amp4
 
@@ -499,13 +499,13 @@ flowchart TB
 
     class Guitar4,Cali4,PA1QG4,Amp4 activeStyle
     class Swiss4 bypassStyle
-    class FT1Y4,AASB4,Nucleo4 ambientStyle
+    class FF1Y4,AASB4,Nucleo4 ambientStyle
 ```
 
 **音色特點**:
 
 - ✅ Clean Tone + Cali76 Sustain
-- ✅ FT-1Y Hold 建構 Ambient Pad
+- ✅ FF-1Y Hold 建構 Ambient Pad
 - ✅ AASB + Nucleo 雙 Freeze 創造天空音景
 - ✅ 厚重 Pad、長 Delay、雙向八度 Shimmer
 
@@ -541,7 +541,7 @@ flowchart TB
             Output5["OUTPUT A"]
         end
 
-        FT1Y5["FT-1Y Delay<br/>✅ ON<br/>Hold 功能"]
+        FF1Y5["FF-1Y Delay<br/>✅ ON<br/>Hold 功能"]
 
         AASB5["AASB Shimmer<br/>✅ ON<br/>Freeze"]
 
@@ -560,8 +560,8 @@ flowchart TB
     TWA5 --> ODL5
     ODL5 --> BoostOff5
     BoostOff5 --> Output5
-    Output5 --> FT1Y5
-    FT1Y5 --> AASB5
+    Output5 --> FF1Y5
+    FF1Y5 --> AASB5
     AASB5 --> Nucleo5
     Nucleo5 --> Amp5
 
@@ -575,7 +575,7 @@ flowchart TB
     class Loop1Off5,BoostOff5 bypassStyle
     class Blacklon5,TWA5,ODL5 gainStyle
     class Morning5 newGainStyle
-    class FT1Y5,AASB5,Nucleo5 ambientStyle
+    class FF1Y5,AASB5,Nucleo5 ambientStyle
 ```
 
 **音色特點**:
@@ -616,7 +616,7 @@ flowchart TB
             Output6["OUTPUT A"]
         end
 
-        FT1Y6["FT-1Y Delay<br/>✅ ON"]
+        FF1Y6["FF-1Y Delay<br/>✅ ON"]
 
         Nucleo6["Nucleo Reverb<br/>✅ ON<br/>Hall 模式"]
 
@@ -632,15 +632,15 @@ flowchart TB
     Morning6 --> TWA6
     TWA6 --> BoostOff6
     BoostOff6 --> Output6
-    Output6 --> FT1Y6
-    FT1Y6 --> Nucleo6
+    Output6 --> FF1Y6
+    FF1Y6 --> Nucleo6
     Nucleo6 --> Amp6
 
     classDef activeStyle fill:#10B981,stroke:#065F46,stroke-width:3px,color:#fff
     classDef bypassStyle fill:#6B7280,stroke:#374151,stroke-width:2px,color:#fff
     classDef rockStyle fill:#F97316,stroke:#C2410C,stroke-width:3px,color:#fff
 
-    class Guitar6,Cali6,PA1QG6,Input6,FT1Y6,Nucleo6,Amp6 activeStyle
+    class Guitar6,Cali6,PA1QG6,Input6,FF1Y6,Nucleo6,Amp6 activeStyle
     class Loop1Off6,BoostOff6 bypassStyle
     class Blacklon6,Morning6,TWA6 rockStyle
 ```
@@ -687,7 +687,7 @@ flowchart TB
             Output7["OUTPUT A"]
         end
 
-        FT1Y7["FT-1Y Delay<br/>✅ ON"]
+        FF1Y7["FF-1Y Delay<br/>✅ ON"]
 
         AASB7["AASB Shimmer<br/>✅ ON"]
 
@@ -709,8 +709,8 @@ flowchart TB
     TWA7 --> ODL7
     ODL7 --> BoostOpt
     BoostOpt --> Output7
-    Output7 --> FT1Y7
-    FT1Y7 --> AASB7
+    Output7 --> FF1Y7
+    FF1Y7 --> AASB7
     AASB7 --> Nucleo7
     Nucleo7 --> Amp7
     Amp7 -.注意.-> Warning
@@ -719,7 +719,7 @@ flowchart TB
     classDef extremeStyle fill:#EF4444,stroke:#991B1B,stroke-width:3px,color:#fff
     classDef warningStyle fill:#FBBF24,stroke:#B45309,stroke-width:3px,color:#000
 
-    class Guitar7,Cali7,PA1QG7,Input7,FT1Y7,AASB7,Nucleo7,Amp7 activeStyle
+    class Guitar7,Cali7,PA1QG7,Input7,FF1Y7,AASB7,Nucleo7,Amp7 activeStyle
     class Sweet7,Horse7,Blacklon7,Morning7,TWA7,ODL7,BoostOpt extremeStyle
     class Warning warningStyle
 ```
@@ -764,7 +764,7 @@ graph TB
         end
 
         subgraph Row5["Row 4 - Time-Based"]
-            FT["FT-1Y<br/>Delay"]
+            FT["FF-1Y<br/>Delay"]
             AA["AASB<br/>Shimmer"]
             NU["Nucleo<br/>Reverb"]
         end
@@ -845,7 +845,7 @@ flowchart TB
     subgraph Pedals12V["12V 效果器（630mA 總計）"]
         PA12["PA-1QG<br/>200mA @ 12V"]
         OD12["ODL-1-CS<br/>180mA @ 12V"]
-        FT12["FT-1Y<br/>250mA @ 12V"]
+        FT12["FF-1Y<br/>250mA @ 12V"]
     end
 
     Out1 --> Swiss9
@@ -885,7 +885,7 @@ flowchart TB
 - **9V 效果器**: ~510mA（10 顆）
   - ⭐ V3.0: -80mA (移除 Colosseum) +55mA (Horsemeat + Morning Glory)
 - **12V 效果器**: 630mA（3 顆）- 無變化
-- **Voltage Doubler Cable**: 需購買 2-3 條（PA-1QG, ODL-1-CS, FT-1Y）
+- **Voltage Doubler Cable**: 需購買 2-3 條（PA-1QG, ODL-1-CS, FF-1Y）
 
 **推薦電源供應器**:
 

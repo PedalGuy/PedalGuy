@@ -11,7 +11,13 @@
       "WebFetch(domain:www.earthquakerdevices.com)",
       "WebFetch(domain:www.sweetwater.com)",
       "WebFetch(domain:www.roland.com)",
-      "WebFetch(domain:www.toneking.com)"
+      "WebFetch(domain:www.toneking.com)",
+      "WebFetch(domain:www.rockboard.de)",
+      "Bash(mkdir:*)",
+      "WebFetch(domain:www.freethetone.com)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(git -C /Users/emilwu/VSCode/Pedal-Research status --short)"
     ]
   }
 }

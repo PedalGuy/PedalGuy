@@ -2,6 +2,12 @@
 
 **版本:** 1.0 | **更新:** 2025-12-13 | **設備數:** 7款
 
+> **⚠️ 更正通知 (2026-01-10):**
+> 本文件原先記載的 Free the Tone 延遲效果器型號有誤。
+> **錯誤型號:** FF-1Y FUTURE FACTORY Digital Delay
+> **正確型號:** FF-1Y FUTURE FACTORY (Random Fluctuating Phase Modulation Delay)
+> 所有內容已更新為正確型號。詳細規格請參考 `shared/equipment_database/pedals/ff1y.yaml`
+
 ---
 
 ## 目錄
@@ -15,7 +21,7 @@
 4. [Free the Tone PA-1QG](#eq-2-free-the-tone-pa-1qg)
 
 ### Spatial Effects (3款)
-5. [Free the Tone Flight Time FT-1Y](#spatial-1-free-the-tone-ft-1y)  
+5. [Free the Tone FUTURE FACTORY FF-1Y](#spatial-1-free-the-tone-ff-1y)  
 6. [Cornerstone Nucleo](#spatial-2-cornerstone-nucleo)  
 7. [Lichtlaerm Audio As Above So Below](#spatial-3-lichtlaerm-aasb)
 
@@ -370,10 +376,10 @@
 
 ---
 
-## Spatial 1: Free the Tone FT-1Y
+## Spatial 1: Free the Tone FF-1Y
 
 ### 基本資訊
-- **全名:** Flight Time FT-1Y Digital Delay
+- **全名:** FUTURE FACTORY FF-1Y Digital Delay
 - **製造:** Free the Tone, 日本
 - **發布:** ~2014年 (後繼型號FT-2Y, 2024)
 - **價格:** High-End Digital Delay
@@ -431,7 +437,7 @@
 - MIDI: IN/OUT (DIN 5-pin)
 - Input Impedance: min. 500kΩ
 - Max Input: INST(+2dBm) / LINE(+13dBm)
-- 電源: 12V DC (FT-1Y) 或 9V DC (FT-2Y), 400mA
+- 電源: 12V DC (FF-1Y) 或 9V DC (FT-2Y), 400mA
 
 ### 適用情境
 **最佳用途:**
@@ -729,7 +735,7 @@
 
 ## Spatial Effects比較
 
-| 項目 | FT-1Y | Nucleo | AASB |
+| 項目 | FF-1Y | Nucleo | AASB |
 |------|-------|--------|------|
 | **效果類型** | Digital Delay | Stereo Reverb | Shimmer Reverb |
 | **核心特色** | Realtime BPM Analyzer | 核電廠靈感空間 | 雙向八度Shimmer |
@@ -739,7 +745,7 @@
 | **最佳應用** | 精準延遲、BPM同步 | Ambient Reverb | Shimmer/Drone |
 
 **選擇建議:**
-- 需要精準延遲控制 → FT-1Y
+- 需要精準延遲控制 → FF-1Y
 - 需要Stereo Reverb → Nucleo
 - 需要雙向八度Shimmer → AASB
 - 預算考量 → AASB較經濟
@@ -773,7 +779,7 @@
 ## 電源供應注意事項
 - 使用品質良好的隔離電源
 - 避免Daisy Chain (尤其PA-1QG)
-- 注意電流需求 (Cali76, FT-1Y較高)
+- 注意電流需求 (Cali76, FF-1Y較高)
 - 確認極性 (Center Negative)
 
 ## 訊號鏈建議順序

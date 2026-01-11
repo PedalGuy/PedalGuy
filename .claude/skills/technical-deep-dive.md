@@ -171,12 +171,12 @@ impedance_analysis:
       match_quality: "✅ Good to Excellent"
       notes: "True Bypass 效果器，但前面有 PA-1QG Buffer 保護"
 
-    - connection: "... → FT-1Y → Amp Input"
+    - connection: "... → FF-1Y → Amp Input"
       z_out: "min. 1kΩ (低阻抗負載)"
       z_in: "1MΩ (Amp input)"
       ratio: "1000:1"
       match_quality: "✅ Excellent"
-      notes: "FT-1Y 低阻抗輸出，可驅動長導線"
+      notes: "FF-1Y 低阻抗輸出，可驅動長導線"
 
   overall_assessment:
     verdict: "✅ 全鏈路阻抗匹配優異"
@@ -190,7 +190,7 @@ impedance_analysis:
     position: "訊號鏈前段 (第 3 位)"
     coverage: "保護後續所有 True Bypass 效果器"
     additional_buffers:
-      - "FT-1Y (內建低阻抗輸出)"
+      - "FF-1Y (內建低阻抗輸出)"
       - "Nucleo (Buffered Output)"
 ```
 
@@ -355,7 +355,7 @@ four_cable_method_analysis:
     path_4_time_effects:
       route: "Amp FX Send → Loop 2 (Swiss Things) → Amp FX Return"
       pedals:
-        - "FT-1Y Delay"
+        - "FF-1Y Delay"
         - "Nucleo Reverb"
         - "AASB Shimmer Reverb"
       purpose: "Time-based 效果在 Amp 前級後"
@@ -372,7 +372,7 @@ four_cable_method_analysis:
       loop_1_before_amp: ["Sweet Honey", "PRS Horsemeat", "Roshi Blacklon", "TWA Source Code", "ODL-1-CS"]
       amp_input: "Swiss Things Output → Amp Input"
       amp_fx_send: "Amp FX Send → Swiss Things Return"
-      loop_2_in_fx_loop: ["FT-1Y", "Nucleo", "AASB"]
+      loop_2_in_fx_loop: ["FF-1Y", "Nucleo", "AASB"]
       amp_fx_return: "Swiss Things Output → Amp FX Return"
 
   final_signal_path:
@@ -450,7 +450,7 @@ tone_suck_analysis:
       - "ESP Eclipse 主動拾音器，輸出阻抗低 (~10kΩ)"
       - "PA-1QG Buffer 在前段保護訊號"
       - "總電容 600pF，高頻截止 26.5kHz (安全範圍)"
-      - "FT-1Y、Nucleo 也提供 Buffered Output"
+      - "FF-1Y、Nucleo 也提供 Buffered Output"
 
   recommendations:
     - "保持 PA-1QG Always-on (不可 Bypass)"
@@ -487,7 +487,7 @@ signal_level_analysis:
     fx_return_level: "Line Level (+4dBu)"
 
     pedals_in_fx_loop:
-      - "FT-1Y (Delay)"
+      - "FF-1Y (Delay)"
       - "Nucleo (Reverb)"
       - "AASB (Reverb)"
 

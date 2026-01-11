@@ -118,7 +118,7 @@ current_investment:
     compressor: 588  # Empress MKII (219) + Cali76 FET (369)
     eq: 425          # PA-1QG
     overdrive: 1863  # From Yesterday (335) + Sweet Honey (220) + Soul Food (90) + Colosseum (380) + Blacklon (200) + ODL-1-CS (425) + Morning Glory (179) + Virtues Arca (280)
-    delay: 400       # FT-1Y
+    delay: 400       # FF-1Y
     reverb: 575      # Nucleo (350) + AASB (225)
 
   breakdown_by_tier:
@@ -410,7 +410,7 @@ budget_alternatives:
       savings: 295
       compromise: "無預設功能、無 MIDI"
 
-    - current: "FT-1Y"
+    - current: "FF-1Y"
       price: 400
       alternative: "Boss DD-8"
       alt_price: 200
@@ -428,7 +428,7 @@ budget_alternatives:
 
   verdict:
     recommendation: "不建議替換 - 功能損失大於成本節省"
-    reason: "核心設備的獨特功能無可取代（如 PA-1QG Presets, FT-1Y BPM Analyzer）"
+    reason: "核心設備的獨特功能無可取代（如 PA-1QG Presets, FF-1Y BPM Analyzer）"
 ```
 
 ---

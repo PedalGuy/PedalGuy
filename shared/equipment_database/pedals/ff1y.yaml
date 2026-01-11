@@ -1,0 +1,290 @@
+# Free the Tone FF-1Y FUTURE FACTORY
+# 效果器詳細技術資料
+# 資料來源: https://www.freethetone.com/en/products/detail43/
+
+version: 1.0
+last_updated: 2026-01-10
+
+# 基本資訊
+basic_info:
+  id: "ff1y"
+  brand: "Free the Tone"
+  model: "FF-1Y FUTURE FACTORY"
+  full_name: "Free the Tone FUTURE FACTORY FF-1Y Digital Delay"
+  type: "delay"
+  subtype: "digital_dual_delay"
+  country: "Japan"
+  release_year: null  # 待確認
+  series: "FUTURE FACTORY"
+
+# 價格資訊
+price:
+  tier: "high_end_digital_delay"
+  msrp: null  # 待確認
+  currency: "USD"
+
+# 核心技術規格
+technical_specs:
+  power:
+    voltage: "9V DC"
+    polarity: "Center Negative"
+    current: "350mA"
+    note: "電源供應器不附"
+
+  dsp: "32-bit High-Precision DSP"
+
+  presets:
+    total: 128
+    description: "128個預設槽位供儲存與調用"
+
+  delay_type: "Random Fluctuating Phase Modulation Delay"
+
+  delay_modules:
+    count: 2
+    routing_options:
+      - "Parallel (並聯)"
+      - "Series (串聯)"
+    description: "雙延遲模組可配置為並聯或串聯"
+
+  signal_path:
+    dry: "全類比"
+    delay: "數位處理 (32-bit DSP)"
+    mixing: "內部類比混音 (Built-in HTS circuit)"
+
+# 創新功能
+innovative_features:
+  random_fluctuating_phase_modulation:
+    description: "世界首創 Random Fluctuating Phase Modulation"
+    features:
+      - "透過隨機相位變化創造調變效果"
+      - "獨特的調變音色特性"
+      - "創造豐富的空間感"
+
+  dual_delay_architecture:
+    description: "雙延遲模組設計"
+    features:
+      - "可獨立控制兩組延遲"
+      - "串聯/並聯路由選擇"
+      - "創造複雜的延遲效果"
+
+  three_band_eq:
+    description: "專用於塑造延遲音色的 3-band EQ"
+    features:
+      - "獨立 EQ 控制延遲音色"
+      - "不影響原始訊號"
+      - "精準塑造延遲頻率響應"
+
+  soft_clipping:
+    description: "Soft Clipping Circuit"
+    features:
+      - "為延遲訊號添加諧波"
+      - "創造溫暖的類比感"
+      - "增加延遲音色的豐富度"
+
+# 音色特性
+tonal_characteristics:
+  delay_quality: "清晰、高保真、精準 (32-bit DSP processing)"
+  hts_circuit: "效果開關時音色質感一致"
+
+  modulation:
+    type: "Random Fluctuating Phase Modulation"
+    description: "獨特的相位調變創造豐富空間感"
+
+  eq:
+    bands: 3
+    description: "專用於延遲音色塑造"
+
+  harmonic_enhancement:
+    soft_clipping: "可為延遲訊號添加諧波內容"
+
+# 控制參數
+controls:
+  # 詳細控制參數待手冊確認
+  main_controls:
+    - "Delay Time (×2 for dual delays)"
+    - "Feedback (×2)"
+    - "Mix"
+    - "EQ (3-band)"
+    - "Modulation controls"
+    - "Routing select"
+    - "Soft Clipping control"
+
+# 特殊功能
+special_features:
+  trail_function:
+    description: "切換預設時保留前一個延遲音"
+    modes:
+      - "自然的效果切換"
+      - "可設定為關閉 (立即切換)"
+
+  phase_invert:
+    description: "反轉延遲音相位"
+    purpose: "解決延遲音被其他樂器掩蓋的問題"
+
+  tap_tempo:
+    description: "Tap input 支援節奏控制"
+
+  midi_control:
+    description: "MIDI 支援整合外部控制器"
+    connector: "DIN 5-pin MIDI"
+
+# 連接規格
+connectivity:
+  input_output:
+    a_in: "1/4\" Phone Jack"
+    b_in: "1/4\" Phone Jack"
+    a_out: "1/4\" Phone Jack"
+    b_out: "1/4\" Phone Jack"
+    note: "雙輸入/雙輸出配置"
+
+  ext_control: "1/4\" Phone Jack (EXT)"
+
+  midi: "IN (DIN 5-pin)"
+
+  impedance:
+    input: "min. 500kΩ (高阻抗)"
+    output: "min. 10kΩ (低阻抗負載)"
+
+  max_input:
+    inst: "+3.5dBu"
+    line: "+11dBu"
+
+  stereo: true
+  note: "支援立體聲運作 (雙輸入/雙輸出)"
+
+# 尺寸與重量
+physical:
+  dimensions:
+    width: "145.4mm"
+    depth: "120.5mm"
+    height: "60mm"
+  weight: "470g (approx.)"
+
+# 使用建議
+usage_recommendations:
+  best_for:
+    - "錄音室級延遲音質需求"
+    - "複雜延遲設定需要多預設 (128預設)"
+    - "MIDI整合系統"
+    - "創意延遲效果實驗"
+    - "需要立體聲延遲效果"
+    - "需要雙延遲模組的複雜設定"
+    - "Post Rock ambient layers"
+    - "Jazz subtle delays"
+    - "Ambient soundscapes"
+
+  music_styles:
+    - "Jazz"
+    - "Neo Soul"
+    - "Fusion"
+    - "Post Rock"
+    - "Pop Rock"
+    - "Ambient"
+    - "Progressive Rock"
+    - "Experimental"
+
+  key_features:
+    - "Random Fluctuating Phase Modulation (世界首創)"
+    - "Dual delay modules (串聯/並聯)"
+    - "128 presets"
+    - "3-band EQ for delay tone"
+    - "Soft clipping circuit"
+    - "MIDI control"
+    - "Tap tempo"
+    - "Stereo I/O"
+
+# 使用技巧
+usage_tips:
+  dual_delay_routing:
+    parallel:
+      description: "兩組延遲並聯運作"
+      use_case: "創造豐富的立體聲延遲效果"
+    series:
+      description: "兩組延遲串聯運作"
+      use_case: "創造複雜的疊加延遲效果"
+
+  eq_shaping:
+    steps:
+      - "使用 3-band EQ 塑造延遲音色"
+      - "不影響原始乾訊號"
+      - "創造從明亮到溫暖的各種延遲音色"
+
+  soft_clipping_usage:
+    steps:
+      - "啟用 Soft Clipping"
+      - "為延遲訊號添加諧波"
+      - "創造更溫暖、更具類比感的延遲音色"
+
+  random_phase_modulation:
+    description: "獨特的相位調變創造有機的空間感"
+    tips:
+      - "適合創造寬廣的立體聲效果"
+      - "調變程度可調整"
+      - "創造從細微到明顯的調變效果"
+
+# 評價
+review_summary:
+  pros:
+    - "世界首創 Random Fluctuating Phase Modulation"
+    - "雙延遲模組設計靈活"
+    - "128個預設儲存"
+    - "專用 3-band EQ 塑造延遲音色"
+    - "Soft Clipping 添加諧波豐富度"
+    - "立體聲輸入/輸出"
+    - "32-bit DSP 高音質處理"
+    - "MIDI 整合能力"
+    - "HTS circuit 保持音色一致性"
+
+  cons:
+    - "複雜功能可能有學習曲線"
+    - "價格可能較高 (高階產品)"
+    - "體積較大 (145.4 × 120.5mm)"
+    - "電流需求較高 (350mA)"
+
+  conclusion: "Free the Tone FUTURE FACTORY FF-1Y 是一款專業級雙延遲效果器，具備世界首創的 Random Fluctuating Phase Modulation 技術，適合追求高音質與創意延遲效果的專業音樂家"
+
+# 阻抗特性
+impedance:
+  input: "min. 500kΩ (高阻抗)"
+  output: "min. 10kΩ (低阻抗負載)"
+
+# 訊號鏈配置
+signal_chain:
+  position: "fx_loop_or_post_gain"
+  swiss_things_assignment: "loop_2"
+  notes: "兩條訊號鏈共用，雙延遲模組提供更豐富的延遲選項"
+
+# 與 FT-1Y 的差異
+comparison_with_ft1y:
+  ft1y:
+    name: "FT-1Y Flight Time"
+    type: "單延遲模組"
+    presets: 99
+    key_feature: "Realtime BPM Analyzer"
+    stereo: "單聲道"
+    power: "12V DC, 400mA"
+
+  ff1y:
+    name: "FF-1Y FUTURE FACTORY"
+    type: "雙延遲模組"
+    presets: 128
+    key_feature: "Random Fluctuating Phase Modulation"
+    stereo: "立體聲"
+    power: "9V DC, 350mA"
+
+  key_differences:
+    - "FF-1Y 具備雙延遲模組 (FT-1Y 為單模組)"
+    - "FF-1Y 支援立體聲 (FT-1Y 為單聲道)"
+    - "FF-1Y 有 3-band EQ (FT-1Y 為 LPF/HPF)"
+    - "FF-1Y 有 Soft Clipping circuit"
+    - "FF-1Y 為 Random Phase Modulation (FT-1Y 為標準調變)"
+    - "FF-1Y 使用 9V 電源 (FT-1Y 為 12V)"
+
+# 參考資料來源
+sources:
+  - "Free the Tone 官方網站: https://www.freethetone.com/en/products/detail43/"
+  - "產品規格頁面"
+
+data_collected: 2026-01-10
+data_reliability: "高 (官方資料)"
+data_note: "部分詳細參數 (如延遲時間範圍) 待手冊確認"

@@ -248,7 +248,7 @@ signal_chain_recommendations:
     pedals:
       - "Blacklon (6V6 + Mellow, 管機底色)"
       - "Morning Glory (輕度 OD)"
-      - "FT-1Y (Delay)"
+      - "FF-1Y (Delay)"
       - "Nucleo (Stereo Reverb)"
     amp: "任何 clean amp"
     notes: "Semi-hollow + reverb = 極度空間感"

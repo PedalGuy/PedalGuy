@@ -464,7 +464,7 @@ Inventory Path: shared/inventory/
    9. Free the Tone ODL-1-CS ($425)
 
    【Delay (1)】
-   10. Free the Tone FT-1Y ($400)
+   10. Free the Tone FF-1Y ($400)
 
    【Reverb (2)】
    11. Cornerstone Nucleo ($350)

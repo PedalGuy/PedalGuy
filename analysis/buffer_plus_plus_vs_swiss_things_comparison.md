@@ -39,7 +39,7 @@
 1. ✅ **JC-22 + Tone King 都有 stereo FX loops**，不是只有單純 mono 設置
 2. ✅ Buffer++ Loop 2 stereo 可串接 JC-22 FX loop → 充分發揮 stereo speakers
 3. ✅ Buffer++ Loop 2 stereo 可串接 Tone King FX loop → 完整 stereo XLR 錄音
-4. ✅ Nucleo stereo reverb + FT-1Y delay 可完整發揮空間感
+4. ✅ Nucleo stereo reverb + FF-1Y delay 可完整發揮空間感
 5. ✅ Swiss Things Loop 2 mono **完全無法利用**這些 stereo 能力
 
 **如果你想充分發揮 JC-22 和 Tone King 的 stereo 能力，Buffer++ 是唯一選擇！**
@@ -289,7 +289,7 @@ Guitar → [Always-on pedals]
 ```
 Guitar → [Always-on: Empress MKII, Cali76, PA-1QG]
      → Loop 1 [Horsemeat, Sweet Honey, Morning Glory]
-     → Loop 2 [FT-1Y, Nucleo]
+     → Loop 2 [FF-1Y, Nucleo]
      → Roland JC-22
 ```
 
@@ -297,7 +297,7 @@ Guitar → [Always-on: Empress MKII, Cali76, PA-1QG]
 ```
 Guitar → [Always-on: 同上]
      → Loop 1 [Blacklon, Source Code, ODL-1-CS]
-     → Loop 2 [FT-1Y, Nucleo, AASB]
+     → Loop 2 [FF-1Y, Nucleo, AASB]
      → Tone King Imperial MKII
 ```
 
@@ -540,7 +540,7 @@ Input 2: Throbber-CTM (SD APH-1, medium output)
 |---|---|---|---|
 | **Nucleo (Stereo Reverb)** | ⚠️ 只能 mono | ✅ **完整 stereo** | **Buffer++ 完勝** |
 | **AASB (Shimmer Reverb)** | ⚠️ 只能 mono | ✅ 可能支援 stereo | 需確認 AASB 是否有 stereo |
-| **FT-1Y (Delay)** | ✅ Loop 2 buffered | ✅ 可配置 | 兩者皆適合 |
+| **FF-1Y (Delay)** | ✅ Loop 2 buffered | ✅ 可配置 | 兩者皆適合 |
 | **Gain Pedals (6顆)** | ✅ Loop 1 unbuffered | ✅ 可配置 unbuffered mode | 兩者皆適合 |
 | **PA-1QG (EQ + Boost)** | ✅ 適合 before input | ✅ 適合 before input | 兩者皆適合 |
 | **Roland JC-22** | ❌ **Loop 2 mono 浪費 stereo FX loop** | ✅ **Loop 2 stereo → JC-22 FX loop** | **Buffer++ 完勝** |
@@ -566,7 +566,7 @@ Guitar → [Always-on: Empress MKII, Cali76, PA-1QG]
 
      → JC-22 FX SEND → Buffer++ Loop 2 Input
 
-     → Buffer++ Loop 2 [Stereo effects: FT-1Y, Nucleo, AASB]
+     → Buffer++ Loop 2 [Stereo effects: FF-1Y, Nucleo, AASB]
 
      → Buffer++ Loop 2 Output LEFT → JC-22 FX RETURN LEFT
      → Buffer++ Loop 2 Output RIGHT → JC-22 FX RETURN RIGHT
@@ -577,7 +577,7 @@ Guitar → [Always-on: Empress MKII, Cali76, PA-1QG]
 **優勢:**
 - ✅ **充分發揮 JC-22 stereo speakers** (2x 6.5")
 - ✅ Nucleo stereo reverb 完整空間感
-- ✅ FT-1Y delay stereo 寬度
+- ✅ FF-1Y delay stereo 寬度
 - ✅ AASB shimmer reverb stereo (如果支援)
 - ✅ 單台音箱即可享受完整 stereo
 - ✅ 適合舞台演出和家裡練習
@@ -602,7 +602,7 @@ Guitar → [Always-on: Empress MKII, Cali76, PA-1QG]
 
      → Tone King FX SEND → Buffer++ Loop 2 Input
 
-     → Buffer++ Loop 2 [Stereo effects: FT-1Y, Nucleo, AASB]
+     → Buffer++ Loop 2 [Stereo effects: FF-1Y, Nucleo, AASB]
 
      → Buffer++ Loop 2 Output LEFT → Tone King FX RETURN LEFT
      → Buffer++ Loop 2 Output RIGHT → Tone King FX RETURN RIGHT
@@ -632,7 +632,7 @@ Guitar → Buffer++ Input
 
      → Buffer++ Loop 1 [Gain pedals]
 
-     → Buffer++ Loop 2 [Stereo effects: FT-1Y, Nucleo, AASB]
+     → Buffer++ Loop 2 [Stereo effects: FF-1Y, Nucleo, AASB]
 
 方案 A: 雙音箱 stereo speakers
      → Buffer++ Loop 2 Output LEFT → JC-22 FX RETURN LEFT → JC-22 Speakers

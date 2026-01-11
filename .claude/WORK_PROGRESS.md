@@ -61,7 +61,7 @@
 
 9. **Equipment Database 建立** ✅
    - `shared/equipment_database/pedals/` 目錄建立
-   - 12 個效果器詳細 YAML 文件 (empress_mkii, cali76_fet, pa1qg, sweet_honey, prs_horsemeat, morning_glory, roshi_blacklon, twa_source_code, odl1cs, ft1y, nucleo, aasb)
+   - 12 個效果器詳細 YAML 文件 (empress_mkii, cali76_fet, pa1qg, sweet_honey, prs_horsemeat, morning_glory, roshi_blacklon, twa_source_code, odl1cs, ff1y, nucleo, aasb)
    - 補齊 `pedals.yaml` 中所有 `research_file` 路徑
 
 ---
@@ -219,7 +219,7 @@
 - Compressors (2): Empress MKII, Cali76 FET
 - EQ (1): PA-1QG
 - Overdrives (5): Sweet Honey, Horsemeat, Morning Glory, Blacklon, Source Code, ODL-1-CS
-- Delay (1): FT-1Y
+- Delay (1): FF-1Y
 - Reverb (2): Nucleo, AASB
 
 ### 音箱 (2)
@@ -358,7 +358,7 @@ buffer_plus_plus_pairing:
       Guitar → Buffer++ Loop 1 [Gain pedals]
       → Buffer++ Output → JC-22 INPUT
       → JC-22 FX SEND → Buffer++ Loop 2 Input
-      → Buffer++ Loop 2 [Stereo effects: FT-1Y, Nucleo, AASB]
+      → Buffer++ Loop 2 [Stereo effects: FF-1Y, Nucleo, AASB]
       → Buffer++ Loop 2 Output L → JC-22 FX RETURN L
       → Buffer++ Loop 2 Output R → JC-22 FX RETURN R
       → JC-22 Power Amp → Stereo Speakers
@@ -529,7 +529,7 @@ stereo_capability:
    - 配置 3: 雙音箱 stereo rig
 
 3. **建立 Stereo Effects 訊號鏈**
-   - FT-1Y (delay) stereo
+   - FF-1Y (delay) stereo
    - Nucleo (reverb) stereo
    - AASB (shimmer) stereo (需確認)
 
@@ -570,7 +570,7 @@ stereo_capability:
 - Compressors (2): Empress MKII, Cali76 FET
 - EQ (1): PA-1QG
 - Overdrives (6): Sweet Honey, Horsemeat, Morning Glory, Blacklon, Source Code, ODL-1-CS
-- Delay (1): FT-1Y
+- Delay (1): FF-1Y
 - Reverb (2): Nucleo, AASB
 
 ### 音箱 (2) - ✅ 完整 YAML + Stereo 確認

@@ -14,7 +14,7 @@ Swiss Things 的核心優勢是 **2 個獨立 Effects Loop**（Loop 1 無緩衝 
 - **Loop 1 (Unbuffered)**: 放置 Jazz/Neo Soul 訊號鏈（Sweet Honey + PRS Horsemeat）
 - **Loop 2 (Buffered)**: 放置 Post Rock 訊號鏈（Blacklon + Morning Glory + TWA Source + ODL-1-CS）
 - **Swiss Things 之前**: Always-on pedals（Empress MKII / Cali76 FET + PA-1QG）
-- **Swiss Things 之後**: Time-based effects（FT-1Y + AASB + Nucleo）
+- **Swiss Things 之後**: Time-based effects（FF-1Y + AASB + Nucleo）
 
 透過腳踏開關，可在演出中快速切換兩組訊號鏈，實現：
 - **Loop 1 ON, Loop 2 OFF** = Jazz/Neo Soul 音色
@@ -91,7 +91,7 @@ Loop 2 (Buffered) → Booster → Buffer → Output A/B
 9. **Free the Tone ODL-1-CS** - Dumble
 
 #### 類別 3: Time-Based Effects（Swiss Things 之後）
-10. **FT-1Y** - Delay
+10. **FF-1Y** - Delay
 11. **AASB** - Shimmer Reverb
 12. **Nucleo** - 主 Reverb
 
@@ -137,7 +137,7 @@ Loop 2 (Buffered) → Booster → Buffer → Output A/B
    - Buffered 對這些現代 OD 影響不大
 
 3. ✅ **Time-based effects 放在 Swiss Things 之後**
-   - FT-1Y, AASB, Nucleo 放在 Output A 之後
+   - FF-1Y, AASB, Nucleo 放在 Output A 之後
    - 或使用 4-Cable Method 放入音箱 FX Loop
 
 ---
@@ -185,7 +185,7 @@ OUTPUT A
       Time-Based Effects Chain
 ═══════════════════════════════════════════
   ↓
-FT-1Y Delay
+FF-1Y Delay
   ↓
 AASB Shimmer (Post Rock 時)
   ↓
@@ -229,7 +229,7 @@ OUTPUT A → 🎛️ AMP INPUT
   ↓
 🎛️ AMP FX SEND
   ↓
-FT-1Y → AASB → Nucleo
+FF-1Y → AASB → Nucleo
   ↓
 🎛️ AMP FX RETURN → POWER AMP → Speaker
 ```
@@ -359,7 +359,7 @@ OUTPUT A → Time-Based Effects Chain
 OUTPUT A (Swiss Things)
   ↓
 ┌──────────────────────────────────────────┐
-│ ⑦ Free the Tone FT-1Y Delay              │
+│ ⑦ Free the Tone FF-1Y Delay              │
 │                                          │
 │ Jazz/Neo Soul:                           │
 │ • TIME: 1/4 note                         │
@@ -517,7 +517,7 @@ Swiss Things 有 **5 個腳踏開關**：
 ```
 Guitar → Empress MKII → PA-1QG (Preset 3, Throbber +6dB)
 → Swiss Things (兩個 Loop 都 Bypass)
-→ FT-1Y (細微 Delay) → Nucleo (Hall, Blend 20%)
+→ FF-1Y (細微 Delay) → Nucleo (Hall, Blend 20%)
 → Tone King Imperial MKII Rhythm
 ```
 
@@ -543,7 +543,7 @@ Guitar → Empress MKII → PA-1QG (Preset 3, Throbber +6dB)
 ```
 Guitar → Empress MKII → PA-1QG (Preset 2, Greco +3dB)
 → [Loop 1: Sweet Honey → PRS Horsemeat]
-→ FT-1Y (BPM 同步) → Nucleo (Room, Blend 30-50%)
+→ FF-1Y (BPM 同步) → Nucleo (Room, Blend 30-50%)
 → Roland JC-22 (Chorus ON)
 ```
 
@@ -570,7 +570,7 @@ Guitar → Empress MKII → PA-1QG (Preset 2, Greco +3dB)
 Guitar → Empress MKII → PA-1QG (Preset 2)
 → [Loop 1: Sweet Honey → PRS Horsemeat]
 → Boost +15dB ← 額外 Solo Boost
-→ FT-1Y → Nucleo
+→ FF-1Y → Nucleo
 → JC-22
 ```
 
@@ -596,13 +596,13 @@ Guitar → Empress MKII → PA-1QG (Preset 2)
 ```
 Guitar → Cali76 FET (增加 Sustain) → PA-1QG (Preset 1, ESP EC 0dB)
 → Swiss Things (兩個 Loop Bypass)
-→ FT-1Y (Hold, 長 Delay) → AASB (Above/Both, Freeze) → Nucleo (Reactor, Decay 60-90秒, Freeze)
+→ FF-1Y (Hold, 長 Delay) → AASB (Above/Both, Freeze) → Nucleo (Reactor, Decay 60-90秒, Freeze)
 → Tone King Imperial MKII / JC-22
 ```
 
 **音色特點:**
 - Clean Tone + Cali76 Sustain
-- FT-1Y Hold 建構 Pad
+- FF-1Y Hold 建構 Pad
 - AASB + Nucleo 雙 Freeze 創造天空音景
 
 ---
@@ -622,7 +622,7 @@ Guitar → Cali76 FET (增加 Sustain) → PA-1QG (Preset 1, ESP EC 0dB)
 ```
 Guitar → Cali76 FET → PA-1QG (Preset 1)
 → [Loop 2: Roshi Blacklon → JHS Morning Glory → TWA Source Code → ODL-1-CS]
-→ FT-1Y (Hold) → AASB (Freeze) → Nucleo (Reactor, Freeze)
+→ FF-1Y (Hold) → AASB (Freeze) → Nucleo (Reactor, Freeze)
 → Amp
 ```
 
@@ -649,7 +649,7 @@ Guitar → Cali76 FET → PA-1QG (Preset 1)
 ```
 Guitar → Cali76 FET → PA-1QG (Preset 7, Post Rock EQ)
 → [Loop 2: Roshi Blacklon (6L6 + Drive) → Morning Glory → TWA Source Code (TS 中頻)]
-→ FT-1Y → Nucleo (Hall)
+→ FF-1Y → Nucleo (Hall)
 → Tone King Imperial MKII Lead (Mid-Bite ON)
 ```
 
@@ -678,7 +678,7 @@ Guitar → Cali76 FET → PA-1QG
 → [Loop 1: Sweet Honey → PRS Horsemeat]
 → [Loop 2: Roshi Blacklon → JHS Morning Glory → TWA → ODL-1-CS]
 → 總共 6 顆 OD 串聯（實驗音色）
-→ FT-1Y → AASB → Nucleo
+→ FF-1Y → AASB → Nucleo
 → Amp
 ```
 
@@ -724,7 +724,7 @@ Guitar → Cali76 FET → PA-1QG
 │                                                                        │
 │  [Row 4 - 訊號鏈 2 (Loop 2) - Part 2 + Time-Based]                     │
 │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐             │
-│  │ ODL-1-CS │  │  FT-1Y   │  │   AASB   │  │  Nucleo  │             │
+│  │ ODL-1-CS │  │  FF-1Y   │  │   AASB   │  │  Nucleo  │             │
 │  │ (Dumble) │  │ (Delay)  │  │(Shimmer) │  │ (Reverb) │             │
 │  └──────────┘  └──────────┘  └──────────┘  └──────────┘             │
 │                                                                        │
@@ -774,8 +774,8 @@ TUNER OUTPUT → TC Polytune / Boss TU-3 (Always-on)
 
 #### Output 連接
 ```
-OUTPUT A → FT-1Y Input
-FT-1Y Output → AASB Input
+OUTPUT A → FF-1Y Input
+FF-1Y Output → AASB Input
 AASB Output → Nucleo Input
 Nucleo Output → Amp Input
 ```
@@ -798,7 +798,7 @@ Nucleo Output → Amp Input
 | **JHS Morning Glory V3** | **9V** | **~25mA** | ⭐ V3.0 新增 |
 | TWA Source Code | 9V | 25mA | |
 | ODL-1-CS | 12V | 180mA | |
-| FT-1Y | 12V | 250mA | |
+| FF-1Y | 12V | 250mA | |
 | AASB | 9V | 100mA | |
 | Nucleo | 9V | 150mA | |
 | **總計 (9V)** | - | **~510mA** | V3.0: -80mA (移除 Colosseum) +55mA (Horsemeat + Morning Glory) |
@@ -814,11 +814,11 @@ Nucleo Output → Amp Input
 - **配置方案**:
   - Output 1-9 (100mA): Swiss Things, Empress, Cali76, Sweet Honey, Horsemeat, Blacklon, Morning Glory, TWA, AASB
   - Output 10 (250mA): Nucleo (需 150mA，裕度充足)
-  - Output 11 (250mA): FT-1Y (需 250mA，使用 Voltage Doubler 升至 12V)
+  - Output 11 (250mA): FF-1Y (需 250mA，使用 Voltage Doubler 升至 12V)
   - Output 12 (500mA): PA-1QG + ODL-1-CS（並聯 @ 12V，使用 Voltage Doubler）
 
 **需購買**: 2-3 條 Truetone Voltage Doubler Cable（9V→12V）
-- PA-1QG, ODL-1-CS, FT-1Y 各需一條（或 PA-1QG + ODL-1-CS 共用一個 12V output）
+- PA-1QG, ODL-1-CS, FF-1Y 各需一條（或 PA-1QG + ODL-1-CS 共用一個 12V output）
 
 ---
 
@@ -830,7 +830,7 @@ Nucleo Output → Amp Input
 
 **配置方案**:
 - Output 1-8 (500mA @ 9V): Swiss Things, Empress, Cali76, Sweet Honey, Horsemeat, Blacklon, Morning Glory, TWA, AASB, Nucleo（分配）
-- Output 9 (500mA @ 12V): PA-1QG + ODL-1-CS + FT-1Y（並聯，總 630mA > 500mA，需分配）
+- Output 9 (500mA @ 12V): PA-1QG + ODL-1-CS + FF-1Y（並聯，總 630mA > 500mA，需分配）
 
 **實際配置**:
 - 需使用 2 個 12V 輸出，或搭配 Zuma Ojai 擴充
@@ -1022,7 +1022,7 @@ Nucleo Output → Amp Input
 ```
 PA-1QG → Swiss Things INPUT → Loop 1 Send
 → Sweet Honey → PRS Horsemeat → Loop 1 Return ⭐ V3.0
-→ OUTPUT A → FT-1Y → Nucleo → Amp
+→ OUTPUT A → FF-1Y → Nucleo → Amp
 ```
 
 **測試項目:**
@@ -1035,7 +1035,7 @@ PA-1QG → Swiss Things INPUT → Loop 1 Send
 ```
 PA-1QG → Swiss Things INPUT → Loop 2 Send
 → Blacklon → JHS Morning Glory → TWA → ODL-1-CS → Loop 2 Return ⭐ V3.0
-→ OUTPUT A → FT-1Y → Nucleo → Amp
+→ OUTPUT A → FF-1Y → Nucleo → Amp
 ```
 
 **測試項目:**
@@ -1226,7 +1226,7 @@ Sweet Honey → Horsemeat → Blacklon → Morning Glory → TWA → ODL-1-CS
 
 **方案 2: 使用 MIDI Loop Switcher**
 - 例如：RJM Mastermind PBC/6X (~$600-800 USD)
-- 可 MIDI 控制 PA-1QG + FT-1Y + Nucleo
+- 可 MIDI 控制 PA-1QG + FF-1Y + Nucleo
 - 但成本更高
 
 **方案 3: 維持手動切換**

@@ -69,7 +69,7 @@
 14. PRS Horsemeat - 透明Germanium
 
 **Delay (1)**
-15. Free the Tone FT-1Y - Realtime BPM Analyzer
+15. Free the Tone FF-1Y - Realtime BPM Analyzer
 
 **Reverb (2)**
 16. Cornerstone Nucleo - Stereo Reverb, Freeze
@@ -215,7 +215,7 @@ JC-22 前級處理 → Send (Stereo)
   ↓
 【Effects Loop - Send/Return之間】
   ↓
-⑥ Free the Tone FT-1Y Delay
+⑥ Free the Tone FF-1Y Delay
    - Realtime BPM Analyzer: ON
    - Tap Tempo輸入大概BPM
    - 演奏時自動微調至實際速度
@@ -250,19 +250,19 @@ JC-22 前級處理 → Send (Stereo)
 - Sweet Honey低增益（Drive 11-12點鐘）
 - Focus 1-2點鐘（溫暖甜美）
 - Soul Food關閉或極低增益Boost
-- FT-1Y短Delay（BPM同步）
+- FF-1Y短Delay（BPM同步）
 
 **Funk Spank**
 - From Yesterday Yellow Clean Mode
 - PA-1QG提升800Hz-3.2kHz（穿透力）
 - JC-22 Bright Switch ON
-- FT-1Y短Delay（增添空間感）
+- FF-1Y短Delay（增添空間感）
 
 **Jazz Lead**
 - Sweet Honey或KOT Yellow
 - 使用吉他Neck拾音器
 - Nucleo Hall模式
-- FT-1Y細微Delay
+- FF-1Y細微Delay
 
 ### 為何選這些效果器？
 
@@ -271,7 +271,7 @@ JC-22 前級處理 → Send (Stereo)
 - **From Yesterday (KOT):** 雙通道極度透明，可Clean/OD切換
 - **Sweet Honey:** 溫暖、Touch-sensitive，完美適合Neo Soul
 - **Soul Food:** Klon透明Boost，推動前面的OD但不染色
-- **FT-1Y:** Stereo Loop中提供精準Delay，BPM Analyzer同步節奏
+- **FF-1Y:** Stereo Loop中提供精準Delay，BPM Analyzer同步節奏
 - **Nucleo:** Stereo Reverb完美適合JC-22，Room/Hall模式自然
 
 ---
@@ -351,7 +351,7 @@ Tone King Imperial MKII 或 Roland JC-22（依需求）
   ↓
 【Effects Loop - Send/Return之間】
   ↓
-⑥ Free the Tone FT-1Y Delay
+⑥ Free the Tone FF-1Y Delay
    - Realtime BPM Analyzer: ON
    - **Hold Function:** 連接外部踏板
      - 演奏樂句 → 按Hold儲存延遲音
@@ -394,7 +394,7 @@ Tone King Imperial MKII 或 Roland JC-22（依需求）
 - 僅Blacklon Clean（6V6 Mellow）
 - AASB Above模式（高八度Shimmer）
 - Nucleo Reactor模式，Decay 60-90秒
-- FT-1Y Hold功能建立Pad層次
+- FF-1Y Hold功能建立Pad層次
 
 **Post Rock Driven**
 - Blacklon 6L6 + Drive
@@ -405,13 +405,13 @@ Tone King Imperial MKII 或 Roland JC-22（依需求）
 **Fusion Lead**
 - Free the Tone ODL-1-CS Drive Channel
 - AASB關閉（清晰度優先）
-- FT-1Y精準Delay（BPM同步）
+- FF-1Y精準Delay（BPM同步）
 - Nucleo Hall模式中等Decay
 
 **Ambient Soundscape**
 - 所有效果全開
 - AASB + Nucleo疊加
-- FT-1Y Hold + Nucleo Freeze建構複雜音景
+- FF-1Y Hold + Nucleo Freeze建構複雜音景
 - Cali76增加延音
 
 **Classic Rock**
@@ -427,7 +427,7 @@ Tone King Imperial MKII 或 Roland JC-22（依需求）
 - **Roshi Blacklon:** Amp-in-a-Box讓JC-22也能有Blackface管機感，4種模式組合
 - **Colosseum:** 雙通道一次提供Klon + BB，節省空間，Order可切換
 - **Free the Tone ODL-1-CS:** Dumble音色，雙通道，電壓可調（CS版本10-19V）
-- **FT-1Y:** Hold功能對Post Rock極有價值，建構Ambient Pad
+- **FF-1Y:** Hold功能對Post Rock極有價值，建構Ambient Pad
 - **AASB:** 雙向八度是Nucleo沒有的，Post Rock Shimmer必備，Below模式Drone
 - **Nucleo:** Reactor模式核電廠空間感，Stereo輸出，Freeze建構層次
 
@@ -456,7 +456,7 @@ Tone King Imperial MKII 或 Roland JC-22（依需求）
 9. ✅ Free the Tone ODL-1-CS - Dumble-style雙通道
 
 **【Delay】1顆**
-10. ✅ Free the Tone FT-1Y - Realtime BPM Analyzer，核心Delay
+10. ✅ Free the Tone FF-1Y - Realtime BPM Analyzer，核心Delay
 
 **【Reverb】2顆**
 11. ✅ Cornerstone Nucleo - Stereo主Reverb，Room/Hall/Reactor
@@ -483,7 +483,7 @@ Cali76 FET → PA-1QG → Roshi Blacklon
   ↓
 【Effects Loop - 兩個配置共用】
   ↓
-Free the Tone FT-1Y Delay
+Free the Tone FF-1Y Delay
   ↓
 Lichtlaerm AASB (需要Shimmer時)
   ↓
@@ -509,9 +509,9 @@ Cornerstone Nucleo Reverb (Stereo Out)
 **3. 完整音樂類型覆蓋**
 - Jazz: Empress + KOT Clean + Sweet Honey + Nucleo Hall
 - Neo Soul: Empress + Sweet Honey + Soul Food + Nucleo Room
-- Funk: Empress + KOT Clean + PA-1QG高中頻 + FT-1Y
+- Funk: Empress + KOT Clean + PA-1QG高中頻 + FF-1Y
 - Post Rock: Cali76 + Blacklon + AASB + Nucleo Reactor
-- Fusion: Cali76 + ODL-1-CS + FT-1Y + Nucleo Hall
+- Fusion: Cali76 + ODL-1-CS + FF-1Y + Nucleo Hall
 - Pop Rock: Empress + Soul Food + Colosseum + Nucleo
 
 **4. 4-Cable Method完美應用**
@@ -521,7 +521,7 @@ Cornerstone Nucleo Reverb (Stereo Out)
 
 **5. MIDI整合能力**
 - PA-1QG: 99預設MIDI切換
-- FT-1Y: MIDI Program Change
+- FF-1Y: MIDI Program Change
 - Nucleo: 128 MIDI預設
 - 可建構完整MIDI控制系統
 
@@ -599,7 +599,7 @@ Empress MKII (輕微壓縮)
 → From Yesterday Yellow側Clean Mode
 → Sweet Honey (低增益)
 → Imperial MKII Rhythm Channel
-→ (Loop) FT-1Y (細微Delay) → Nucleo Hall (低Mix)
+→ (Loop) FF-1Y (細微Delay) → Nucleo Hall (低Mix)
 ```
 
 **關鍵設定：**
@@ -624,7 +624,7 @@ Empress MKII
 → Mad Professor Sweet Honey (中低增益，Focus 1-2點鐘)
 → EHX Soul Food (Clean Boost模式)
 → JC-22 Input (Chorus ON)
-→ (Loop) FT-1Y (BPM同步) → Nucleo Room (Stereo)
+→ (Loop) FF-1Y (BPM同步) → Nucleo Room (Stereo)
 ```
 
 **關鍵設定：**
@@ -648,7 +648,7 @@ Empress MKII (快Attack, 快Release)
 → PA-1QG (提升800Hz-3.2kHz穿透力)
 → From Yesterday Yellow Clean Mode
 → JC-22 Input (Chorus ON, Bright Switch ON)
-→ (Loop) FT-1Y (短Delay) → Nucleo Room (低Mix)
+→ (Loop) FF-1Y (短Delay) → Nucleo Room (低Mix)
 ```
 
 **關鍵設定：**
@@ -656,7 +656,7 @@ Empress MKII (快Attack, 快Release)
 - PA-1QG: 提升800Hz +2dB, 1.6kHz +3dB, 3.2kHz +2dB
 - From Yesterday: Yellow Clean Mode，清晰Attack
 - JC-22: Bright Switch ON，高頻Sparkle
-- FT-1Y: 短Delay（100-150ms），增添空間感
+- FF-1Y: 短Delay（100-150ms），增添空間感
 - Nucleo: Room模式，Blend 20-30%
 
 ---
@@ -672,7 +672,7 @@ Cali76 FET (中IN, 快ATTACK, 增加Sustain)
 → Roshi Blacklon (6L6 + Drive Mode)
 → Cornerstone Colosseum (Klon → BB)
 → 音箱 Input
-→ (Loop) FT-1Y (Hold功能建Pad)
+→ (Loop) FF-1Y (Hold功能建Pad)
 → AASB (Above或Both模式, Freeze)
 → Nucleo Reactor (長Decay 60-90秒, Freeze)
 ```
@@ -681,7 +681,7 @@ Cali76 FET (中IN, 快ATTACK, 增加Sustain)
 - Cali76: IN中，ATTACK快，RELEASE中，DRY 70-80%
 - Blacklon: 6L6 Mode（大headroom），Drive Mode（更多失真）
 - Colosseum: Klon → BB順序，Klon推動BB
-- FT-1Y: Hold功能連接外部踏板，建構Ambient Pad
+- FF-1Y: Hold功能連接外部踏板，建構Ambient Pad
 - AASB: Above（高八度）或Both（雙向），Freeze凍結
 - Nucleo: Reactor模式，Decay 60-90秒，Freeze建構層次
 
@@ -698,14 +698,14 @@ Cali76 FET 或 Empress MKII
 → PA-1QG
 → Free the Tone ODL-1-CS (Drive Channel, 14-16V)
 → JC-22 Input
-→ (Loop) FT-1Y (精準BPM Analyzer) → Nucleo Hall
+→ (Loop) FF-1Y (精準BPM Analyzer) → Nucleo Hall
 ```
 
 **關鍵設定：**
 - Compressor: Empress（透明）或Cali76（染色）依需求
 - PA-1QG: 吉他專用Preset
 - ODL-1-CS: Drive Channel，電壓14-16V，ROCK Mode
-- FT-1Y: Realtime BPM Analyzer精準同步
+- FF-1Y: Realtime BPM Analyzer精準同步
 - Nucleo: Hall模式，中等Decay
 
 ---
@@ -721,7 +721,7 @@ Cali76 FET
 → PA-1QG
 → Roshi Blacklon (6L6 + Drive) 或 Cornerstone Colosseum BB Side
 → Imperial MKII Lead Channel (Mid-Bite ON)
-→ (Loop) FT-1Y → Nucleo Hall
+→ (Loop) FF-1Y → Nucleo Hall
 ```
 
 **關鍵設定：**
@@ -748,7 +748,7 @@ Cali76 FET
 | Colosseum | 9V DC | 150mA | |
 | Roshi Blacklon | 9V DC | 100mA | **勿超過10V** |
 | Free the Tone ODL-1-CS | 9V DC | 200mA+ | 內部可升壓10-19V |
-| FT-1Y | **12V DC** | **400mA** | **需專用12V** |
+| FF-1Y | **12V DC** | **400mA** | **需專用12V** |
 | Nucleo | 9V DC | 150mA | |
 | AASB | 9V DC | 150mA | **僅支援9V** |
 
@@ -761,7 +761,7 @@ Cali76 FET
 - 特色：2個可調電壓輸出（9/12/18V）
 - 總電流：4500mA
 - 價格：~$280 USD
-- **優勢：** 完全隔離，極低雜訊，可調電壓適合FT-1Y 12V需求
+- **優勢：** 完全隔離，極低雜訊，可調電壓適合FF-1Y 12V需求
 
 **選項2：Truetone CS12（性價比）**
 - 規格：12個輸出
@@ -782,7 +782,7 @@ Cali76 FET
 ### 供電配置建議（使用Truetone CS12）
 
 ```
-CS12 Output 1 (500mA): FT-1Y Delay (12V模式，使用Voltage Doubler Cable)
+CS12 Output 1 (500mA): FF-1Y Delay (12V模式，使用Voltage Doubler Cable)
 CS12 Output 2 (500mA): Free the Tone ODL-1-CS (200mA+)
 CS12 Output 3 (250mA): PA-1QG (200mA)
 CS12 Output 4 (250mA): Nucleo (150mA)
@@ -797,8 +797,8 @@ CS12 Output 12 (100mA): Sweet Honey (5mA)
 ```
 
 **注意事項：**
-- **FT-1Y需要12V**：使用CS12的Voltage Doubler Cable將兩個9V輸出串聯成18V，或使用Zuma的可調電壓輸出
-- **PA-1QG, ODL-1-CS, FT-1Y**：需要獨立隔離輸出（勿Daisy Chain）
+- **FF-1Y需要12V**：使用CS12的Voltage Doubler Cable將兩個9V輸出串聯成18V，或使用Zuma的可調電壓輸出
+- **PA-1QG, ODL-1-CS, FF-1Y**：需要獨立隔離輸出（勿Daisy Chain）
 - **Roshi Blacklon**：嚴禁超過10V
 - **Cali76, Colosseum, AASB**：可能需要使用250mA或500mA輸出
 
@@ -830,7 +830,7 @@ Colosseum → Roshi Blacklon → Free the Tone ODL-1-CS
 
 ```
 【Bottom Row - Effects Loop空間系】(左→右)
-FT-1Y Delay → AASB Shimmer → Nucleo Reverb
+FF-1Y Delay → AASB Shimmer → Nucleo Reverb
 ```
 
 **視覺化配置圖：**
@@ -842,7 +842,7 @@ FT-1Y Delay → AASB Shimmer → Nucleo Reverb
 ├─────────────────────────────────────────┤
 │ Colosseum  Blacklon  ODL-1-CS           │ Mid 2
 ├─────────────────────────────────────────┤
-│ FT-1Y    AASB    Nucleo                 │ Bottom
+│ FF-1Y    AASB    Nucleo                 │ Bottom
 └─────────────────────────────────────────┘
 ```
 
@@ -875,7 +875,7 @@ FT-1Y Delay → AASB Shimmer → Nucleo Reverb
 
 **MIDI控制內容：**
 - PA-1QG: Program Change切換99個預設
-- FT-1Y: Program Change切換預設，BPM控制
+- FF-1Y: Program Change切換預設，BPM控制
 - Nucleo: Program Change切換128個MIDI預設
 - 一次切換整套效果器設定（吉他切換/風格切換）
 
@@ -883,7 +883,7 @@ FT-1Y Delay → AASB Shimmer → Nucleo Reverb
 ```
 MIDI Controller OUT
 → PA-1QG MIDI IN → PA-1QG MIDI OUT
-→ FT-1Y MIDI IN → FT-1Y MIDI OUT
+→ FF-1Y MIDI IN → FF-1Y MIDI OUT
 → Nucleo MIDI IN
 ```
 
@@ -1004,7 +1004,7 @@ JC-22 後級處理 (Power Amp)
 
 **問題2：Loop電平不匹配**
 - 症狀：Loop效果器音量過小或過大
-- 解決：調整Loop中第一顆效果器（FT-1Y）的輸入增益
+- 解決：調整Loop中第一顆效果器（FF-1Y）的輸入增益
 - 或使用Line Level Converter
 
 **問題3：Stereo Loop訊號丟失**
@@ -1028,7 +1028,7 @@ JC-22 後級處理 (Power Amp)
 | ✅ Mad Professor Sweet Honey | 90% | Neo Soul核心音色 |
 | ✅ PA-1QG | 95% | EQ核心，每把吉他專用Preset |
 | ✅ Empress MKII | 85% | Clean-focused音樂類型首選 |
-| ✅ FT-1Y | 100% | 唯一Delay，所有風格必備 |
+| ✅ FF-1Y | 100% | 唯一Delay，所有風格必備 |
 | ✅ Nucleo | 95% | 主Reverb，Stereo輸出核心 |
 
 ### Tier 1.5（高使用率，特定風格核心）
@@ -1073,7 +1073,7 @@ JC-22 後級處理 (Power Amp)
 1. **Free the Tone PA-1QG** ($425) - EQ核心，MIDI整合
 2. **From Yesterday (KOT)** ($335) - 透明OD核心，雙通道
 3. **Mad Professor Sweet Honey** ($220) - Neo Soul核心
-4. **Free the Tone FT-1Y** ($400) - Delay核心，BPM Analyzer
+4. **Free the Tone FF-1Y** ($400) - Delay核心，BPM Analyzer
 5. **Cornerstone Nucleo** ($350) - Reverb核心，Stereo
 6. **Empress MKII** ($219) - Compressor透明選項
 
@@ -1081,7 +1081,7 @@ JC-22 後級處理 (Power Amp)
 - 完整EQ能力（PA-1QG）
 - 透明Overdrive（KOT）
 - 溫暖Overdrive（Sweet Honey）
-- 核心Delay（FT-1Y）
+- 核心Delay（FF-1Y）
 - 核心Reverb（Nucleo）
 - 透明壓縮（Empress）
 
@@ -1125,7 +1125,7 @@ JC-22 後級處理 (Power Amp)
 
 **如果預算有限，優先購買順序：**
 
-1. **Free the Tone FT-1Y** - 唯一Delay，必備
+1. **Free the Tone FF-1Y** - 唯一Delay，必備
 2. **Cornerstone Nucleo** - 主Reverb，Stereo核心
 3. **Free the Tone PA-1QG** - EQ核心，多吉他切換
 4. **From Yesterday (KOT)** - 透明OD核心
@@ -1163,7 +1163,7 @@ JC-22 後級處理 (Power Amp)
 7. Colosseum
 8. Roshi Blacklon
 9. Free the Tone ODL-1-CS
-10. FT-1Y
+10. FF-1Y
 11. Nucleo
 12. AASB
 

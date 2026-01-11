@@ -1,0 +1,321 @@
+# RockBoard MOD 2 V2 All-in-One Pedalboard Patchbay
+# Pedalboard Accessory 技術資料
+
+version: 1.0
+last_updated: 2026-01-08
+data_source: "Web search, zZounds, official retailers"
+
+# 基本資訊
+basic_info:
+  id: "rockboard_mod2_v2"
+  brand: "RockBoard"
+  manufacturer: "Warwick"
+  model: "MOD 2 V2"
+  full_name: "RockBoard MOD 2 V2 All-in-One Pedalboard Patchbay"
+  type: "pedalboard_accessory"
+  category: "patchbay_module"
+  made_in: "Germany (推測)"
+  release_year: 2020
+
+# 價格資訊
+price:
+  msrp: 179  # USD (預估)
+  street_price: 150-180  # USD
+  currency: "USD"
+  tier: "professional_accessory"
+
+# 核心規格
+technical_specs:
+  type: "Modular patchbay for pedalboards"
+  mounting: "MOD slot compatible (RockBoard pedalboards)"
+
+  dimensions:
+    with_front_plate:
+      width: "175 mm (6 7/8 inch)"
+      depth: "85 mm (3 3/8 inch)"
+      height: "47 mm (3 15/16 inch)"
+    without_front_plate:
+      width: "160 mm (6 5/16 inch)"
+      depth: "85 mm (3 3/8 inch)"
+      height: "33 mm (1 5/16 inch)"
+
+  weight: "420g (0.93 lbs)"
+
+  front_plate: "Detachable for mounting"
+
+# 連接器配置
+connectors:
+  trs_1_4_inch:
+    count: 4
+    type: "6.3 mm / 1/4 inch TRS thru"
+    configuration: "Front jack mirrors to back jack"
+    use_case:
+      - "吉他/效果器訊號線路管理"
+      - "效果器鏈跳線整理"
+      - "Pedalboard 輸入/輸出整合"
+
+  midi:
+    count: 2
+    type: "5-pin DIN MIDI thru"
+    configuration: "Front jack mirrors to back jack"
+    use_case:
+      - "MIDI Controller → MIDI 效果器"
+      - "MIDI 訊號鏈管理"
+      - "控制支援 MIDI 的效果器 (例: PA-1QG, ODL-1-CS)"
+
+  usb:
+    count: 1
+    type: "USB Type A thru"
+    configuration: "Front jack mirrors to back jack"
+    use_case:
+      - "USB MIDI Controller"
+      - "USB 設備連接"
+      - "未來擴充彈性"
+
+  dc_power:
+    count: 1
+    type: "DC 2.1 x 5.5 mm barrel thru"
+    configuration: "Front jack mirrors to back jack"
+    use_case:
+      - "電源供應整合"
+      - "統一供電管理"
+
+  ac_power:
+    count: 1
+    type: "AC IEC thru (male front / female back)"
+    configuration: "Male connector on front, female on back"
+    use_case:
+      - "AC 電源設備連接"
+      - "音箱或其他 AC 設備供電"
+
+# 核心功能
+core_features:
+  mirrored_connections:
+    description: "所有連接器前後鏡像"
+    benefit: "前面板連接效果器，背面連接音箱/電源"
+
+  cable_management:
+    description: "集中管理 pedalboard 所有接線"
+    benefit: "訊號線、MIDI、電源統一整理"
+
+  modular_design:
+    description: "可安裝在 RockBoard pedalboard 的 MOD slot"
+    benefit: "與 pedalboard 完美整合"
+
+  removable_front_plate:
+    description: "可拆卸前面板"
+    benefit: "彈性安裝方式"
+
+# 主要用途
+primary_use_cases:
+  use_case_1:
+    name: "訊號線整理"
+    description: "管理效果器鏈的訊號線"
+    benefit: "4 個 TRS thru 可處理 input, output, FX loop 等連接"
+
+  use_case_2:
+    name: "MIDI 控制系統"
+    description: "整合 MIDI Controller 與 MIDI 效果器"
+    benefit: "2 個 MIDI thru 可串接多個 MIDI 設備"
+    example: "MIDI Controller → MOD 2 → PA-1QG → ODL-1-CS"
+
+  use_case_3:
+    name: "電源管理"
+    description: "統一管理 DC 和 AC 電源"
+    benefit: "前面板連接電源，背面輸出到設備"
+
+  use_case_4:
+    name: "USB 設備整合"
+    description: "連接 USB MIDI Controller 或其他 USB 設備"
+    benefit: "USB Type A thru 預留擴充彈性"
+
+# 目標用戶
+target_users:
+  excellent:
+    - "需要 MIDI 控制效果器的玩家 (例: PA-1QG 99 preset 切換)"
+    - "複雜 pedalboard 需要整理接線"
+    - "前級效果器管理 (gain pedals, compressors, EQ)"
+    - "不需要 XLR 連接的玩家"
+
+  good:
+    - "RockBoard pedalboard 用戶"
+    - "需要統一電源管理"
+    - "USB MIDI 設備用戶"
+
+# 與 MOD 3 V2 比較
+vs_mod3_v2:
+  advantages_mod2:
+    - name: "MIDI 支援"
+      mod2: "✅ 2 x MIDI thru"
+      mod3: "❌ 無 MIDI"
+      impact: "可控制 PA-1QG, ODL-1-CS 等 MIDI 效果器"
+
+    - name: "TRS 數量"
+      mod2: "✅ 4 x TRS"
+      mod3: "❌ 3 x TRS"
+      impact: "更多訊號線接口，更有彈性"
+
+    - name: "USB 支援"
+      mod2: "✅ 1 x USB Type A"
+      mod3: "❌ 無 USB"
+      impact: "可連接 USB MIDI Controller"
+
+  advantages_mod3:
+    - name: "XLR 連接器"
+      mod2: "❌ 無 XLR"
+      mod3: "✅ 3 x XLR (2 male + 1 female)"
+      impact: "適合需要 XLR 輸出的設置 (例: Tone King → Interface)"
+
+    - name: "設計目標"
+      mod2: "TRS + MIDI + USB 管理"
+      mod3: "XLR + TRS 管理 (人聲/錄音)"
+      impact: "MOD 3 V2 專為 XLR 錄音設計"
+
+# 推薦使用情境
+recommended_scenarios:
+  scenario_1:
+    name: "前級效果器 Pedalboard + MIDI 控制"
+    description: "主 pedalboard 放前級效果器，需要 MIDI 控制"
+    configuration: |
+      吉他 → MOD 2 TRS 1 → Pedalboard Input
+      效果器鏈 Output → MOD 2 TRS 2 → 音箱 Input
+      MIDI Controller → MOD 2 MIDI 1 → PA-1QG MIDI In
+      PA-1QG MIDI Thru → MOD 2 MIDI 2 → ODL-1-CS MIDI In
+    benefit:
+      - "4 個 TRS 處理訊號線"
+      - "2 個 MIDI 控制效果器 Preset"
+      - "統一線路管理"
+
+  scenario_2:
+    name: "Rock + Clean 雙訊號鏈 (Buffer++ 配置)"
+    description: "使用 Buffer++ 切換兩條訊號鏈，不含空間系"
+    configuration: |
+      吉他 → MOD 2 TRS 1 → Buffer++ Input
+      Buffer++ Loop 1 [Rock 訊號鏈]
+      Buffer++ Loop 2 [Clean 訊號鏈]
+      Buffer++ Output → MOD 2 TRS 2 → 音箱 Input (或空間系 pedalboard)
+      預留 TRS 3, 4 用於四線法連接空間系 pedalboard
+    benefit:
+      - "4 個 TRS 足夠處理雙訊號鏈 + 四線法預留"
+      - "MIDI 控制 PA-1QG 和其他效果器"
+
+  scenario_3:
+    name: "不整合 Tone King，空間系分離"
+    description: "主 pedalboard 前級效果器，空間系另外放置"
+    configuration: |
+      主 pedalboard 只放前級 6 顆效果器
+      空間系 pedalboard 獨立放置
+      MOD 2 管理主 pedalboard 的訊號線和 MIDI
+    benefit:
+      - "4 個 TRS 充裕"
+      - "MIDI 控制前級效果器"
+      - "不需要 XLR (因為不整合 Tone King)"
+
+# 搭配 Buffer++ 的配置方案
+buffer_plus_plus_integration:
+  configuration_name: "Rock + Clean 雙訊號鏈 (不含空間系)"
+
+  signal_flow: |
+    🎸 吉他
+      ↓
+    【MOD 2 V2 TRS 1 Input】
+      ↓
+    ① Empress Buffer++ Input
+      ↓
+    Buffer++ Loop 1 Send → [Rock 訊號鏈] → Loop 1 Return
+      - Cali76 FET (Compressor, 增加 Sustain)
+      - Roshi Blacklon (Amp-in-a-Box, Blackface 模擬)
+      - TWA Source Code (TS Evolution, 中頻突出)
+      - Free the Tone ODL-1-CS (Dumble, 高階音色)
+      ↓
+    Buffer++ Loop 2 Send → [Clean 訊號鏈] → Loop 2 Return
+      - Empress MKII (透明壓縮)
+      - Mad Professor Sweet Honey (溫暖 OD)
+      - PRS Horsemeat (Klon Boost)
+      - JHS Morning Glory (BB Overdrive)
+      ↓
+    Buffer++ Output
+      ↓
+    【MOD 2 V2 TRS 2 Output】
+      ↓
+    🎛️ 音箱 Input (或空間系 pedalboard Input)
+
+    【四線法預留接口】
+    MOD 2 TRS 3: 音箱 FX Send → 空間系 pedalboard Input
+    MOD 2 TRS 4: 空間系 pedalboard Output → 音箱 FX Return
+
+    【MIDI 控制】
+    MIDI Controller → MOD 2 MIDI 1 → PA-1QG MIDI In
+    PA-1QG MIDI Thru → MOD 2 MIDI 2 → ODL-1-CS MIDI In
+
+  routing_mode: "Buffer++ Mode 5 - Loop Select (在 Loop 1 和 Loop 2 之間切換)"
+
+  pedal_count:
+    total: 10
+    loop_1_rock: 4
+    loop_2_clean: 4
+    shared_always_on: 2  # PA-1QG (EQ), 預留一個位置
+
+  connector_usage:
+    trs_used: 4
+    trs_available: 4
+    usage_detail:
+      - "TRS 1: 吉他 Input"
+      - "TRS 2: 主 pedalboard Output → 音箱/空間系"
+      - "TRS 3: 預留四線法 (音箱 FX Send → 空間系)"
+      - "TRS 4: 預留四線法 (空間系 Output → 音箱 FX Return)"
+    conclusion: "✅ 4 個 TRS 完全足夠使用"
+
+  midi_usage:
+    midi_used: 2
+    midi_available: 2
+    usage_detail:
+      - "MIDI 1: MIDI Controller → PA-1QG"
+      - "MIDI 2: PA-1QG → ODL-1-CS"
+    conclusion: "✅ 2 個 MIDI 完全足夠使用"
+
+  benefits:
+    - "✅ 可用 Buffer++ 在 Rock 和 Clean 訊號鏈之間快速切換"
+    - "✅ PA-1QG 保持在主訊號鏈 (Buffer++ 之前), 提供每把吉他專用 EQ"
+    - "✅ 預留四線法接口連接空間系 pedalboard"
+    - "✅ MIDI 控制 PA-1QG 99 preset 和 ODL-1-CS"
+    - "✅ 4 個 TRS 足夠處理所有訊號路徑"
+
+# 優缺點
+pros_cons:
+  pros:
+    - "✅ 4 個 TRS thru (比 MOD 3 多 1 個)"
+    - "✅ 2 個 MIDI thru (MOD 3 沒有)"
+    - "✅ 1 個 USB Type A thru (MOD 3 沒有)"
+    - "✅ 適合 MIDI 控制系統 (PA-1QG, ODL-1-CS)"
+    - "✅ 所有連接器前後鏡像"
+    - "✅ 集中管理訊號線、MIDI、電源"
+    - "✅ 模組化設計，與 RockBoard pedalboard 整合"
+    - "✅ 價格合理 ($150-180)"
+
+  cons:
+    - "❌ 無 XLR 連接器 (不適合需要 XLR 輸出的設置)"
+    - "❌ 需要 RockBoard pedalboard 或自行安裝"
+    - "❌ TRS 數量雖多但可能不足非常複雜的配置"
+
+# 購買建議
+purchase_recommendation:
+  highly_recommended_if:
+    - "你需要 MIDI 控制效果器 (PA-1QG 99 preset)"
+    - "主 pedalboard 只放前級效果器，空間系分離"
+    - "不需要整合 Tone King XLR 輸出"
+    - "使用 Buffer++ 雙訊號鏈配置"
+
+  not_recommended_if:
+    - "需要 XLR 連接器 (選 MOD 3 V2)"
+    - "不使用 MIDI 控制 (可能功能過剩)"
+    - "不使用 RockBoard pedalboard (安裝較麻煩)"
+
+# 參考資料
+sources:
+  - "RockBoard Official Website - https://www.rockboard.de/en/mod-patchbays/mod-2-v2/"
+  - "zZounds - https://www.zzounds.com/item--RBOBMOD2V2"
+  - "Various online retailers"
+  - "Web search 2026-01-08"
+
+data_reliability: "高 (多方驗證)"

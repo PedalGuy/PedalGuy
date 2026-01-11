@@ -56,7 +56,7 @@
 7. Colosseum
 8. Roshi Blacklon
 9. Free the Tone ODL-1-CS
-10. FT-1Y
+10. FF-1Y
 11. Nucleo
 12. AASB
 
@@ -423,7 +423,7 @@ Cali76 FET → PA-1QG → Roshi Blacklon → Colosseum → ODL-1-CS
 ---
 
 **【Delay】1顆 - $400**
-9. ✅ **Free the Tone FT-1Y** ($400)
+9. ✅ **Free the Tone FF-1Y** ($400)
    - 角色：Realtime BPM Analyzer Delay
    - 適用：所有音樂類型
    - 兩條訊號鏈共用
@@ -457,7 +457,7 @@ Cali76 FET → PA-1QG → Roshi Blacklon → Colosseum → ODL-1-CS
 | **TS-style OD** | TWA Source Code | 無 | **Tier 2 → 核心** |
 | **Amp-in-a-Box** | Roshi Blacklon | 無 | 無 |
 | **Dumble** | ODL-1-CS | 無 | 無 |
-| **Delay** | FT-1Y | 無 | 無 |
+| **Delay** | FF-1Y | 無 | 無 |
 | **主 Reverb** | Nucleo | 無 | 無 |
 | **Shimmer** | AASB | 無 | 無 |
 
@@ -576,7 +576,7 @@ JC-22 前級處理 → Send (Stereo L+R)
 【Effects Loop - Stereo】
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   ↓
-⑤ Free the Tone FT-1Y Delay
+⑤ Free the Tone FF-1Y Delay
    ┌─────────────────────────────────────┐
    │ 設定：                               │
    │ • MODE: Digital                      │
@@ -615,7 +615,7 @@ JC-22 前級處理 → Send (Stereo L+R)
 | PA-1QG | 100% | EQ + Clean Boost |
 | Sweet Honey | 90% | 核心 OD 音色 |
 | Colosseum Klon Side | 80% | Klon Boost |
-| FT-1Y | 100% | 主 Delay |
+| FF-1Y | 100% | 主 Delay |
 | Nucleo | 95% | 主 Reverb |
 
 **總計**：6顆效果器（前級4顆 + Loop 2顆）
@@ -764,7 +764,7 @@ JC-22 前級處理 → Send (Stereo L+R)
 【Effects Loop】
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   ↓
-⑦ Free the Tone FT-1Y Delay
+⑦ Free the Tone FF-1Y Delay
    ┌─────────────────────────────────────┐
    │ 設定：                               │
    │ • MODE: Analog/Digital（視需求）     │
@@ -820,7 +820,7 @@ JC-22 前級處理 → Send (Stereo L+R)
 | Colosseum | 90% | BB + Klon 雙通道疊加 |
 | TWA Source Code | 60% | TS 中頻（Classic Rock 時） |
 | ODL-1-CS | 70% | Dumble 高階音色 |
-| FT-1Y | 100% | 主 Delay + Hold |
+| FF-1Y | 100% | 主 Delay + Hold |
 | AASB | 50% | Shimmer/Drone |
 | Nucleo | 95% | 主 Reverb |
 
@@ -1569,7 +1569,7 @@ Colosseum → TWA Source Code → ODL-1-CS
 │                                                  │
 │ Middle 2: [TWA Source] [ODL-1-CS]                │
 │                                                  │
-│ Bottom:     [FT-1Y] [AASB] [Nucleo]              │
+│ Bottom:     [FF-1Y] [AASB] [Nucleo]              │
 │                                                  │
 │ Under:      [Truetone CS12 電源供應器]            │
 └─────────────────────────────────────────────────┘
@@ -1604,12 +1604,12 @@ Colosseum → TWA Source Code → ODL-1-CS
 | Blacklon | 30mA | Output 5 (100mA) |
 | TWA Source Code | 25mA | Output 6 (100mA) |
 | ODL-1-CS | **12V, 180mA** | Output 10 + Voltage Doubler Cable |
-| FT-1Y | **12V, 250mA** | Output 11 (250mA) + Voltage Doubler |
+| FF-1Y | **12V, 250mA** | Output 11 (250mA) + Voltage Doubler |
 | AASB | 100mA | Output 7 (100mA) |
 | Nucleo | 150mA | Output 8 (100mA) + Output 12 (100mA) 並聯 |
 
 **注意**：
-- PA-1QG, ODL-1-CS, FT-1Y 需要 **12V**（使用 Voltage Doubler Cable）
+- PA-1QG, ODL-1-CS, FF-1Y 需要 **12V**（使用 Voltage Doubler Cable）
 - Truetone CS12 原生 9V，需購買 Voltage Doubler Cable
 
 ---
@@ -1650,7 +1650,7 @@ Pedalboard Input → Cali76 FET → PA-1QG → Blacklon → Colosseum → TWA So
 
 **Loop 鏈**：
 ```
-Pedalboard Loop Input → FT-1Y → AASB → Nucleo → Pedalboard Loop Output
+Pedalboard Loop Input → FF-1Y → AASB → Nucleo → Pedalboard Loop Output
 ```
 
 **測試項目**：
@@ -1682,7 +1682,7 @@ Pedalboard Loop Input → FT-1Y → AASB → Nucleo → Pedalboard Loop Output
 
 **MIDI 支援效果器**：
 - PA-1QG: MIDI In
-- FT-1Y: MIDI In
+- FF-1Y: MIDI In
 - Nucleo: MIDI In
 
 **MIDI 連接方式**：
@@ -1691,7 +1691,7 @@ Morningstar MC6 MKII → MIDI Out
   ↓
 PA-1QG → MIDI In → MIDI Thru
   ↓
-FT-1Y → MIDI In → MIDI Thru
+FF-1Y → MIDI In → MIDI Thru
   ↓
 Nucleo → MIDI In
 ```
@@ -1704,7 +1704,7 @@ Nucleo → MIDI In
 ```
 踏板1 → MIDI PC 3
   → PA-1QG Preset 3 (Throbber +6dB)
-  → FT-1Y Preset 1 (細微Delay)
+  → FF-1Y Preset 1 (細微Delay)
   → Nucleo Preset 1 (Hall, Blend 20%)
 ```
 
@@ -1712,7 +1712,7 @@ Nucleo → MIDI In
 ```
 踏板2 → MIDI PC 2
   → PA-1QG Preset 2 (Greco +3dB)
-  → FT-1Y Preset 2 (BPM同步)
+  → FF-1Y Preset 2 (BPM同步)
   → Nucleo Preset 2 (Room, Blend 30%)
 ```
 
@@ -1720,7 +1720,7 @@ Nucleo → MIDI In
 ```
 踏板3 → MIDI PC 1
   → PA-1QG Preset 1 (ESP EC 0dB)
-  → FT-1Y Preset 3 (Hold, 長Delay)
+  → FF-1Y Preset 3 (Hold, 長Delay)
   → Nucleo Preset 3 (Reactor, Blend 60%)
 ```
 
@@ -1728,7 +1728,7 @@ Nucleo → MIDI In
 ```
 踏板4 → MIDI PC 8
   → PA-1QG Preset 8 (Solo +9dB)
-  → FT-1Y Preset 4 (中等Delay)
+  → FF-1Y Preset 4 (中等Delay)
   → Nucleo Preset 4 (Hall, Blend 40%)
 ```
 
@@ -1802,9 +1802,9 @@ Nucleo → MIDI In
 |---------|-------------------|-------------------|------|
 | **Jazz** | Empress + KOT Clean + Sweet Honey + Nucleo | Empress + PA-1QG (LEVEL +6dB) + Sweet Honey + Nucleo | ★★★★★ |
 | **Neo Soul** | Empress + Sweet Honey + Soul Food + Nucleo | Empress + PA-1QG (LEVEL +3dB) + Sweet Honey + Colosseum Klon + Nucleo | ★★★★★ |
-| **Funk** | Empress + KOT Clean + PA-1QG + FT-1Y | Empress + PA-1QG (LEVEL +4dB) + FT-1Y | ★★★★★ |
+| **Funk** | Empress + KOT Clean + PA-1QG + FF-1Y | Empress + PA-1QG (LEVEL +4dB) + FF-1Y | ★★★★★ |
 | **Post Rock** | Cali76 + Blacklon + AASB + Nucleo | Cali76 + PA-1QG + Blacklon + Colosseum (雙通道) + TWA Source + AASB + Nucleo | ★★★★★ |
-| **Fusion** | Cali76 + ODL-1-CS + FT-1Y + Nucleo | Cali76 + PA-1QG + ODL-1-CS + FT-1Y + Nucleo | ★★★★★ |
+| **Fusion** | Cali76 + ODL-1-CS + FF-1Y + Nucleo | Cali76 + PA-1QG + ODL-1-CS + FF-1Y + Nucleo | ★★★★★ |
 | **Pop Rock** | Empress + Soul Food + Colosseum + Nucleo | Empress + PA-1QG + Colosseum Klon + Nucleo | ★★★★★ |
 | **Classic Rock** | Cali76 + Blacklon/Colosseum BB + Imperial Lead | Cali76 + PA-1QG + Blacklon + Colosseum (雙通道) + **TWA Source** + Imperial Lead | ★★★★★ |
 
@@ -1840,12 +1840,12 @@ Empress MKII → PA-1QG (EQ + LEVEL Clean Boost) → Sweet Honey → Colosseum K
 
 **V1.0**：
 ```
-Cali76 FET → PA-1QG → Roshi Blacklon → Colosseum → ODL-1-CS → Loop (FT-1Y → AASB → Nucleo)
+Cali76 FET → PA-1QG → Roshi Blacklon → Colosseum → ODL-1-CS → Loop (FF-1Y → AASB → Nucleo)
 ```
 
 **V2.0**：
 ```
-Cali76 FET → PA-1QG → Roshi Blacklon → Colosseum (雙通道) → TWA Source Code → ODL-1-CS → Loop (FT-1Y → AASB → Nucleo)
+Cali76 FET → PA-1QG → Roshi Blacklon → Colosseum (雙通道) → TWA Source Code → ODL-1-CS → Loop (FF-1Y → AASB → Nucleo)
 ```
 
 **改進**：

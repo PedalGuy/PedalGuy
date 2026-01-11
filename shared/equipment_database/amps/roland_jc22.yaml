@@ -163,7 +163,7 @@ fx_loop_details:
       note: "只使用 L/MONO return，音箱會 mono 輸出"
 
     stereo_effect:
-      description: "連接 stereo 效果器 (例: Nucleo, FT-1Y, AASB)"
+      description: "連接 stereo 效果器 (例: Nucleo, FF-1Y, AASB)"
       connection: "SEND → Stereo Effect Input → Stereo Effect L Out → RETURN L/MONO, Stereo Effect R Out → RETURN R"
       note: "**完整 stereo，左右聲道分別輸出到 JC-22 的兩個 speakers**"
 
@@ -271,7 +271,7 @@ pedal_pairing:
     placement_option_1: "**放在 FX loop (推薦，可使用 stereo)**"
     placement_option_2: "放在 amp 前面 (傳統方式)"
     excellent:
-      - "FT-1Y (Delay) - **可用 stereo FX loop**"
+      - "FF-1Y (Delay) - **可用 stereo FX loop**"
       - "Nucleo (Stereo Reverb) - **強烈建議用 stereo FX loop**"
       - "AASB (Shimmer Reverb) - **可用 stereo FX loop**"
     notes:
@@ -284,7 +284,7 @@ pedal_pairing:
     example_with_fx_loop: |
       Guitar → Empress MKII → PA-1QG → [Sweet Honey]
         → JC-22 INPUT
-        → JC-22 FX SEND → [FT-1Y, Nucleo (Stereo)] → JC-22 FX RETURN (Stereo)
+        → JC-22 FX SEND → [FF-1Y, Nucleo (Stereo)] → JC-22 FX RETURN (Stereo)
         → JC-22 Power Amp → Stereo Speakers
 
     order_without_fx_loop: "Guitar → Compressor → EQ → Gain pedals → Time-based → JC-22 Input"
@@ -348,7 +348,7 @@ signal_chain_recommendations:
         → Swiss Things Loop 1 [Horsemeat, Sweet Honey, Morning Glory]
         → JC-22 INPUT
         → JC-22 FX SEND
-        → Swiss Things Loop 2 [FT-1Y, Nucleo (Stereo)]
+        → Swiss Things Loop 2 [FF-1Y, Nucleo (Stereo)]
         → JC-22 FX RETURN L/R (Stereo)
         → JC-22 Power Amp → Stereo Speakers
     fx_loop_mode: "Series"
@@ -362,7 +362,7 @@ signal_chain_recommendations:
         → Empress MKII (輕度壓縮)
         → PA-1QG (吉他專用 EQ preset)
         → Swiss Things Loop 1 [Horsemeat, Sweet Honey, Morning Glory]
-        → Swiss Things Loop 2 [FT-1Y, Nucleo]
+        → Swiss Things Loop 2 [FF-1Y, Nucleo]
         → JC-22 INPUT
     chorus_setting: "ON, moderate speed/depth"
     notes: "傳統方式，但 Nucleo stereo 能力無法發揮"
@@ -397,7 +397,7 @@ notes:
     advantage: "可充分發揮 stereo effects 的能力"
     recommendation:
       - "將 stereo delay/reverb 放在 FX loop"
-      - "Nucleo, FT-1Y, AASB 等 stereo effects 強烈建議使用 FX loop"
+      - "Nucleo, FF-1Y, AASB 等 stereo effects 強烈建議使用 FX loop"
       - "Gain pedals (OD/distortion) 仍建議放在 amp 前面"
     modes:
       - "Series mode: 標準 FX loop 使用"
@@ -484,7 +484,7 @@ buffer_plus_plus_pairing:
         → Buffer++ Output → JC-22 INPUT
         → JC-22 FX SEND
         → Buffer++ Loop 2 Input
-        → Buffer++ Loop 2 [Stereo effects: FT-1Y, Nucleo, AASB]
+        → Buffer++ Loop 2 [Stereo effects: FF-1Y, Nucleo, AASB]
         → Buffer++ Loop 2 Output L → JC-22 FX RETURN L
         → Buffer++ Loop 2 Output R → JC-22 FX RETURN R
         → JC-22 Power Amp → Stereo Speakers

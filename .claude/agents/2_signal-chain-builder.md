@@ -230,7 +230,7 @@ else:
 【FX Loop Effects】
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   ↓
-④ Free the Tone FT-1Y
+④ Free the Tone FF-1Y
    Settings: Digital, 1/4 note, 15-25% mix
   ↓
 ⑤ Cornerstone Nucleo
@@ -262,7 +262,7 @@ else:
 1. 使用頸拾音器獲得溫暖 Jazz chord tone
 2. 吉他 volume 降至 7-8 可獲得極 clean 音色
 3. Sweet Honey 僅在需要 Blues breakup 時開啟
-4. FT-1Y 時間調整至歌曲 BPM (使用 tap tempo)
+4. FF-1Y 時間調整至歌曲 BPM (使用 tap tempo)
 ```
 
 ---

@@ -256,7 +256,7 @@ swiss_things_routing:
     - "sweet_honey"   # Overdrive
 
   loop_2:
-    - "ft1y"          # Delay
+    - "ff1y"          # Delay
     - "nucleo"        # Reverb
 
   notes: |
@@ -308,8 +308,8 @@ pairing_result:
     placement: "before_swiss_things_input"
 
   delay:
-    model: "Free the Tone FT-1Y"
-    id: "ft1y"
+    model: "Free the Tone FF-1Y"
+    id: "ff1y"
     reason: "Jazz 需要短 delay 提供 subtle articulation"
     settings:
       mode: "digital"
