@@ -1,9 +1,15 @@
 # Skill: Implementation Planner
 
 **Skill Name:** Implementation Planner
-**Version:** 1.0
+**Version:** 1.1
 **Created:** 2025-12-30
+**Last Updated:** 2026-01-12
 **Purpose:** 產生分階段實施計畫、購物清單、Pedalboard 佈局、測試驗證流程
+
+**Version 1.1 Changes (2026-01-12)**:
+- 移除預算規劃相關欄位
+- 購物清單價格改為參考價格
+- 專注於技術實施步驟而非成本規劃
 
 ---
 
@@ -76,10 +82,6 @@ input:
     owned_pedals: [全部 10 顆已擁有]
     owned_cables: ["部分 patch cables"]
     owned_power: null
-
-  budget:
-    total: 1000
-    priority: "power_supply_first"
 
   timeline:
     target: "8_weeks"
@@ -601,40 +603,41 @@ troubleshooting_guide:
 
 **專案:** V2.0 訊號鏈實施
 **目標完成時間:** 8 週
-**預算:** $1,000
 
 ---
 
 ## 階段總覽
 
-| 階段 | 時間 | 重點 | 預算 |
-|------|------|------|------|
-| Phase 1 | Week 1-2 | 基礎設施 | $678 |
-| Phase 2 | Week 3-4 | 核心設定 | $0 |
-| Phase 3 | Week 5-6 | Overdrive | $0 |
-| Phase 4 | Week 7-8 | Time Effects | $0 |
-| Phase 5 | Week 9-12 | MIDI (可選) | $250 |
+| 階段 | 時間 | 重點 |
+|------|------|------|
+| Phase 1 | Week 1-2 | 基礎設施 |
+| Phase 2 | Week 3-4 | 核心設定 |
+| Phase 3 | Week 5-6 | Overdrive |
+| Phase 4 | Week 7-8 | Time Effects |
+| Phase 5 | Week 9-12 | MIDI (可選) |
 
 ---
 
 ## 購物清單
 
-### 必需品 ($678)
+### 必需品
 
 1. **Pedalboard**
-   - Pedaltrain Classic Pro: $129
+   - Pedaltrain Classic Pro (參考價格: $129)
 
 2. **電源供應**
-   - Strymon Zuma: $279
+   - Strymon Zuma (參考價格: $279)
 
 3. **線材**
-   - Patch Cables (15條): $90
-   - Instrument Cables: $180
+   - Patch Cables (15條，參考價格: $90)
+   - Instrument Cables (參考價格: $180)
 
-### 可選 ($250)
+### 可選
 
 4. **MIDI Controller**
-   - Morningstar MC6 MKII: $250
+   - Morningstar MC6 MKII (參考價格: $250)
+
+*註：價格僅供參考，實際購買時請以當時市場價格為準*
 
 ---
 
@@ -654,7 +657,6 @@ troubleshooting_guide:
 ```yaml
 implementation_plan:
   timeline: "8_weeks"
-  budget: 1000
 
   phases:
     - phase: 1

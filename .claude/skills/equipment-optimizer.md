@@ -1,9 +1,15 @@
 # Skill: Equipment Optimizer
 
 **Skill Name:** Equipment Optimizer
-**Version:** 1.0
+**Version:** 1.1
 **Created:** 2025-12-30
-**Purpose:** 優化效果器組合，減少功能重疊，提升使用率與成本效益
+**Last Updated:** 2026-01-12
+**Purpose:** 優化效果器組合，減少功能重疊，提升使用率
+
+**Version 1.1 Changes (2026-01-12)**:
+- 移除 "minimize_cost" 作為優化目標
+- 移除所有成本相關的決策考量
+- 專注於功能重疊和使用率優化
 
 ---
 
@@ -65,7 +71,6 @@ input:
   optimization_goals:
     - "reduce_overlap"          # 減少功能重疊
     - "improve_usage_rate"      # 提升使用率
-    - "minimize_cost"           # 降低總成本
     - "maintain_coverage"       # 維持音樂風格覆蓋
 ```
 
@@ -98,15 +103,12 @@ function_matrix:
       - pedal: "from_yesterday"
         mode: "Yellow Clean Mode"
         usage_rate: 16%
-        cost: 335
       - pedal: "pa1qg"
         feature: "LEVEL control (-12dB to +12dB)"
         usage_rate: 95%
-        cost: 425 (已擁有，邊際成本 0)
       - pedal: "soul_food"
         mode: "Low Gain Boost"
         usage_rate: 20%
-        cost: 90
 
   klon_transparent_od:
     providers:
@@ -164,21 +166,17 @@ overlaps_detected:
     providers:
       - pedal: "from_yesterday"
         usage_rate: 16%
-        cost: 335
         marginal_value: "低 (僅使用 1/6 功能)"
       - pedal: "pa1qg"
         usage_rate: 95%
-        cost: 0 (邊際)
         marginal_value: "高 (同時提供 EQ)"
       - pedal: "soul_food"
         usage_rate: 20%
-        cost: 90
         marginal_value: "中"
 
     recommendation:
       action: "移除 from_yesterday 和 soul_food，統一使用 pa1qg LEVEL"
-      reason: "PA-1QG 已擁有，邊際成本為 0，且提供針對不同吉他的獨立 Preset"
-      savings: 335 + 90 = 425 USD
+      reason: "PA-1QG 已擁有，且提供針對不同吉他的獨立 Preset"
 
   - function: "klon_transparent_od"
     overlap_score: 33%
@@ -191,7 +189,6 @@ overlaps_detected:
     recommendation:
       action: "移除 soul_food，使用 Colosseum Klon Side"
       reason: "Colosseum 已有 Klon Side，可低 Gain 設定當 Boost，訊號鏈2可雙通道疊加"
-      savings: 90 USD
 ```
 
 ---
@@ -322,7 +319,6 @@ candidates_for_gap:
         unique_feature: "Bite Control 無可取代"
 
       recommendation: "提升至核心，填補 from_yesterday 空缺"
-      cost: 299 (已擁有)
 
     - pedal: "prs_horsemeat"
       match_score: 60%
@@ -377,11 +373,6 @@ technical_validation:
       pa1qg_level: "✅ 同時做 EQ 調整"
       verdict: "✅ PA-1QG 更優"
 
-    characteristic: "成本"
-      from_yesterday: "335 (獨立效果器)"
-      pa1qg_level: "0 (已有 PA-1QG，邊際成本)"
-      verdict: "✅ PA-1QG 更優"
-
   conclusion: "PA-1QG LEVEL 完美取代 From Yesterday Clean Boost，且功能更強大"
   confidence: 100%
 ```
@@ -401,7 +392,6 @@ optimization_recommendations:
       reason: "PA-1QG LEVEL 取代 Clean Boost"
       technical_validation: "✅ 通過"
       impact:
-        savings: 335
         usage_rate_change: "16% → 0% (功能移至 PA-1QG)"
         coverage_loss: "無"
 
@@ -410,7 +400,6 @@ optimization_recommendations:
       reason: "Colosseum Klon Side 取代"
       technical_validation: "✅ 通過"
       impact:
-        savings: 90
         usage_rate_change: "20% → 0% (功能移至 Colosseum)"
         coverage_loss: "無"
 
@@ -419,18 +408,14 @@ optimization_recommendations:
       reason: "填補 from_yesterday 空缺 (TS-style 中頻)"
       technical_validation: "✅ 通過"
       impact:
-        cost: 0 (已擁有)
         usage_rate_change: "0% → 35%"
         coverage_gain: "✅ Post Rock/Fusion TS-style 中頻"
 
     - decision_id: "D4"
       action: "保持原有移除建議 (Morning Glory + Virtues Arca)"
       reason: "功能已被其他效果器覆蓋"
-      impact:
-        savings: "229 + 280 = 509"
 
   summary:
-    total_savings: "335 + 90 + 509 = 934"
     pedal_count: "12 → 10 (-17%)"
     average_usage_rate: "90% → 95% (+5%)"
     overlap_reduction: "100%"
@@ -458,8 +443,6 @@ optimization_recommendations:
 可在維持 100% 音樂風格覆蓋的前提下，實現：
 
 - ✅ 效果器數量：12顆 → **10顆** (-17%)
-- ✅ 總投資：$3,847 → **$3,493** (-9%)
-- ✅ 回收金額：**$650-790**
 - ✅ 使用率：90% → **95%** (+5%)
 - ✅ 功能重疊：**0%**
 
@@ -472,17 +455,15 @@ optimization_recommendations:
 **問題發現:**
 - From Yesterday 在訊號鏈1僅使用 Yellow Clean Mode (1/6 功能)
 - 使用率僅 16%
-- 投資 $335 僅為 Clean Boost 功能
 
 **替代方案:**
 - PA-1QG LEVEL 控制 (-12dB to +12dB) 提供線性放大
-- 邊際成本 $0 (已擁有 PA-1QG)
 - 功能更強：每把吉他獨立 Preset + MIDI 切換
 
 **技術驗證:**
 [對照表...]
 
-**結論:** ✅ 移除 From Yesterday，回收 $335
+**結論:** ✅ 移除 From Yesterday
 
 ---
 
@@ -506,20 +487,16 @@ optimization_report:
 
   current_state:
     pedal_count: 12
-    total_cost: 3847
     average_usage_rate: 90%
     overlap_count: 3
 
   optimized_state:
     pedal_count: 10
-    total_cost: 3493
     average_usage_rate: 95%
     overlap_count: 0
 
   improvements:
     pedal_reduction: -2
-    cost_reduction: -354
-    reclaim_value: 650-790
     usage_increase: +5%
 
   decisions:
@@ -527,13 +504,11 @@ optimization_report:
       action: "remove"
       target: "from_yesterday"
       reason: "PA-1QG LEVEL 取代 Clean Boost"
-      savings: 335
 
     - id: "D2"
       action: "remove"
       target: "soul_food"
       reason: "Colosseum Klon Side 取代"
-      savings: 90
 
     - id: "D3"
       action: "upgrade"

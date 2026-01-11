@@ -1,9 +1,16 @@
 # Agent 1: Pedal Research Agent
 
 **Agent Name:** Pedal Research Agent
-**Version:** 1.0
+**Version:** 1.1
 **Created:** 2025-12-30
+**Last Updated:** 2026-01-12
 **Purpose:** 研究效果器/吉他/音箱，生成完整技術報告 (MD + YAML)
+
+**Version 1.1 Changes (2026-01-12)**:
+- 將「預算分析」改為「價格資訊 (僅供參考)」
+- 明確標註價格資訊不影響配對決策
+- 保留 YAML 中的 price 欄位作為參考資料
+- 移除 budget 決策相關欄位
 
 ---
 
@@ -220,14 +227,15 @@ Post Rock: 5/5 - "長 decay shimmer reverb 完美適合 Post Rock 音景"
 - ESP Throbber-CTM (SD APH-1 medium): 適合溫暖 compressor
 ```
 
-#### 5.4 預算分析 (如果啟用)
+#### 5.4 價格資訊 (僅供參考)
 
 ```
-if budget_analysis_enabled:
-    - 價格: $[amount] USD
-    - 與同類型產品比較
-    - Cost-per-function 分析
-    - 購買優先順序建議
+價格記錄 (參考資訊):
+    - MSRP: $[amount] USD
+    - Street Price (如可取得): $[amount] USD
+    - 二手市場價格範圍 (如可取得)
+
+⚠️ 注意: 價格資訊僅作為參考資料記錄，不應該影響配對決策或推薦建議。
 ```
 
 ### Step 6: 生成輸出
@@ -331,12 +339,13 @@ if budget_analysis_enabled:
 - **Complement:** [analysis]
 - **Recommendation:** [which to use when]
 
-## Budget Analysis
+## Price Information (參考資訊)
 
-- **Price:** $[amount] USD
-- **Value Proposition:** [analysis]
-- **Priority:** High / Medium / Low
-- **Reason:** [explanation]
+- **MSRP:** $[amount] USD
+- **Street Price:** $[amount] USD (if available)
+- **Used Market Range:** $[low] - $[high] USD (if available)
+
+*註：價格資訊僅供參考，不影響推薦決策*
 
 ## Pros & Cons
 
@@ -401,6 +410,7 @@ price:
   msrp: 479
   currency: "USD"
   street_price: 449
+  note: "參考資訊，不影響配對決策"
 
 specs:
   input_impedance: "1M ohm"
@@ -453,10 +463,6 @@ comparison_with_owned:
     complement: "BigSky提供12種類型，Nucleo獨特IR"
     recommendation: "BigSky更versatile，Nucleo更unique"
 
-budget:
-  enabled: true
-  priority: "medium"
-  reason: "Third reverb, unique features but not essential"
 
 sources:
   official:

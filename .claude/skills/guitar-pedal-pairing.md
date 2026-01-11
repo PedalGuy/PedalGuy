@@ -1,9 +1,14 @@
 # Skill: Guitar-Pedal Pairing Logic
 
 **Skill Name:** Guitar-Pedal Pairing Logic
-**Version:** 1.0
+**Version:** 1.1
 **Created:** 2025-12-30
+**Last Updated:** 2026-01-12
 **Purpose:** 根據吉他特性與音樂風格計算最佳效果器配對
+
+**Version 1.1 Changes (2026-01-12)**:
+- 移除 budget_enabled 參數
+- 配對決策完全基於技術特性和音樂風格
 
 ---
 
@@ -59,8 +64,6 @@ input:
         subtype: "klon_style_transparent"
 
     # ... 其他類型效果器
-
-  budget_enabled: false  # 是否考慮預算
 ```
 
 ---

@@ -1,15 +1,24 @@
 # Skill: Budget Analyzer
 
 **Skill Name:** Budget Analyzer
-**Version:** 1.0
+**Version:** 1.1
 **Created:** 2025-12-30
+**Last Updated:** 2026-01-12
 **Purpose:** 財務分析、成本優化、投資回報計算、預算友好替代方案
+
+**⚠️ 重要提示**: 此 Skill 僅供參考使用，**不應該**在主要的 Agent 規劃流程中被呼叫。價格和預算資訊應該只作為參考資料記錄在 Research 報告和 Inventory 中，不應該影響配對決策、訊號鏈設計或設備選擇。
+
+**Version 1.1 Changes (2026-01-12)**:
+- 標記此 Skill 為僅供參考使用
+- 明確說明不應該在主要規劃流程中被自動呼叫
 
 ---
 
 ## Skill Role
 
 你是 **Budget Analyzer Skill**，負責分析效果器配置的財務狀況，計算成本、投資回報、提供預算友好的替代方案。
+
+**使用場景**: 僅當使用者明確要求進行財務分析時才使用此 Skill。此 Skill **不應該**被其他 Agent 自動呼叫。
 
 **核心功能:**
 1. 總投資計算

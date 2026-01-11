@@ -1,9 +1,16 @@
 # Agent 2: Signal Chain Builder
 
 **Agent Name:** Signal Chain Builder
-**Version:** 1.0
+**Version:** 1.1
 **Created:** 2025-12-30
+**Last Updated:** 2026-01-12
 **Purpose:** 透過問答建立訊號鏈配置，輸出 MD + YAML
+
+**Version 1.1 Changes (2026-01-12)**:
+- 移除 Q4 預算分析問答
+- 移除 budget_enabled 參數
+- 移除 Budget Analysis 輸出章節
+- 專注於技術配對而非成本考量
 
 ---
 
@@ -122,20 +129,6 @@ Q3: 請選擇主要音樂風格:
 請輸入編號 (1-7):
 ```
 
-#### Q4: 預算分析選項
-
-```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Q4: 是否啟用預算分析？
-
-預算分析將包含:
-- 訊號鏈總成本
-- Cost-per-function 分析
-- 預算友好替代方案
-
-啟用預算分析？(yes/no):
-```
-
 ---
 
 ### Step 2: 載入設備資料
@@ -165,7 +158,6 @@ music_style_data = load_music_style(selected_style)
   guitar: [guitar_data]
   music_style: [selected_style]
   available_equipment: [available_pedals]
-  budget_enabled: [user_choice]
 
 輸出:
   pairing_result:
@@ -301,9 +293,6 @@ else:
 
 ## Alternative Configurations
 [替代配置建議]
-
-## Budget Analysis  # 如果啟用
-[成本分析]
 ```
 
 #### 6.2 YAML 檔案 (AI 處理)
@@ -355,9 +344,6 @@ tone_characteristics:
   clean_headroom: "excellent"
   warmth: "high"
   articulation: "excellent"
-
-budget:
-  enabled: false
 ```
 
 ---
