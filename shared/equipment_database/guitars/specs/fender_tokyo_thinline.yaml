@@ -55,32 +55,32 @@ fingerboard:
 # 拾音器配置
 pickups:
   neck:
-    model: "Momose VT-1 Single-coil (Neck)"
-    type: "single_coil"
-    output: "medium"
-    magnets: "Alnico V (預估)"
+    model: "Seymour Duncan SP90-1 Vintage P90 (或 Lollar DC-90)"
+    type: "p90_single_coil_sized"
+    output: "medium_high"
+    magnets: "Alnico 5"
     characteristics:
-      - "Classic Telecaster neck tone"
-      - "Clear, articulate"
-      - "Vintage-voiced"
-      - "Warm yet bright"
+      - "P90-style warmth with single-coil clarity"
+      - "Thicker midrange than traditional Tele"
+      - "Clear, articulate with more body"
+      - "Vintage P90 voicing"
 
   bridge:
-    model: "Momose VT-1 Single-coil (Bridge)"
-    type: "single_coil"
-    output: "medium"
-    magnets: "Alnico V (預估)"
+    model: "Seymour Duncan SP90-1 Vintage P90 (或 Lollar DC-90)"
+    type: "p90_single_coil_sized"
+    output: "medium_high"
+    magnets: "Alnico 5"
     characteristics:
-      - "Classic Telecaster twang"
-      - "Clear, cutting highs"
-      - "Articulate attack"
-      - "Vintage-style output"
+      - "P90 bite with Telecaster clarity"
+      - "More midrange punch than traditional Tele"
+      - "Articulate attack with warmth"
+      - "Vintage P90 output"
 
   pickup_set:
-    name: "Momose VT-1 Pickups"
-    description: "High-quality Japanese single-coil pickups by Momose"
-    designed_for: "Classic Telecaster tones, Country, Blues, Funk, Clean"
-    manufacturer: "Momose (日本高端吉他品牌)"
+    name: "Seymour Duncan SP90-1 Set (或 Lollar DC-90 Set)"
+    description: "P90-style pickups in single-coil size (dogear-style)"
+    designed_for: "Blues, Rock, Jazz, versatile tones with P90 character"
+    manufacturer: "Seymour Duncan (或 Lollar Guitars)"
 
   controls:
     - "Volume (共用)"
@@ -105,28 +105,29 @@ electronics:
 
 # 音色特性
 tonal_characteristics:
-  core_tone: "Classic Telecaster tone with semi-hollow airiness"
+  core_tone: "P90-style warmth meets Telecaster clarity with semi-hollow airiness"
 
   frequency:
-    low: "Moderate bass (single-coil + semi-hollow)"
-    mid: "Clear, articulate midrange"
-    high: "Bright, twangy highs (Classic Tele character)"
+    low: "Moderate to strong bass (P90 + semi-hollow)"
+    mid: "Thick, pronounced midrange (P90 特性)"
+    high: "Clear, articulate highs (比傳統 Tele 溫暖)"
 
   dynamics:
-    pick_sensitivity: "Very high (single-coil + semi-hollow)"
+    pick_sensitivity: "Very high (P90 + semi-hollow)"
     volume_sensitivity: "Very high (guitar volume knob 極度靈敏)"
-    compression: "Very low (natural, open single-coil)"
+    compression: "Low to medium (P90 略有壓縮感)"
 
-  output_level: "Medium (vintage-style single-coil)"
+  output_level: "Medium-high (P90-style output)"
   resonance: "High (semi-hollow thinline)"
-  twang: "Very high (classic Telecaster)"
+  twang: "Moderate (P90 比傳統 Tele 溫暖)"
 
   character:
-    - "Classic Telecaster twang"
+    - "P90 warmth and thickness"
     - "Semi-hollow airiness"
     - "Clear, articulate attack"
-    - "Bright, cutting tone"
-    - "Excellent clarity"
+    - "Warm yet clear tone"
+    - "Strong midrange presence"
+    - "Versatile blues/rock character"
 
 # 適用音樂風格
 best_for:
@@ -149,37 +150,40 @@ best_for:
 pedal_pairing:
   overdrive:
     excellent:
-      - "Morning Glory (保留 Tele clarity, Bright Cut ON)"
-      - "Horsemeat (transparent boost)"
-      - "Sweet Honey (增加溫暖度)"
+      - "Morning Glory (保留清晰度，P90 不需要 Bright Cut)"
+      - "Sweet Honey (與 P90 溫暖感完美搭配)"
+      - "Blacklon (P90 + Blackface = blues heaven)"
     good:
-      - "Blacklon (Tele + Blackface = classic)"
-      - "Source Code (Tele + TS = classic rock)"
+      - "Horsemeat (transparent boost)"
+      - "Source Code (P90 + TS = classic rock)"
+      - "Roshi Blacklon (P90 + vintage amp sim)"
     notes:
-      - "Single-coil 已經很 bright，避免過度高頻 OD"
-      - "Morning Glory Bright Cut 建議 ON (削減高頻)"
+      - "P90 比傳統 single-coil 溫暖，不需過度削減高頻"
+      - "P90 midrange 豐富，與 Bluesbreaker 風格 OD 極度契合"
 
   compressor:
     recommendation:
-      - "Empress MKII (控制 single-coil 動態)"
-      - "Cali76 FET (增加 sustain)"
+      - "Cali76 FET (增加 sustain，保留 P90 warmth)"
+      - "Empress MKII (控制 P90 動態)"
     notes:
-      - "Single-coil 動態極大，compressor 很有用"
-      - "可幫助平衡 neck/bridge pickup 輸出差異"
+      - "P90 動態大，compressor 可平滑化音色"
+      - "P90 略有自然壓縮感，compressor 使用可以較輕"
 
   eq:
     recommendation:
-      - "PA-1QG 建立 Fender Thinline 專用 preset"
-      - "可能需要略減高頻 (single-coil bright)"
+      - "PA-1QG 建立 Fender P90 Thinline 專用 preset"
+      - "P90 midrange 豐富，EQ 調整可能較少"
 
   noise:
     notes:
-      - "Single-coil 拾音器有 60Hz hum"
+      - "P90 為 single-coil 結構，有 60Hz hum"
+      - "P90 比傳統 single-coil 略安靜，但仍有雜音"
       - "使用 noise gate 或避免高 gain"
 
   special_notes:
     - "Semi-hollow 在高音量時注意 feedback"
-    - "Single-coil 適合 clean 和 low-medium gain"
+    - "P90 適合 clean 到 medium-high gain"
+    - "P90 比傳統 Tele single-coil 更能承受 gain"
 
 # 適合搭配的音箱
 amp_pairing:
@@ -200,12 +204,13 @@ notes:
   mij_quality:
     - "Made in Japan Flagship series 品質極高"
     - "日本製造工藝精良"
-    - "Momose pickups 是高品質日本拾音器"
+    - "使用 Seymour Duncan SP90-1 或 Lollar DC-90 高品質 P90 拾音器"
 
-  single_coil:
-    - "Single-coil 拾音器有 60Hz hum (正常現象)"
+  p90_pickups:
+    - "P90 拾音器為 single-coil 結構，有 60Hz hum (正常現象)"
     - "避免靠近變壓器、電腦螢幕等電磁干擾源"
     - "可使用 hum-cancelling pedals"
+    - "P90 比傳統 single-coil 有更多 midrange 和 warmth"
 
   maintenance:
     - "Maple 指板需要定期清潔"
@@ -224,55 +229,63 @@ comparisons:
       - "Both semi-hollow thinline Telecasters"
       - "Similar body construction (Ash, f-hole)"
       - "Same scale length (25.5\")"
+      - "Both have warm, thick tone (P90 vs WideRange)"
     differences:
-      - "Fender: Single-coil vs Greco: WideRange Humbucker"
-      - "Fender: Brighter vs Greco: Warmer"
+      - "Fender: P90 vs Greco: WideRange Humbucker"
+      - "Fender: Single-coil hum vs Greco: Hum-cancelling"
       - "Fender: Modern MIJ vs Greco: Vintage"
-      - "Fender: More twang vs Greco: More warmth"
+      - "Fender: More clarity vs Greco: More warmth"
+      - "Fender: P90 bite vs Greco: Smooth humbucker"
 
   vs_eclipse_ctm:
     differences:
-      - "完全不同風格"
-      - "Fender: Single-coil, clean styles vs Eclipse: Humbucker, high-gain"
-      - "Fender: Bright, twangy vs Eclipse: Warm, compressed"
+      - "不同風格但 midrange 都豐富"
+      - "Fender: P90, blues/rock vs Eclipse: Humbucker, high-gain"
+      - "Fender: P90 bite vs Eclipse: Smooth, compressed"
+      - "Fender: Semi-hollow airiness vs Eclipse: Solid body sustain"
 
   vs_throbber_ctm:
+    similarities:
+      - "Both warm, thick tone (P90 vs Humbucker)"
+      - "Both semi-hollow (Fender Thinline vs Throbber Sound Reservoir)"
+      - "Both have strong midrange"
     differences:
-      - "Fender: Single-coil vs Throbber: Humbucker"
-      - "Fender: Brighter, twangier vs Throbber: Warmer"
+      - "Fender: P90 (single-coil hum) vs Throbber: Humbucker (quiet)"
+      - "Fender: More bite vs Throbber: Smoother"
       - "Fender: Bolt-on vs Throbber: Set neck"
+      - "Fender: Telecaster shape vs Throbber: Semi-hollow body"
 
 # 推薦訊號鏈
 signal_chain_recommendations:
   chain_1:
-    name: "Funk / Clean"
+    name: "Blues / Rock"
     pedals:
-      - "Empress MKII (控制動態)"
-      - "PA-1QG (Fender 專用 EQ preset)"
-      - "Horsemeat (clean boost, 需要時)"
-    amp: "Roland JC-22 (clean, chorus ON)"
-    notes: "完美 funk 吉他"
+      - "Cali76 FET (控制 P90 動態)"
+      - "Sweet Honey (P90 + Honey Bee = blues heaven)"
+      - "Morning Glory (stacking, P90 clarity)"
+    amp: "任何 clean amp"
+    notes: "P90 完美 blues 配置"
 
   chain_2:
-    name: "Country / Blues"
+    name: "Vintage Blues"
     pedals:
-      - "Cali76 FET (增加 sustain)"
-      - "Morning Glory (vintage crunch, Bright Cut ON)"
-    amp: "Blacklon (Blackface sim) → any amp"
-    notes: "經典 country Tele tone"
+      - "Empress MKII (平滑化 P90)"
+      - "Blacklon (Blackface sim, P90 + Blackface = classic)"
+    amp: "任何 amp"
+    notes: "經典 P90 + Blackface 組合"
 
   chain_3:
     name: "Classic Rock"
     pedals:
       - "Morning Glory (foundational crunch)"
-      - "Source Code (solo, TS + Tele = classic)"
+      - "Source Code (solo, P90 + TS = thick rock)"
     amp: "任何 amp"
-    notes: "Keith Richards style (Tele + OD)"
+    notes: "P90 + overdrive stacking"
 
   always_on:
     recommendation:
-      - "PA-1QG EQ (Fender 專用 preset)"
-      - "Empress MKII (控制 single-coil 動態)"
+      - "PA-1QG EQ (P90 Thinline 專用 preset)"
+      - "Cali76 FET (控制 P90 動態，保留 warmth)"
 
 # 適合的音樂家參考
 reference_artists:
@@ -284,24 +297,31 @@ reference_artists:
     - "Nile Rodgers (Tele funk)"
     - "Bill Frisell (Tele jazz)"
 
-# Momose VT-1 Pickups 特性
-momose_vt1_pickups:
-  description: "High-quality Japanese single-coil pickups"
-  manufacturer: "Momose (日本高端吉他品牌)"
+# P90-Style Pickups 特性
+p90_pickups:
+  description: "P90-style pickups in single-coil size (SP90-1 或 DC-90)"
+  manufacturer: "Seymour Duncan 或 Lollar Guitars"
 
   characteristics:
-    - "Vintage-voiced Telecaster tone"
-    - "Clear, articulate"
-    - "Balanced output"
-    - "Classic Tele twang with modern clarity"
+    - "P90 warmth and thickness"
+    - "More midrange than traditional single-coils"
+    - "Clear articulation with body"
+    - "Vintage P90 voicing"
+    - "Single-coil-sized for Tele routing"
 
-  quality_note: "Momose 是日本知名高端吉他品牌，拾音器品質極佳"
+  quality_note: "SP90-1 和 DC-90 都是高品質 P90 風格拾音器，適合 Thinline 的音色特性"
+
+  note: "⚠️ 原 YAML 記錄為 'Momose VT-1' 有誤，Momose VT-1 是 Momose MT1 系列吉他使用的拾音器，非 Fender 產品"
 
 # 參考資料來源
 sources:
   - "Fender 官方網站"
   - "Made in Japan Flagship series 資料"
-  - "Momose Guitars 資料"
+  - "Seymour Duncan SP90-1 官方規格"
+  - "Lollar DC-90 官方規格"
 
 data_collected: 2026-01-02
-data_reliability: "中 (部分規格需要補充)"
+data_updated: 2026-01-13  # 修正拾音器資訊
+data_reliability: "中高 (拾音器資訊已驗證修正，其他規格部分需要補充)"
+
+correction_note: "⚠️ 原 YAML 記錄拾音器為 'Momose VT-1' 有誤，已更正為 'Seymour Duncan SP90-1 或 Lollar DC-90'"
