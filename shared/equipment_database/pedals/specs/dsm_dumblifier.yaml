@@ -1,0 +1,558 @@
+# DSM/HUMBOLDT The Dumblifier Overdrive Special
+# 效果器詳細技術資料
+# 資料來源: 官方網站、Premier Guitar、gearnews.com、Thomann、Andertons、Henning Pauly YouTube 評測
+
+version: 1.1
+last_updated: 2026-01-14
+
+# 基本資訊
+basic_info:
+  id: "dsm_dumblifier"
+  brand: "DSM/HUMBOLDT"
+  model: "The Dumblifier"
+  full_name: "DSM/HUMBOLDT The Dumblifier Overdrive Special"
+  type: "overdrive"
+  subtype: "amp_in_a_box"
+  circuit_basis: "Dumble Overdrive Special 全類比模擬"
+  design_approach: "基於 1970s Dumble ODS 實機分析的全類比放大器建模"
+  release_date: "2025-2026"
+  status: "新品發售"
+
+# 價格資訊
+price:
+  msrp: 599
+  map: 549
+  currency: "USD"
+  price_eur: 599
+  price_gbp: 519
+  tier: "premium_boutique"
+
+# 核心技術規格
+technical_specs:
+  power:
+    voltage: "9-12V DC"
+    polarity: "center-negative"
+    current: "150-200mA"
+    connector: "2.1mm DC jack"
+
+  dimensions:
+    width: "135mm"
+    depth: "115mm"
+    height: "65mm"
+    width_inches: "5.5in"
+    depth_inches: "4.4in"
+    height_inches: "2.5in"
+
+  weight:
+    grams: "620g"
+    note: "重量可能因批次略有差異"
+
+  construction:
+    enclosure: "Heavy duty custom-made anodised aluminium"
+    finish: "Sandblasted finish"
+    side_panels: "Wooden side panels"
+    origin: "Handmade in Chile"
+    build_quality: "Premium boutique"
+
+  controls:
+    clean_channel:
+      - name: "Volume"
+        function: "Clean 通道輸出音量,可推動 Overdrive 通道"
+      - name: "Bass"
+        function: "低頻控制 (3-band EQ)"
+      - name: "Middle"
+        function: "中頻控制 (3-band EQ)"
+      - name: "Treble"
+        function: "高頻控制 (3-band EQ)"
+      - name: "Bright Switch"
+        function: "高頻增強開關,在低 Clean 音量時提升高頻"
+
+    overdrive_channel:
+      - name: "Drive"
+        function: "增益量控制"
+      - name: "Ratio"
+        function: "類似 presence 控制"
+      - name: "Mid Boost Switch"
+        function: "中頻與低中頻增強開關"
+      - name: "Rock/Jazz Switch"
+        function: "切換 tone stack 特性 (FMV vs Baxandall-James)"
+
+    global_controls:
+      - name: "PAB (Preamp Boost)"
+        function: "繞過 tone stack,增加約 10dB 前級增益"
+      - name: "Reverb Level"
+        function: "殘響音量控制"
+      - name: "Reverb Type"
+        function: "Room / Ethereal / Plate 三種選擇"
+      - name: "Cab Sim Switch"
+        function: "開啟/關閉音箱模擬"
+      - name: "Ground Lift Switch"
+        function: "XLR 輸出接地提升開關"
+
+    footswitches:
+      - name: "Clean"
+        function: "Clean 通道開關"
+      - name: "Overdrive"
+        function: "Overdrive 通道開關"
+      - name: "Reverb"
+        function: "殘響開關"
+
+  connectivity:
+    inputs:
+      - "1/4\" Input"
+      - "1/4\" Aux Input (for silent practice or backing tracks)"
+      - "Input Boost switch (rear panel)"
+    outputs:
+      - "Dual 1/4\" TRS outputs (stereo, cab sim bypassable per channel)"
+      - "Dual XLR DI outputs with cab sim"
+      - "1/4\" Headphone output"
+    fx_loop:
+      - "Mono FX Send"
+      - "Stereo FX Return"
+    aux_routing:
+      - "Aux can route to headphones only or both headphones and DI out"
+
+  special_features:
+    - "Full analog amplifier modeling technology"
+    - "Stereo cabinet simulation (bypassable)"
+    - "Multi-stage stereo reverb (Room/Ethereal/Plate)"
+    - "Stereo FX loop"
+    - "Can operate as standalone amp replacement or front-end pedal"
+    - "Based on analysis of authentic 1970s Dumble ODS"
+    - "Power amp section replicating Dumble design nuances"
+
+  bypass: "Buffered bypass (amp modeling device)"
+
+# 音色特性
+tonal_characteristics:
+  type: "Dumble Overdrive Special Amp Simulation"
+
+  clean_channel:
+    description: "Dumble 經典 clean 音色"
+    frequency:
+      low: "飽滿、溫暖"
+      mid: "平衡、透明"
+      high: "清晰、可透過 Bright 調整"
+    dynamics:
+      pick_sensitivity: "極高 (Dumble 特性)"
+      volume_sensitivity: "極高 - Cleans up beautifully with guitar volume"
+      compression: "有機、自然"
+    characteristics:
+      - "非常厚實的 clean tone (Dumble 著稱特性)"
+      - "不是最 chimey 的音箱 (因為太厚實)"
+      - "Clean lead 音色極佳,會讓吉他變厚 (thickens your guitar)"
+      - "與 Stratocaster 是完美組合"
+      - "相當大的 headroom"
+      - "3-band EQ 提供完整音色塑造"
+      - "可推動 Overdrive 通道達到更多增益"
+    reviewer_notes: "Dumble is known for very very thick clean tones - Henning Pauly"
+
+  overdrive_channel:
+    description: "Dumble ODS 經典 overdrive 音色"
+    frequency:
+      low: "飽滿、厚實"
+      mid: "豐富、音樂性強 (可透過 Mid Boost 調整)"
+      high: "清晰、細節豐富"
+    dynamics:
+      pick_sensitivity: "極高 (觸鍵靈敏)"
+      volume_sensitivity: "極高 - Cleans up beautifully with guitar volume"
+      compression: "有機動態壓縮 (Dumble 特性)"
+    gain:
+      breakup_point: "可調,從 edge of breakup 到 high gain"
+      gain_range: "Clean to High gain - Dumbles have a lot of gain"
+      harmonics: "豐富、複雜的諧波 (Dumble 特性)"
+    characteristics:
+      - "經典 Dumble ODS 觸鍵動態"
+      - "Super thick, juicy, saturated drive"
+      - "Screaming leads with a lot of body"
+      - "creamy, responsive lead tones"
+      - "clear, articulate cleans"
+      - "豐富的和聲複雜度"
+    reviewer_notes: "Dumbles have a lot of gain. Super thick juicy saturated drive for those screaming leads but again with a lot of body - Henning Pauly"
+
+  power_amp_simulation:
+    description: "複製 Dumble 功率管設計細節"
+    characteristics:
+      - "有機動態壓縮"
+      - "觸鍵敏感度"
+      - "諧波複雜度"
+
+  channel_interaction:
+    description: "Clean 通道串接 Overdrive 通道"
+    note: "Clean Volume 可推動 Overdrive 通道達到更多飽和度"
+
+# PAB (Preamp Boost)
+pab_feature:
+  name: "PAB (Preamp Boost)"
+  description: "繞過 tone stack,直接增加前級增益"
+  boost_amount: "約 10dB"
+  application: "Solo boost 或額外增益"
+  note: "來自原版 Dumble ODS 設計"
+
+# Bright Switch
+bright_switch:
+  name: "Bright Switch"
+  function: "在低 Clean 音量時增強高頻"
+  best_for: "使用 humbucker 或需要更多高頻時"
+
+# Mid Boost Switch
+mid_boost_switch:
+  name: "Mid Boost Switch"
+  function: "增強中頻與低中頻範圍,增加音色的 body"
+  best_for: "Solo 或需要更突出的中頻"
+  usage_recommendation: "評測者通常保持開啟狀態 (pushes up the body of sound)"
+
+# Rock/Jazz Switch
+rock_jazz_switch:
+  name: "Rock/Jazz Switch"
+  description: "切換 tone stack 架構"
+  jazz_mode:
+    setting: "Jazz"
+    tonestack: "Classic FMV configuration"
+    character: "傳統音色堆疊"
+    note: "較弱、較細 (Henning Pauly 評測者從不使用)"
+  rock_mode:
+    setting: "Rock"
+    tonestack: "Baxandall-James configuration"
+    character: "不同的音色響應"
+    note: "評測者建議設定 (fuller, more body)"
+  usage_recommendation: "多數玩家偏好 Rock 設定,提供更飽滿的 body"
+
+# Reverb
+reverb:
+  type: "Multi-stage stereo reverb"
+  modes:
+    - name: "Room"
+      description: "自然空間殘響,適合輕微空間感"
+    - name: "Ethereal"
+      description: "空靈殘響 (Ether = very big reverb, ethereal quality)"
+    - name: "Plate"
+      description: "板式殘響,經典 studio plate reverb"
+  control: "Dedicated level control (rear panel) and footswitch"
+  location: "Reverb level control and type selector on rear panel"
+
+# Cabinet Simulation
+cabinet_simulation:
+  description: "立體聲音箱模擬"
+
+  speaker_sizes:
+    - name: "4x12"
+      description: "4x12 cabinet simulation"
+    - name: "1x12"
+      description: "1x12 cabinet simulation"
+    - name: "2x12"
+      description: "2x12 cabinet simulation"
+
+  speaker_types:
+    - name: "G12M"
+      description: "Celestion Greenback style"
+    - name: "G12H"
+      description: "Celestion G12H style"
+    - name: "EV12L"
+      description: "Electro-Voice 12L style"
+
+  features:
+    - "Independent L/R speaker selection (size and type)"
+    - "可為左右聲道選擇不同喇叭組合以拓寬立體聲音場"
+    - "Bypassable per channel (rear panel switches)"
+    - "Professional studio and live use"
+
+  outputs:
+    - "XLR DI outputs with cab sim"
+    - "TRS outputs with independent cab sim bypass switches"
+
+# 使用建議
+usage_recommendations:
+  best_for:
+    - "Dumble 風格音色追求者"
+    - "需要高品質 amp-in-a-box 的玩家"
+    - "Studio direct recording"
+    - "Silent practice with headphones"
+    - "Live performance (direct to PA)"
+    - "Boutique amp tone without the cost"
+
+  versatility: "極度多功能,可作為獨立音箱替代或前級效果器"
+
+  use_cases:
+    standalone:
+      description: "完整 amp replacement"
+      features:
+        - "Cab simulation"
+        - "Stereo outputs"
+        - "Reverb"
+        - "FX loop"
+    pedal_mode:
+      description: "Two-channel overdrive pedal"
+      usage: "前接現有音箱系統"
+
+  signal_chain_position: "可放置於任何位置,或作為完整訊號鏈終點"
+
+  stacking:
+    ability: "內建兩通道可疊加使用"
+    note: "Clean 通道可推動 Overdrive 通道"
+
+  integration:
+    stereo_fx_loop: "可整合 stereo delay/modulation 效果"
+    aux_input: "可接入手機/播放器進行 silent practice"
+    headphone_out: "適合夜間練習"
+
+# 阻抗特性
+impedance:
+  input: "~1MΩ (預估,基於 DSM 產品線)"
+  output: "TRS: Low impedance / XLR: 100Ω (balanced)"
+
+# 與其他 Dumble 風格效果器比較
+comparisons:
+  vs_j_rockett_the_dude:
+    description: "The Dude 是簡單的 Dumble 風格 overdrive (~$200)"
+    dumblifier_advantage: "完整 amp modeling + cab sim + reverb + FX loop"
+    price_difference: "Dumblifier 約 2.5-3 倍價格,但功能完整"
+
+  vs_hermida_zendrive:
+    description: "Zendrive 是經典 Dumble 風格 OD,Robben Ford 使用 (~$200)"
+    dumblifier_advantage: "雙通道 + 完整 amp sim + 整合功能"
+
+  vs_cornerstone_gladio:
+    description: "Gladio 是雙通道 Dumble 風格 preamp (~$300)"
+    dumblifier_advantage: "完整 power amp sim + cab sim + reverb"
+
+  vs_peace_hill_ods:
+    description: "ODS 是高端 Dumble 模擬,使用真空管 (>$500)"
+    dumblifier_difference: "Dumblifier 全類比電晶體設計,價格相近但更實用"
+
+  vs_simplifier_x:
+    description: "DSM/HUMBOLDT 自家 Simplifier X"
+    simplifier_x_characteristics:
+      - "更大的踏板 (big-ass pedal)"
+      - "多通道設計"
+      - "需要了解 power amp 運作等知識"
+      - "有學習曲線"
+    dumblifier_advantages:
+      - "更小、更簡單"
+      - "更直覺、自我解釋 (self-explanatory)"
+      - "專注於 Dumble 音色"
+      - "不需要深入技術知識"
+      - "評測者認為這甚至更好 (even better)"
+    reviewer_quote: "For me, this is actually even better, even though what they had before was already great - Henning Pauly"
+
+  unique_selling_points:
+    - "唯一整合 Dumble ODS + cab sim + stereo reverb + FX loop 的產品"
+    - "可作為完整 amp replacement"
+    - "立體聲架構"
+    - "基於實體 1970s Dumble 分析"
+    - "比 Simplifier X 更易用且直覺"
+
+# 評價
+review_summary:
+  overall: "2025-2026 新品,已有專業評測"
+
+  henning_pauly_review:
+    reviewer: "Henning Pauly (The Pedal People)"
+    date: "2026"
+    video_url: "https://www.youtube.com/watch?v=f-sKYUAb2Cw"
+
+    overall_verdict: "DSM Humboldt's best pedal to date"
+
+    key_quotes:
+      - "This is actually even better [than Simplifier X], even though what they had before was already great"
+      - "Feels like it delivers the goods"
+      - "Can you make music with this? Hell yeah"
+      - "It cleans up beautifully"
+      - "Absolutely beautiful [wooden sides, made by hand]"
+      - "They just nailed it with the user interface"
+
+    testing_methodology:
+      approach: "實際歌曲製作測試"
+      genre: "Modern John Mayer/Jason Mraz style uptempo"
+      guitars_used:
+        - "Duesenberg Joey Landreth"
+        - "Schecter Nick Johnston Custom Shop"
+      production_scope:
+        - "所有吉他音軌"
+        - "貝斯音軌"
+        - "鼓由 AI 生成,其餘全部使用 Dumblifier"
+
+    sound_quality:
+      cleans: "Very thick clean tones, perfect for clean leads"
+      overdrive: "Super thick, juicy, saturated drive with screaming leads"
+      dynamics: "Cleans up beautifully with guitar volume knob"
+      comparison: "Delivers authentic Dumble experience"
+      note: "評測者沒有真實 Dumble,但相信它達到了效果"
+
+    design_and_usability:
+      appearance: "Absolutely beautiful, wooden sides made by hand"
+      ui_design: "Nailed it - self-explanatory and intuitive"
+      simplicity: "比 Simplifier X 更易用,無學習曲線"
+      features: "Packed full of features like DSM Humboldt tradition"
+
+    usage_settings:
+      rock_jazz_switch: "從不使用 Jazz (太弱太細),永遠使用 Rock"
+      mid_boost: "通常保持開啟"
+      typical_setup: "Rock switch on, Mid boost in, Bright switch as needed"
+
+    price_opinion:
+      estimated: "猜測 $399-449 會很合理"
+      acceptable_range: "$399-449"
+      problematic: "$799 would be a problem"
+      actual_price: "$549-599"
+      note: "實際價格高於評測者預期但仍在可接受範圍"
+
+  early_reception:
+    - "視覺設計極佳 (wooden side panels, handmade)"
+    - "Demo 影片音色令人印象深刻"
+    - "Early contender for 2026 pedal of the year"
+    - "Professional reviewers 高度讚賞"
+
+  confirmed_pros:
+    - "DSM/HUMBOLDT 有史以來最好的踏板 (according to Henning Pauly)"
+    - "完整的 Dumble ODS 體驗且真實"
+    - "極佳的用戶介面設計"
+    - "比 Simplifier X 更易用更直覺"
+    - "實際歌曲製作驗證可用性"
+    - "可處理完整音樂製作 (all guitars, bass)"
+    - "Premium 製造品質 (handmade wooden sides)"
+    - "音色厚實、飽滿、動態極佳"
+
+  potential_concerns:
+    - "價格 $549-599 高於部分評測者預期"
+    - "需要立體聲功能才能完全發揮價值"
+    - "尺寸較大 (135mm × 115mm)"
+    - "Jazz switch 幾乎不會使用 (too weak, too thin)"
+
+  brand_reputation:
+    simplifier_x_rating: "4.8/5 stars (Sweetwater)"
+    brand_quality: "DSM/HUMBOLDT 以高品質類比設計著稱"
+    build_quality: "Simplifier 系列獲得 '製造品質完美' 評價"
+    dumblifier_position: "Brand's best pedal to date"
+
+# 技術創新
+technical_innovation:
+  analog_modeling:
+    description: "Organic analog amplifier modeling technology"
+    approach: "基於實體 1970s Dumble ODS 分析"
+    advantages:
+      - "Zero latency"
+      - "Touch sensitive response"
+      - "Organic dynamics"
+
+  dual_channel_design:
+    description: "Clean 與 Overdrive 串接設計"
+    benefit: "可用 Clean Volume 推動 Overdrive saturation"
+
+  comprehensive_feature_set:
+    description: "唯一整合所有功能的 Dumble 風格產品"
+    features:
+      - "Dual channel amp sim"
+      - "Power amp simulation"
+      - "Stereo cab sim"
+      - "Multi-stage stereo reverb"
+      - "Stereo FX loop"
+      - "Multiple output options"
+
+# 市場定位
+market_positioning:
+  segment: "Premium boutique amp-in-a-box / Dumble simulator"
+  target_audience:
+    - "專業/半專業吉他手"
+    - "Studio musicians"
+    - "Dumble 音色追求者 (無法負擔真實 Dumble 音箱)"
+    - "需要輕便 amp solution 的巡演樂手"
+
+  competitive_advantage:
+    - "市場上最完整的 Dumble 整合解決方案"
+    - "可替代 $100,000+ Dumble 真實音箱"
+    - "DSM/HUMBOLDT 品牌信譽"
+    - "Premium 製造品質"
+
+  value_proposition:
+    description: "以 $549-599 獲得完整 Dumble ODS 體驗"
+    comparison: "真實 Dumble ODS 價格 $100,000+"
+
+# 建議與注意事項
+recommendations:
+  購買建議:
+    適合:
+      - "需要 Dumble 音色的專業玩家"
+      - "需要 amp-in-a-box + cab sim 的錄音工作者"
+      - "需要輕便 amp solution 的表演者"
+      - "願意投資 premium boutique 效果器"
+    不適合:
+      - "預算有限且只需要簡單 overdrive"
+      - "不需要 cab sim/stereo 功能"
+      - "Pedalboard 空間受限 (尺寸較大)"
+
+  alternative_options:
+    budget_friendly:
+      - "J. Rockett The Dude (~$200) - 簡單 Dumble OD"
+      - "Hermida Zendrive (~$200) - 經典 Dumble OD"
+    similar_price_range:
+      - "Peace Hill FX ODS (>$500) - 真空管 Dumble sim"
+
+  評估建議:
+    status: "新品,已有專業評測驗證"
+    recommendation: "強烈推薦收錄 - 已有實際使用案例驗證"
+    confidence_level: "高 (基於專業評測與實際歌曲製作測試)"
+    follow_up:
+      - "持續追蹤用戶長期使用反饋"
+      - "關注更多獨立評測"
+      - "追蹤社群論壇討論"
+
+  實際使用驗證:
+    verified_use_cases:
+      - "完整歌曲製作 (所有吉他與貝斯音軌)"
+      - "Modern John Mayer/Jason Mraz 風格"
+      - "Studio recording"
+      - "Direct recording (no amp)"
+    verified_guitars:
+      - "Duesenberg Joey Landreth (clean tones)"
+      - "Schecter Nick Johnston Custom Shop (demo)"
+      - "Works perfectly with Stratocaster"
+    production_capability: "可替代真實音箱進行專業錄音"
+
+# 資料來源
+sources:
+  official:
+    - "DSM/HUMBOLDT 官方網站"
+    - url: "https://www.dsmhumboldt.com/the-dumblifier"
+  reviews:
+    - "Premier Guitar"
+    - url: "https://www.premierguitar.com/news/dsm-humboldt-introduces-dumblifier-overdrive-special"
+    - "gearnews.com"
+    - url: "https://www.gearnews.com/dsm-humboldt-dumblifier/"
+    - "Delicious Audio"
+    - url: "https://delicious-audio.com/dsm-humboldt-dumblifier-overdrive-special/"
+    - "Guitar Bomb"
+    - url: "https://guitarbomb.com/dsm-humboldt-dumblifier/"
+  retailers:
+    - "Thomann"
+    - url: "https://www.thomannmusic.com/dsm_humboldt_dumblifier_overdrive_special.htm"
+    - "Andertons"
+    - url: "https://www.andertons.co.uk/dsm-and-humboldt-dumblifier-overdrive-special/"
+  youtube:
+    - reviewer: "Henning Pauly (The Pedal People)"
+    - url: "https://www.youtube.com/watch?v=f-sKYUAb2Cw"
+    - date: "2026"
+    - type: "Deep dive review with song production test"
+    - verdict: "DSM Humboldt's best pedal to date"
+    - transcript: "完整評測逐字稿已分析"
+
+data_collected: 2026-01-14
+data_reliability: "高 (官方資料 + 專業評測 + 實際使用案例)"
+data_notes: "新品發售,已有專業評測與實際歌曲製作驗證,等待更多長期用戶反饋"
+
+# 特殊標籤
+tags:
+  - "dumble"
+  - "dumble_ods"
+  - "amp_in_a_box"
+  - "amp_simulator"
+  - "dual_channel"
+  - "stereo"
+  - "cab_sim"
+  - "reverb"
+  - "fx_loop"
+  - "premium_boutique"
+  - "new_release_2026"
+  - "analog_modeling"
+  - "dsm_humboldt"
+  - "made_in_chile"
